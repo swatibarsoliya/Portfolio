@@ -1,114 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css" rel="stylesheet">
-    <title>Swati Barsoliya - Full Stack UI Engineer</title>
-    <script src="https://cdn.tailwindcss.com/3.4.16"></script>
-    <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            colors: { primary: "#0A66C2", secondary: "#00A0DC" },
-            borderRadius: {
-              none: "0px",
-              sm: "4px",
-              DEFAULT: "8px",
-              md: "12px",
-              lg: "16px",
-              xl: "20px",
-              "2xl": "24px",
-              "3xl": "32px",
-              full: "9999px",
-              button: "8px",
-            },
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css" rel="stylesheet">
+  <title>Swati Barsoliya - Full Stack UI Engineer</title>
+  <script src="https://cdn.tailwindcss.com/3.4.16"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: { primary: "#0A66C2", secondary: "#00A0DC" },
+          borderRadius: {
+            none: "0px",
+            sm: "4px",
+            DEFAULT: "8px",
+            md: "12px",
+            lg: "16px",
+            xl: "20px",
+            "2xl": "24px",
+            "3xl": "32px",
+            full: "9999px",
+            button: "8px",
           },
         },
-      };
-    </script>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
-    />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-    <style>
-      .typewriter {
+      },
+    };
+  </script>
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+  />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <style>
+    .typewriter {
       overflow: hidden;
       border-right: .15em solid transparent;
       white-space: nowrap;
       animation: typing 3.5s steps(40, end), blink-caret .75s step-end infinite;
-      }
-      @keyframes typing {
+    }
+    @keyframes typing {
       from { width: 0 }
       to { width: 100% }
-      }
-      @keyframes blink-caret {
+    }
+    @keyframes blink-caret {
       from, to { border-color: transparent }
       50% { border-color: #0A66C2 }
-      }
-      @media (max-width: 768px) {
+    }
+    @media (max-width: 768px) {
       .timeline-item {
-      padding-left: 2rem;
+        padding-left: 2rem;
       }
       .timeline-item::before {
-      left: 0;
+        left: 0;
       }
       .timeline-item::after {
-      left: 7px;
+        left: 7px;
       }
-      }
-      @media (max-width: 640px) {
+    }
+    @media (max-width: 640px) {
       .skill-bar {
-      margin-bottom: 1.5rem;
+        margin-bottom: 1.5rem;
       }
       .portfolio-item {
-      margin-bottom: 2rem;
+        margin-bottom: 2rem;
       }
-      }
-      .timeline-item {
+    }
+    .timeline-item {
       opacity: 0;
       transform: translateY(20px);
       transition: all 0.6s ease-out;
-      }
-      .timeline-item.visible {
+    }
+    .timeline-item.visible {
       opacity: 1;
       transform: translateY(0);
-      }
-    </style>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css"
-    />
-    <style>
-      :where([class^="ri-"])::before { content: "\f3c2"; }
-      body {
+    }
+  </style>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+  href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
+  rel="stylesheet"
+  />
+  <link
+  href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+  rel="stylesheet"
+  />
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css"
+  />
+  <style>
+    :where([class^="ri-"])::before { content: "\f3c2"; }
+    body {
       font-family: 'Inter', sans-serif;
       scroll-behavior: smooth;
-      }
-      .skill-bar {
+    }
+    .skill-bar {
       height: 8px;
       border-radius: 4px;
       background-color: #e5e7eb;
       overflow: hidden;
-      }
-      .skill-progress {
+    }
+    .skill-progress {
       height: 100%;
       border-radius: 4px;
       background-color: #4f46e5;
       transition: width 1.5s ease-in-out;
-      }
-      .timeline-item::before {
+    }
+    .timeline-item::before {
       content: '';
       position: absolute;
       left: -35px;
@@ -119,8 +119,8 @@
       background-color: #4f46e5;
       border: 3px solid white;
       z-index: 1;
-      }
-      .timeline-item::after {
+    }
+    .timeline-item::after {
       content: '';
       position: absolute;
       left: -28px;
@@ -129,22 +129,22 @@
       height: calc(100% + 40px);
       background-color: #e5e7eb;
       z-index: 0;
-      }
-      .timeline-item:last-child::after {
+    }
+    .timeline-item:last-child::after {
       display: none;
-      }
-      .portfolio-item {
+    }
+    .portfolio-item {
       transition: transform 0.3s ease, box-shadow 0.3s ease;
-      }
-      .portfolio-item:hover {
+    }
+    .portfolio-item:hover {
       transform: translateY(-5px);
       box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
-      }
-      input:focus, textarea:focus {
+    }
+    input:focus, textarea:focus {
       outline: none;
       border-color: #4f46e5;
-      }
-      .custom-checkbox {
+    }
+    .custom-checkbox {
       appearance: none;
       width: 20px;
       height: 20px;
@@ -153,12 +153,12 @@
       cursor: pointer;
       position: relative;
       transition: all 0.2s ease;
-      }
-      .custom-checkbox:checked {
+    }
+    .custom-checkbox:checked {
       background-color: #4f46e5;
       border-color: #4f46e5;
-      }
-      .custom-checkbox:checked::after {
+    }
+    .custom-checkbox:checked::after {
       content: '';
       position: absolute;
       left: 6px;
@@ -168,35 +168,35 @@
       border: solid white;
       border-width: 0 2px 2px 0;
       transform: rotate(45deg);
-      }
-      .custom-range {
+    }
+    .custom-range {
       appearance: none;
       width: 100%;
       height: 6px;
       background: #e5e7eb;
       border-radius: 3px;
       outline: none;
-      }
-      .custom-range::-webkit-slider-thumb {
+    }
+    .custom-range::-webkit-slider-thumb {
       appearance: none;
       width: 18px;
       height: 18px;
       background: #4f46e5;
       border-radius: 50%;
       cursor: pointer;
-      }
-      .custom-switch {
+    }
+    .custom-switch {
       position: relative;
       display: inline-block;
       width: 48px;
       height: 24px;
-      }
-      .custom-switch input {
+    }
+    .custom-switch input {
       opacity: 0;
       width: 0;
       height: 0;
-      }
-      .slider {
+    }
+    .slider {
       position: absolute;
       cursor: pointer;
       top: 0;
@@ -206,8 +206,8 @@
       background-color: #e5e7eb;
       transition: .4s;
       border-radius: 24px;
-      }
-      .slider:before {
+    }
+    .slider:before {
       position: absolute;
       content: "";
       height: 18px;
@@ -217,18 +217,18 @@
       background-color: white;
       transition: .4s;
       border-radius: 50%;
-      }
-      input:checked + .slider {
+    }
+    input:checked + .slider {
       background-color: #4f46e5;
-      }
-      input:checked + .slider:before {
+    }
+    input:checked + .slider:before {
       transform: translateX(24px);
-      }
-      .filter-button.active {
+    }
+    .filter-button.active {
       background-color: #4f46e5;
       color: white;
-      }
-      .modal {
+    }
+    .modal {
       display: none;
       position: fixed;
       z-index: 50;
@@ -238,8 +238,8 @@
       height: 100%;
       overflow: auto;
       background-color: rgba(0, 0, 0, 0.7);
-      }
-      .modal-content {
+    }
+    .modal-content {
       position: relative;
       background-color: white;
       margin: 5% auto;
@@ -248,1637 +248,1446 @@
       max-width: 900px;
       border-radius: 8px;
       animation: modalopen 0.3s;
-      }
-      @keyframes modalopen {
+    }
+    @keyframes modalopen {
       from {opacity: 0; transform: translateY(-60px);}
       to {opacity: 1; transform: translateY(0);}
-      }
-      .close {
+    }
+    .close {
       position: absolute;
       right: 20px;
       top: 15px;
       font-size: 28px;
       font-weight: bold;
       cursor: pointer;
-      }
-    </style>
-  </head>
-  <body class="bg-white">
-    <!-- Header Section -->
-    <header
-      class="fixed top-0 left-0 w-full bg-white shadow-sm z-40 transition-all duration-300"
+    }
+  </style>
+</head>
+<body class="bg-white">
+  <!-- Header Section -->
+  <header
+  class="fixed top-0 left-0 w-full bg-white shadow-sm z-40 transition-all duration-300"
+  >
+  <div
+  class="container mx-auto px-6 py-4 flex justify-between items-center"
+  >
+  <a href="#" class="text-2xl font-['Pacifico'] text-primary"
+  >Swati Barsoliya</a
+  >
+  <nav class="hidden md:flex space-x-8">
+    <a
+    href="#about"
+    class="text-gray-700 hover:text-primary transition-colors"
+    >About</a
     >
-      <div
-        class="container mx-auto px-6 py-4 flex justify-between items-center"
-      >
-        <a href="#" class="text-2xl font-['Pacifico'] text-primary"
-          >Swati Barsoliya</a
-        >
-        <nav class="hidden md:flex space-x-8">
-          <a
-            href="#about"
-            class="text-gray-700 hover:text-primary transition-colors"
-            >About</a
-          >
-          <a
-            href="#portfolio"
-            class="text-gray-700 hover:text-primary transition-colors"
-            >Portfolio</a
-          >
-          <a
-            href="#experience"
-            class="text-gray-700 hover:text-primary transition-colors"
-            >Experience</a
-          >
-          <a
-            href="#skills"
-            class="text-gray-700 hover:text-primary transition-colors"
-            >Skills</a
-          >
-          <a
-            href="#contact"
-            class="text-gray-700 hover:text-primary transition-colors"
-            >Contact</a
-          >
-        </nav>
-        <div class="hidden md:flex space-x-4">
-          <a
-            href="https://linkedin.com"
-            target="_blank"
-            class="w-10 h-10 flex items-center justify-center text-gray-600 hover:text-primary transition-colors"
-          >
-            <i class="ri-linkedin-line ri-lg"></i>
-          </a>
-          <a
+    <a
+    href="#portfolio"
+    class="text-gray-700 hover:text-primary transition-colors"
+    >Portfolio</a
+    >
+    <a
+    href="#experience"
+    class="text-gray-700 hover:text-primary transition-colors"
+    >Experience</a
+    >
+    <a
+    href="#skills"
+    class="text-gray-700 hover:text-primary transition-colors"
+    >Skills</a
+    >
+    <a
+    href="#contact"
+    class="text-gray-700 hover:text-primary transition-colors"
+    >Contact</a
+    >
+  </nav>
+  <div class="hidden md:flex space-x-4">
+    <a
+    href="https://linkedin.com"
+    target="_blank"
+    class="w-10 h-10 flex items-center justify-center text-gray-600 hover:text-primary transition-colors"
+    >
+    <i class="ri-linkedin-line ri-lg"></i>
+  </a>
+  <a
+  href="https://github.com"
+  target="_blank"
+  class="w-10 h-10 flex items-center justify-center text-gray-600 hover:text-primary transition-colors"
+  >
+  <i class="ri-github-line ri-lg"></i>
+</a>
+<a
+href="https://behance.net"
+target="_blank"
+class="w-10 h-10 flex items-center justify-center text-gray-600 hover:text-primary transition-colors"
+>
+<i class="ri-behance-line ri-lg"></i>
+</a>
+</div>
+<button
+class="md:hidden w-10 h-10 flex items-center justify-center"
+id="mobile-menu-button"
+>
+<i class="ri-menu-line ri-lg"></i>
+</button>
+</div>
+<!-- Mobile Menu -->
+<div
+id="mobile-menu"
+class="hidden md:hidden bg-white shadow-lg absolute w-full"
+>
+<div class="container mx-auto px-6 py-4 flex flex-col space-y-4">
+  <a
+  href="#about"
+  class="text-gray-700 hover:text-primary transition-colors py-2"
+  >About</a
+  >
+  <a
+  href="#portfolio"
+  class="text-gray-700 hover:text-primary transition-colors py-2"
+  >Portfolio</a
+  >
+  <a
+  href="#experience"
+  class="text-gray-700 hover:text-primary transition-colors py-2"
+  >Experience</a
+  >
+  <a
+  href="#skills"
+  class="text-gray-700 hover:text-primary transition-colors py-2"
+  >Skills</a
+  >
+  <a
+  href="#contact"
+  class="text-gray-700 hover:text-primary transition-colors py-2"
+  >Contact</a
+  >
+  <div class="flex space-x-4 py-2">
+    <a
+    href="https://linkedin.com"
+    target="_blank"
+    class="w-10 h-10 flex items-center justify-center text-gray-600 hover:text-primary transition-colors"
+    >
+    <i class="ri-linkedin-line ri-lg"></i>
+  </a>
+  <a
+  href="https://github.com"
+  target="_blank"
+  class="w-10 h-10 flex items-center justify-center text-gray-600 hover:text-primary transition-colors"
+  >
+  <i class="ri-github-line ri-lg"></i>
+</a>
+<a
+href="https://behance.net"
+target="_blank"
+class="w-10 h-10 flex items-center justify-center text-gray-600 hover:text-primary transition-colors"
+>
+<i class="ri-behance-line ri-lg"></i>
+</a>
+</div>
+</div>
+</div>
+</header>
+<!-- Hero Section -->
+<section
+class="pt-28 md:pt-40 pb-20 md:pb-28 relative overflow-hidden"
+style="background-image: url('https://readdy.ai/api/search-image?query=modern%20tech%20office%20environment%20with%20multiple%20screens%20showing%20code%20and%20UI%20designs%2C%20professional%20UK%20workspace%2C%20clean%20modern%20aesthetic%2C%20soft%20ambient%20lighting%2C%20minimalist%20setup%2C%20high%20quality%2C%208k%2C%20ultra%20detailed&width=1920&height=1080&seq=1&orientation=landscape'); background-size: cover; background-position: center;"
+>
+<div
+class="absolute -top-1/2 -right-1/2 w-full h-full bg-gradient-radial from-primary/20 to-transparent rounded-full blur-3xl"
+></div>
+<div
+class="absolute inset-0 bg-gradient-to-r from-white via-white/90 to-white/30"
+></div>
+<div class="container mx-auto px-6 relative">
+  <div class="max-w-2xl" data-aos="fade-up" data-aos-duration="1000">
+    <h1
+    class="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6 typewriter"
+    >
+    Full Stack <span class="text-primary">UI Engineer</span>
+  </h1>
+  <p class="text-lg md:text-xl text-gray-700 mb-8">
+    Creating beautiful, functional, and user-centered digital
+    experiences with 7 years of design expertise and front-end
+    development skills.
+  </p>
+  <div
+  class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4"
+  >
+  <a
+  href="#portfolio"
+  class="px-8 py-3 bg-primary text-white font-medium !rounded-button whitespace-nowrap shadow-lg hover:bg-primary/90 transition-colors text-center"
+  >
+  View My Work
+</a>
+<a
+href="#contact"
+class="px-8 py-3 bg-white text-primary font-medium border border-primary !rounded-button whitespace-nowrap hover:bg-gray-50 transition-colors text-center"
+>
+Contact Me
+</a>
+</div>
+</div>
+</div>
+</section>
+<!-- About Section -->
+<section id="about" class="py-20 bg-gray-50">
+  <div class="container mx-auto px-6">
+    <div class="text-center mb-16">
+      <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+        About Me
+      </h2>
+      <div class="w-20 h-1 bg-primary mx-auto"></div>
+    </div>
+    <div class="flex flex-col lg:flex-row gap-12">
+      <div class="lg:w-1/3">
+        <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+          <img
+          src="https://static.readdy.ai/image/56ed73f06342fa03f754734d34fd8d19/8199a9e58654013a1b80ee210ba0328a.jpeg"
+          alt="Swati Barsoliya"
+          class="w-full h-auto object-cover"
+          />
+          <div class="p-6">
+            <h3 class="text-2xl font-bold text-gray-900 mb-2">
+              Swati Barsoliya
+            </h3>
+            <p class="text-gray-600 mb-4">
+              Web Designer & Front-end Developer
+            </p>
+            <div class="flex space-x-4 mb-6">
+              <a
+              href="https://linkedin.com"
+              target="_blank"
+              class="w-10 h-10 flex items-center justify-center text-gray-600 hover:text-primary transition-colors"
+              >
+              <i class="ri-linkedin-line ri-lg"></i>
+            </a>
+            <a
             href="https://github.com"
             target="_blank"
             class="w-10 h-10 flex items-center justify-center text-gray-600 hover:text-primary transition-colors"
-          >
+            >
             <i class="ri-github-line ri-lg"></i>
           </a>
           <a
-            href="https://behance.net"
-            target="_blank"
-            class="w-10 h-10 flex items-center justify-center text-gray-600 hover:text-primary transition-colors"
+          href="https://behance.net"
+          target="_blank"
+          class="w-10 h-10 flex items-center justify-center text-gray-600 hover:text-primary transition-colors"
           >
-            <i class="ri-behance-line ri-lg"></i>
-          </a>
-        </div>
-        <button
-          class="md:hidden w-10 h-10 flex items-center justify-center"
-          id="mobile-menu-button"
+          <i class="ri-behance-line ri-lg"></i>
+        </a>
+        <a
+        href="https://dribbble.com"
+        target="_blank"
+        class="w-10 h-10 flex items-center justify-center text-gray-600 hover:text-primary transition-colors"
         >
-          <i class="ri-menu-line ri-lg"></i>
-        </button>
-      </div>
-      <!-- Mobile Menu -->
-      <div
-        id="mobile-menu"
-        class="hidden md:hidden bg-white shadow-lg absolute w-full"
-      >
-        <div class="container mx-auto px-6 py-4 flex flex-col space-y-4">
-          <a
-            href="#about"
-            class="text-gray-700 hover:text-primary transition-colors py-2"
-            >About</a
-          >
-          <a
-            href="#portfolio"
-            class="text-gray-700 hover:text-primary transition-colors py-2"
-            >Portfolio</a
-          >
-          <a
-            href="#experience"
-            class="text-gray-700 hover:text-primary transition-colors py-2"
-            >Experience</a
-          >
-          <a
-            href="#skills"
-            class="text-gray-700 hover:text-primary transition-colors py-2"
-            >Skills</a
-          >
-          <a
-            href="#contact"
-            class="text-gray-700 hover:text-primary transition-colors py-2"
-            >Contact</a
-          >
-          <div class="flex space-x-4 py-2">
-            <a
-              href="https://linkedin.com"
-              target="_blank"
-              class="w-10 h-10 flex items-center justify-center text-gray-600 hover:text-primary transition-colors"
-            >
-              <i class="ri-linkedin-line ri-lg"></i>
-            </a>
-            <a
-              href="https://github.com"
-              target="_blank"
-              class="w-10 h-10 flex items-center justify-center text-gray-600 hover:text-primary transition-colors"
-            >
-              <i class="ri-github-line ri-lg"></i>
-            </a>
-            <a
-              href="https://behance.net"
-              target="_blank"
-              class="w-10 h-10 flex items-center justify-center text-gray-600 hover:text-primary transition-colors"
-            >
-              <i class="ri-behance-line ri-lg"></i>
-            </a>
-          </div>
-        </div>
-      </div>
-    </header>
-    <!-- Hero Section -->
-    <section
-      class="pt-28 md:pt-40 pb-20 md:pb-28 relative overflow-hidden"
-      style="background-image: url('https://readdy.ai/api/search-image?query=modern%20tech%20office%20environment%20with%20multiple%20screens%20showing%20code%20and%20UI%20designs%2C%20professional%20UK%20workspace%2C%20clean%20modern%20aesthetic%2C%20soft%20ambient%20lighting%2C%20minimalist%20setup%2C%20high%20quality%2C%208k%2C%20ultra%20detailed&width=1920&height=1080&seq=1&orientation=landscape'); background-size: cover; background-position: center;"
+        <i class="ri-dribbble-line ri-lg"></i>
+      </a>
+    </div>
+    <a
+    href="#"
+    class="block w-full py-3 bg-primary text-white font-medium !rounded-button whitespace-nowrap text-center hover:bg-primary/90 transition-colors"
     >
-      <div
-        class="absolute -top-1/2 -right-1/2 w-full h-full bg-gradient-radial from-primary/20 to-transparent rounded-full blur-3xl"
-      ></div>
-      <div
-        class="absolute inset-0 bg-gradient-to-r from-white via-white/90 to-white/30"
-      ></div>
-      <div class="container mx-auto px-6 relative">
-        <div class="max-w-2xl" data-aos="fade-up" data-aos-duration="1000">
-          <h1
-            class="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6 typewriter"
-          >
-            Full Stack <span class="text-primary">UI Engineer</span>
-          </h1>
-          <p class="text-lg md:text-xl text-gray-700 mb-8">
-            Creating beautiful, functional, and user-centered digital
-            experiences with 7 years of design expertise and front-end
-            development skills.
-          </p>
-          <div
-            class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4"
-          >
-            <a
-              href="#portfolio"
-              class="px-8 py-3 bg-primary text-white font-medium !rounded-button whitespace-nowrap shadow-lg hover:bg-primary/90 transition-colors text-center"
-            >
-              View My Work
-            </a>
-            <a
-              href="#contact"
-              class="px-8 py-3 bg-white text-primary font-medium border border-primary !rounded-button whitespace-nowrap hover:bg-gray-50 transition-colors text-center"
-            >
-              Contact Me
-            </a>
-          </div>
-        </div>
+    Download CV
+  </a>
+</div>
+</div>
+</div>
+<div class="lg:w-2/3">
+  <h3 class="text-2xl font-bold text-gray-900 mb-4">My Story</h3>
+  <p class="text-gray-700 mb-6 leading-relaxed">
+    With over 7 years of experience in web design and a year of
+    focused front-end development, I've cultivated a unique blend of
+    creative and technical skills. My journey began at a boutique
+    design agency where I discovered my passion for creating intuitive
+    and visually appealing digital experiences.
+  </p>
+  <p class="text-gray-700 mb-8 leading-relaxed">
+    I specialize in translating complex requirements into elegant,
+    user-centered designs that not only look beautiful but also
+    function flawlessly. My recent transition into front-end
+    development has allowed me to bridge the gap between design and
+    implementation, creating more cohesive and efficient workflows.
+  </p>
+  <h3 class="text-2xl font-bold text-gray-900 mb-4">My Skills</h3>
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+    <div>
+      <div class="flex justify-between mb-2">
+        <span class="text-gray-700 font-medium">React.js</span>
+        <span class="text-primary font-medium">90%</span>
       </div>
-    </section>
-    <!-- About Section -->
-    <section id="about" class="py-20 bg-gray-50">
-      <div class="container mx-auto px-6">
-        <div class="text-center mb-16">
-          <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-            About Me
-          </h2>
-          <div class="w-20 h-1 bg-primary mx-auto"></div>
-        </div>
-        <div class="flex flex-col lg:flex-row gap-12">
-          <div class="lg:w-1/3">
-            <div class="bg-white shadow-lg rounded-lg overflow-hidden">
-              <img
-                src="https://static.readdy.ai/image/56ed73f06342fa03f754734d34fd8d19/8199a9e58654013a1b80ee210ba0328a.jpeg"
-                alt="Swati Barsoliya"
-                class="w-full h-auto object-cover"
-              />
-              <div class="p-6">
-                <h3 class="text-2xl font-bold text-gray-900 mb-2">
-                  Swati Barsoliya
-                </h3>
-                <p class="text-gray-600 mb-4">
-                  Web Designer & Front-end Developer
-                </p>
-                <div class="flex space-x-4 mb-6">
-                  <a
-                    href="https://linkedin.com"
-                    target="_blank"
-                    class="w-10 h-10 flex items-center justify-center text-gray-600 hover:text-primary transition-colors"
-                  >
-                    <i class="ri-linkedin-line ri-lg"></i>
-                  </a>
-                  <a
-                    href="https://github.com"
-                    target="_blank"
-                    class="w-10 h-10 flex items-center justify-center text-gray-600 hover:text-primary transition-colors"
-                  >
-                    <i class="ri-github-line ri-lg"></i>
-                  </a>
-                  <a
-                    href="https://behance.net"
-                    target="_blank"
-                    class="w-10 h-10 flex items-center justify-center text-gray-600 hover:text-primary transition-colors"
-                  >
-                    <i class="ri-behance-line ri-lg"></i>
-                  </a>
-                  <a
-                    href="https://dribbble.com"
-                    target="_blank"
-                    class="w-10 h-10 flex items-center justify-center text-gray-600 hover:text-primary transition-colors"
-                  >
-                    <i class="ri-dribbble-line ri-lg"></i>
-                  </a>
-                </div>
-                <a
-                  href="#"
-                  class="block w-full py-3 bg-primary text-white font-medium !rounded-button whitespace-nowrap text-center hover:bg-primary/90 transition-colors"
-                >
-                  Download CV
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="lg:w-2/3">
-            <h3 class="text-2xl font-bold text-gray-900 mb-4">My Story</h3>
-            <p class="text-gray-700 mb-6 leading-relaxed">
-              With over 7 years of experience in web design and a year of
-              focused front-end development, I've cultivated a unique blend of
-              creative and technical skills. My journey began at a boutique
-              design agency where I discovered my passion for creating intuitive
-              and visually appealing digital experiences.
-            </p>
-            <p class="text-gray-700 mb-8 leading-relaxed">
-              I specialize in translating complex requirements into elegant,
-              user-centered designs that not only look beautiful but also
-              function flawlessly. My recent transition into front-end
-              development has allowed me to bridge the gap between design and
-              implementation, creating more cohesive and efficient workflows.
-            </p>
-            <h3 class="text-2xl font-bold text-gray-900 mb-4">My Skills</h3>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
-              <div>
-                <div class="flex justify-between mb-2">
-                  <span class="text-gray-700 font-medium">React.js</span>
-                  <span class="text-primary font-medium">90%</span>
-                </div>
-                <div class="skill-bar">
-                  <div class="skill-progress" data-width="90%"></div>
-                </div>
-              </div>
-              <div>
-                <div class="flex justify-between mb-2">
-                  <span class="text-gray-700 font-medium">JavaScript</span>
-                  <span class="text-primary font-medium">85%</span>
-                </div>
-                <div class="skill-bar">
-                  <div class="skill-progress" data-width="85%"></div>
-                </div>
-              </div>
-              <div>
-                <div class="flex justify-between mb-2">
-                  <span class="text-gray-700 font-medium">UI/UX Design</span>
-                  <span class="text-primary font-medium">85%</span>
-                </div>
-                <div class="skill-bar">
-                  <div class="skill-progress" data-width="85%"></div>
-                </div>
-              </div>
-              <div>
-                <div class="flex justify-between mb-2">
-                  <span class="text-gray-700 font-medium">HTML5/CSS3</span>
-                  <span class="text-primary font-medium">90%</span>
-                </div>
-                <div class="skill-bar">
-                  <div class="skill-progress" data-width="90%"></div>
-                </div>
-              </div>
-              <div>
-                <div class="flex justify-between mb-2">
-                  <span class="text-gray-700 font-medium"
-                    >Responsive Design</span
-                  >
-                  <span class="text-primary font-medium">85%</span>
-                </div>
-                <div class="skill-bar">
-                  <div class="skill-progress" data-width="85%"></div>
-                </div>
-              </div>
-              <div>
-                <div class="flex justify-between mb-2">
-                  <span class="text-gray-700 font-medium">JavaScript</span>
-                  <span class="text-primary font-medium">70%</span>
-                </div>
-                <div class="skill-bar">
-                  <div class="skill-progress" data-width="70%"></div>
-                </div>
-              </div>
-              <div>
-                <div class="flex justify-between mb-2">
-                  <span class="text-gray-700 font-medium"
-                    >Adobe Creative Suite</span
-                  >
-                  <span class="text-primary font-medium">90%</span>
-                </div>
-                <div class="skill-bar">
-                  <div class="skill-progress" data-width="90%"></div>
-                </div>
-              </div>
-            </div>
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
-              <div class="flex flex-col items-center">
-                <div
-                  class="w-16 h-16 flex items-center justify-center bg-primary/10 text-primary rounded-full mb-2"
-                >
-                  <i class="ri-layout-4-line ri-xl"></i>
-                </div>
-                <span class="text-gray-700 font-medium">20+ Websites</span>
-              </div>
-              <div class="flex flex-col items-center">
-                <div
-                  class="w-16 h-16 flex items-center justify-center bg-primary/10 text-primary rounded-full mb-2"
-                >
-                  <i class="ri-user-smile-line ri-xl"></i>
-                </div>
-                <span class="text-gray-700 font-medium">15+ Clients</span>
-              </div>
-              <div class="flex flex-col items-center">
-                <div
-                  class="w-16 h-16 flex items-center justify-center bg-primary/10 text-primary rounded-full mb-2"
-                >
-                  <i class="ri-award-line ri-xl"></i>
-                </div>
-                <span class="text-gray-700 font-medium">5 Awards</span>
-              </div>
-              <div class="flex flex-col items-center">
-                <div
-                  class="w-16 h-16 flex items-center justify-center bg-primary/10 text-primary rounded-full mb-2"
-                >
-                  <i class="ri-time-line ri-xl"></i>
-                </div>
-                <span class="text-gray-700 font-medium">7+ Years</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Portfolio Section -->
-    <section id="portfolio" class="py-20">
-      <div class="container mx-auto px-6">
-        <div class="text-center mb-16">
-          <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-            My Portfolio
-          </h2>
-          <div class="w-20 h-1 bg-primary mx-auto mb-8"></div>
-          <p class="max-w-2xl mx-auto text-gray-700">
-            A collection of my recent work showcasing web design, UI/UX, and
-            front-end development projects.
-          </p>
-        </div>
-        <div class="flex flex-wrap justify-center gap-4 mb-12">
-          <button
-            class="filter-button active px-6 py-2 !rounded-button whitespace-nowrap bg-gray-100 text-gray-700 hover:bg-gray-200 transition-colors"
-            data-filter="all"
-          >
-            All Projects
-          </button>
-          <button
-            class="filter-button px-6 py-2 !rounded-button whitespace-nowrap bg-gray-100 text-gray-700 hover:bg-gray-200 transition-colors"
-            data-filter="web-design"
-          >
-            Web Design
-          </button>
-          <button
-            class="filter-button px-6 py-2 !rounded-button whitespace-nowrap bg-gray-100 text-gray-700 hover:bg-gray-200 transition-colors"
-            data-filter="ui-ux"
-          >
-            UI/UX Design
-          </button>
-          <button
-            class="filter-button px-6 py-2 !rounded-button whitespace-nowrap bg-gray-100 text-gray-700 hover:bg-gray-200 transition-colors"
-            data-filter="development"
-          >
-            Development
-          </button>
-        </div>
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          <!-- Project 1 -->
-          <div
-            class="portfolio-item rounded-lg overflow-hidden shadow-lg bg-white hover:scale-105 transition-transform duration-300"
-            data-category="web-design"
-            data-aos="fade-up"
-            data-aos-delay="100"
-          >
-            <div class="relative overflow-hidden">
-              <img
-                src="https://readdy.ai/api/search-image?query=modern%20e-commerce%20website%20design%20for%20fashion%20brand%2C%20clean%20layout%2C%20product%20grid%2C%20shopping%20cart%2C%20responsive%20design%2C%20high%20quality%20mockup%20on%20laptop%20screen%2C%20professional%20web%20design%2C%208k%2C%20ultra%20detailed&width=600&height=450&seq=3&orientation=landscape"
-                alt="E-commerce Website"
-                class="w-full h-64 object-cover object-top transition-transform duration-500 hover:scale-105"
-              />
-              <div
-                class="absolute inset-0 bg-primary/80 opacity-0 hover:opacity-100 transition-opacity flex items-center justify-center"
-              >
-                <button
-                  class="view-project px-6 py-2 bg-white text-primary font-medium !rounded-button whitespace-nowrap"
-                  data-project="project1"
-                >
-                  View Project
-                </button>
-              </div>
-            </div>
-            <div class="p-6">
-              <h3 class="text-xl font-bold text-gray-900 mb-2">
-                Luxe Fashion E-commerce
-              </h3>
-              <p class="text-gray-700 mb-4">
-                A complete redesign of an e-commerce platform for a luxury
-                fashion brand.
-              </p>
-              <div class="flex flex-wrap gap-2">
-                <span
-                  class="px-3 py-1 bg-gray-100 text-gray-700 text-sm !rounded-button whitespace-nowrap"
-                  >Web Design</span
-                >
-                <span
-                  class="px-3 py-1 bg-gray-100 text-gray-700 text-sm !rounded-button whitespace-nowrap"
-                  >UI/UX</span
-                >
-                <span
-                  class="px-3 py-1 bg-gray-100 text-gray-700 text-sm !rounded-button whitespace-nowrap"
-                  >Shopify</span
-                >
-              </div>
-            </div>
-          </div>
-          <!-- Project 2 -->
-          <div
-            class="portfolio-item rounded-lg overflow-hidden shadow-lg bg-white"
-            data-category="ui-ux"
-          >
-            <div class="relative overflow-hidden">
-              <img
-                src="https://readdy.ai/api/search-image?query=mobile%20app%20interface%20design%20for%20fitness%20tracking%20application%2C%20user%20dashboard%20with%20statistics%2C%20workout%20plans%2C%20progress%20charts%2C%20clean%20modern%20UI%20on%20smartphone%20screen%2C%20professional%20UI%2FUX%20design%2C%208k%2C%20ultra%20detailed&width=600&height=450&seq=4&orientation=landscape"
-                alt="Fitness App UI"
-                class="w-full h-64 object-cover object-top transition-transform duration-500 hover:scale-105"
-              />
-              <div
-                class="absolute inset-0 bg-primary/80 opacity-0 hover:opacity-100 transition-opacity flex items-center justify-center"
-              >
-                <button
-                  class="view-project px-6 py-2 bg-white text-primary font-medium !rounded-button whitespace-nowrap"
-                  data-project="project2"
-                >
-                  View Project
-                </button>
-              </div>
-            </div>
-            <div class="p-6">
-              <h3 class="text-xl font-bold text-gray-900 mb-2">
-                FitTrack Mobile App
-              </h3>
-              <p class="text-gray-700 mb-4">
-                A comprehensive fitness tracking mobile application with
-                personalized workout plans.
-              </p>
-              <div class="flex flex-wrap gap-2">
-                <span
-                  class="px-3 py-1 bg-gray-100 text-gray-700 text-sm !rounded-button whitespace-nowrap"
-                  >UI/UX</span
-                >
-                <span
-                  class="px-3 py-1 bg-gray-100 text-gray-700 text-sm !rounded-button whitespace-nowrap"
-                  >Mobile</span
-                >
-                <span
-                  class="px-3 py-1 bg-gray-100 text-gray-700 text-sm !rounded-button whitespace-nowrap"
-                  >Figma</span
-                >
-              </div>
-            </div>
-          </div>
-          <!-- Project 3 -->
-          <div
-            class="portfolio-item rounded-lg overflow-hidden shadow-lg bg-white"
-            data-category="development"
-          >
-            <div class="relative overflow-hidden">
-              <img
-                src="https://readdy.ai/api/search-image?query=real%20estate%20website%20design%2C%20property%20listings%2C%20map%20integration%2C%20search%20filters%2C%20modern%20clean%20interface%2C%20responsive%20web%20design%2C%20professional%20real%20estate%20platform%20on%20desktop%20screen%2C%208k%2C%20ultra%20detailed&width=600&height=450&seq=5&orientation=landscape"
-                alt="Real Estate Website"
-                class="w-full h-64 object-cover object-top transition-transform duration-500 hover:scale-105"
-              />
-              <div
-                class="absolute inset-0 bg-primary/80 opacity-0 hover:opacity-100 transition-opacity flex items-center justify-center"
-              >
-                <button
-                  class="view-project px-6 py-2 bg-white text-primary font-medium !rounded-button whitespace-nowrap"
-                  data-project="project3"
-                >
-                  View Project
-                </button>
-              </div>
-            </div>
-            <div class="p-6">
-              <h3 class="text-xl font-bold text-gray-900 mb-2">
-                HomeSeeker Real Estate
-              </h3>
-              <p class="text-gray-700 mb-4">
-                A fully responsive real estate platform with advanced search and
-                filtering.
-              </p>
-              <div class="flex flex-wrap gap-2">
-                <span
-                  class="px-3 py-1 bg-gray-100 text-gray-700 text-sm !rounded-button whitespace-nowrap"
-                  >Development</span
-                >
-                <span
-                  class="px-3 py-1 bg-gray-100 text-gray-700 text-sm !rounded-button whitespace-nowrap"
-                  >React</span
-                >
-                <span
-                  class="px-3 py-1 bg-gray-100 text-gray-700 text-sm !rounded-button whitespace-nowrap"
-                  >API</span
-                >
-              </div>
-            </div>
-          </div>
-          <!-- Project 4 -->
-          <div
-            class="portfolio-item rounded-lg overflow-hidden shadow-lg bg-white hover:scale-105 transition-transform duration-300"
-            data-category="web-design"
-            data-aos="fade-up"
-            data-aos-delay="100"
-          >
-            <div class="relative overflow-hidden">
-              <img
-                src="https://readdy.ai/api/search-image?query=restaurant%20website%20design%2C%20food%20menu%2C%20reservation%20system%2C%20chef%20profiles%2C%20elegant%20layout%2C%20high%20quality%20food%20photography%2C%20responsive%20restaurant%20website%20on%20tablet%20device%2C%20professional%20web%20design%2C%208k%2C%20ultra%20detailed&width=600&height=450&seq=6&orientation=landscape"
-                alt="Restaurant Website"
-                class="w-full h-64 object-cover object-top transition-transform duration-500 hover:scale-105"
-              />
-              <div
-                class="absolute inset-0 bg-primary/80 opacity-0 hover:opacity-100 transition-opacity flex items-center justify-center"
-              >
-                <button
-                  class="view-project px-6 py-2 bg-white text-primary font-medium !rounded-button whitespace-nowrap"
-                  data-project="project4"
-                >
-                  View Project
-                </button>
-              </div>
-            </div>
-            <div class="p-6">
-              <h3 class="text-xl font-bold text-gray-900 mb-2">
-                Saveur Restaurant
-              </h3>
-              <p class="text-gray-700 mb-4">
-                An elegant website for a fine dining restaurant with online
-                reservation system.
-              </p>
-              <div class="flex flex-wrap gap-2">
-                <span
-                  class="px-3 py-1 bg-gray-100 text-gray-700 text-sm !rounded-button whitespace-nowrap"
-                  >Web Design</span
-                >
-                <span
-                  class="px-3 py-1 bg-gray-100 text-gray-700 text-sm !rounded-button whitespace-nowrap"
-                  >WordPress</span
-                >
-                <span
-                  class="px-3 py-1 bg-gray-100 text-gray-700 text-sm !rounded-button whitespace-nowrap"
-                  >SEO</span
-                >
-              </div>
-            </div>
-          </div>
-          <!-- Project 5 -->
-          <div
-            class="portfolio-item rounded-lg overflow-hidden shadow-lg bg-white"
-            data-category="ui-ux"
-          >
-            <div class="relative overflow-hidden">
-              <img
-                src="https://readdy.ai/api/search-image?query=banking%20dashboard%20UI%20design%2C%20financial%20analytics%2C%20transaction%20history%2C%20account%20management%2C%20modern%20clean%20interface%2C%20data%20visualization%2C%20professional%20fintech%20application%20on%20desktop%20screen%2C%208k%2C%20ultra%20detailed&width=600&height=450&seq=7&orientation=landscape"
-                alt="Banking Dashboard"
-                class="w-full h-64 object-cover object-top transition-transform duration-500 hover:scale-105"
-              />
-              <div
-                class="absolute inset-0 bg-primary/80 opacity-0 hover:opacity-100 transition-opacity flex items-center justify-center"
-              >
-                <button
-                  class="view-project px-6 py-2 bg-white text-primary font-medium !rounded-button whitespace-nowrap"
-                  data-project="project5"
-                >
-                  View Project
-                </button>
-              </div>
-            </div>
-            <div class="p-6">
-              <h3 class="text-xl font-bold text-gray-900 mb-2">
-                FinTrack Dashboard
-              </h3>
-              <p class="text-gray-700 mb-4">
-                A comprehensive financial tracking dashboard with data
-                visualization.
-              </p>
-              <div class="flex flex-wrap gap-2">
-                <span
-                  class="px-3 py-1 bg-gray-100 text-gray-700 text-sm !rounded-button whitespace-nowrap"
-                  >UI/UX</span
-                >
-                <span
-                  class="px-3 py-1 bg-gray-100 text-gray-700 text-sm !rounded-button whitespace-nowrap"
-                  >Dashboard</span
-                >
-                <span
-                  class="px-3 py-1 bg-gray-100 text-gray-700 text-sm !rounded-button whitespace-nowrap"
-                  >Adobe XD</span
-                >
-              </div>
-            </div>
-          </div>
-          <!-- Project 6 -->
-          <div
-            class="portfolio-item rounded-lg overflow-hidden shadow-lg bg-white"
-            data-category="development"
-          >
-            <div class="relative overflow-hidden">
-              <img
-                src="https://readdy.ai/api/search-image?query=travel%20booking%20website%20design%2C%20destination%20search%2C%20flight%20and%20hotel%20booking%2C%20itinerary%20planner%2C%20modern%20travel%20platform%20interface%2C%20responsive%20travel%20website%20on%20laptop%20screen%2C%20professional%20web%20design%2C%208k%2C%20ultra%20detailed&width=600&height=450&seq=8&orientation=landscape"
-                alt="Travel Booking Website"
-                class="w-full h-64 object-cover object-top transition-transform duration-500 hover:scale-105"
-              />
-              <div
-                class="absolute inset-0 bg-primary/80 opacity-0 hover:opacity-100 transition-opacity flex items-center justify-center"
-              >
-                <button
-                  class="view-project px-6 py-2 bg-white text-primary font-medium !rounded-button whitespace-nowrap"
-                  data-project="project6"
-                >
-                  View Project
-                </button>
-              </div>
-            </div>
-            <div class="p-6">
-              <h3 class="text-xl font-bold text-gray-900 mb-2">
-                Wanderlust Travel
-              </h3>
-              <p class="text-gray-700 mb-4">
-                A travel booking platform with integrated payment system and
-                itinerary planner.
-              </p>
-              <div class="flex flex-wrap gap-2">
-                <span
-                  class="px-3 py-1 bg-gray-100 text-gray-700 text-sm !rounded-button whitespace-nowrap"
-                  >Development</span
-                >
-                <span
-                  class="px-3 py-1 bg-gray-100 text-gray-700 text-sm !rounded-button whitespace-nowrap"
-                  >JavaScript</span
-                >
-                <span
-                  class="px-3 py-1 bg-gray-100 text-gray-700 text-sm !rounded-button whitespace-nowrap"
-                  >API</span
-                >
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Project Modals -->
-    <div id="project1Modal" class="modal">
-      <div class="modal-content">
-        <span class="close">&times;</span>
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
-          <div>
-            <img
-              src="https://readdy.ai/api/search-image?query=luxury%20fashion%20e-commerce%20website%20design%2C%20product%20page%20with%20detailed%20view%2C%20shopping%20cart%2C%20payment%20options%2C%20high-end%20fashion%20photography%2C%20responsive%20e-commerce%20platform%2C%20professional%20web%20design%2C%208k%2C%20ultra%20detailed&width=800&height=600&seq=9&orientation=landscape"
-              alt="Luxe Fashion E-commerce"
-              class="w-full h-auto rounded-lg mb-4"
-            />
-            <div class="grid grid-cols-3 gap-2">
-              <img
-                src="https://readdy.ai/api/search-image?query=fashion%20e-commerce%20mobile%20view%2C%20product%20listing%20on%20smartphone%2C%20clean%20interface%2C%20luxury%20brand%2C%20professional%20UI%20design%2C%208k&width=200&height=200&seq=10&orientation=squarish"
-                alt="Mobile View"
-                class="w-full h-24 object-cover rounded"
-              />
-              <img
-                src="https://readdy.ai/api/search-image?query=fashion%20e-commerce%20checkout%20page%2C%20payment%20form%2C%20order%20summary%2C%20clean%20modern%20design%2C%20professional%20UI%20design%2C%208k&width=200&height=200&seq=11&orientation=squarish"
-                alt="Checkout Page"
-                class="w-full h-24 object-cover rounded"
-              />
-              <img
-                src="https://readdy.ai/api/search-image?query=fashion%20e-commerce%20product%20category%20page%2C%20filter%20options%2C%20sorting%2C%20grid%20layout%2C%20professional%20web%20design%2C%208k&width=200&height=200&seq=12&orientation=squarish"
-                alt="Category Page"
-                class="w-full h-24 object-cover rounded"
-              />
-            </div>
-          </div>
-          <div>
-            <h3 class="text-2xl font-bold text-gray-900 mb-4">
-              Luxe Fashion E-commerce
-            </h3>
-            <p class="text-gray-700 mb-6 leading-relaxed">
-              A complete redesign of an e-commerce platform for a luxury fashion
-              brand. The project focused on creating an elegant shopping
-              experience that reflects the brand's premium positioning while
-              ensuring a seamless user journey from product discovery to
-              checkout.
-            </p>
-            <div class="mb-6">
-              <h4 class="text-lg font-bold text-gray-900 mb-2">
-                Project Details
-              </h4>
-              <ul class="space-y-2">
-                <li class="flex items-start">
-                  <span
-                    class="w-6 h-6 flex items-center justify-center text-primary mr-2"
-                  >
-                    <i class="ri-check-line"></i>
-                  </span>
-                  <span class="text-gray-700"
-                    >Responsive design for all device sizes</span
-                  >
-                </li>
-                <li class="flex items-start">
-                  <span
-                    class="w-6 h-6 flex items-center justify-center text-primary mr-2"
-                  >
-                    <i class="ri-check-line"></i>
-                  </span>
-                  <span class="text-gray-700"
-                    >Advanced filtering and search functionality</span
-                  >
-                </li>
-                <li class="flex items-start">
-                  <span
-                    class="w-6 h-6 flex items-center justify-center text-primary mr-2"
-                  >
-                    <i class="ri-check-line"></i>
-                  </span>
-                  <span class="text-gray-700"
-                    >Integrated payment gateway with multiple options</span
-                  >
-                </li>
-                <li class="flex items-start">
-                  <span
-                    class="w-6 h-6 flex items-center justify-center text-primary mr-2"
-                  >
-                    <i class="ri-check-line"></i>
-                  </span>
-                  <span class="text-gray-700"
-                    >Wishlist and saved items functionality</span
-                  >
-                </li>
-                <li class="flex items-start">
-                  <span
-                    class="w-6 h-6 flex items-center justify-center text-primary mr-2"
-                  >
-                    <i class="ri-check-line"></i>
-                  </span>
-                  <span class="text-gray-700"
-                    >Custom Shopify theme development</span
-                  >
-                </li>
-              </ul>
-            </div>
-            <div class="mb-6">
-              <h4 class="text-lg font-bold text-gray-900 mb-2">
-                Technologies Used
-              </h4>
-              <div class="flex flex-wrap gap-2">
-                <span
-                  class="px-3 py-1 bg-gray-100 text-gray-700 text-sm !rounded-button whitespace-nowrap"
-                  >Shopify</span
-                >
-                <span
-                  class="px-3 py-1 bg-gray-100 text-gray-700 text-sm !rounded-button whitespace-nowrap"
-                  >HTML5</span
-                >
-                <span
-                  class="px-3 py-1 bg-gray-100 text-gray-700 text-sm !rounded-button whitespace-nowrap"
-                  >CSS3</span
-                >
-                <span
-                  class="px-3 py-1 bg-gray-100 text-gray-700 text-sm !rounded-button whitespace-nowrap"
-                  >JavaScript</span
-                >
-                <span
-                  class="px-3 py-1 bg-gray-100 text-gray-700 text-sm !rounded-button whitespace-nowrap"
-                  >Liquid</span
-                >
-                <span
-                  class="px-3 py-1 bg-gray-100 text-gray-700 text-sm !rounded-button whitespace-nowrap"
-                  >Figma</span
-                >
-              </div>
-            </div>
-            <div class="flex space-x-4">
-              <a
-                href="#"
-                class="px-6 py-2 bg-primary text-white font-medium !rounded-button whitespace-nowrap hover:bg-primary/90 transition-colors"
-              >
-                Live Demo
-              </a>
-              <a
-                href="#"
-                class="px-6 py-2 bg-white text-primary font-medium border border-primary !rounded-button whitespace-nowrap hover:bg-gray-50 transition-colors"
-              >
-                Case Study
-              </a>
-            </div>
-          </div>
-        </div>
+      <div class="skill-bar">
+        <div class="skill-progress" data-width="90%"></div>
       </div>
     </div>
-    <!-- Experience Section -->
-    <section id="experience" class="py-20 bg-gray-50">
-      <div class="container mx-auto px-6">
-        <div class="text-center mb-16">
-          <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-            Professional Experience
-          </h2>
-          <div class="w-20 h-1 bg-primary mx-auto mb-8"></div>
-          <p class="max-w-2xl mx-auto text-gray-700">
-            My professional journey in web design and development over the past
-            7 years.
-          </p>
-        </div>
-        <div class="max-w-4xl mx-auto">
-          <div class="relative pl-10 md:pl-0 md:ml-[50%] mb-16 timeline-item">
-            <div
-              class="md:absolute md:left-0 md:top-0 md:w-[calc(50%-40px)] md:text-right md:pr-10"
-            >
-              <span
-                class="inline-block px-4 py-1 bg-primary text-white text-sm !rounded-button whitespace-nowrap mb-2"
-              >
-                08/2022 - 02/2023
-              </span>
-              <h3 class="text-xl font-bold text-gray-900 mb-1">
-                Front End Developer | Sr. Web Designer
-              </h3>
-              <p class="text-gray-600">Kanhsoft, Ahmedabad, India</p>
-            </div>
-            <div class="bg-white p-6 rounded-lg shadow-md">
-              <p class="text-gray-700 mb-4">
-                Expert in developing custom ERP software to improve business
-                productivity.
-              </p>
-              <ul class="space-y-2">
-                <li class="flex items-start">
-                  <span
-                    class="w-6 h-6 flex items-center justify-center text-primary mr-2"
-                  >
-                    <i class="ri-check-line"></i>
-                  </span>
-                  <span class="text-gray-700"
-                    >Led API-driven front-end development, increasing user
-                    engagement by 30%</span
-                  >
-                </li>
-                <li class="flex items-start">
-                  <span
-                    class="w-6 h-6 flex items-center justify-center text-primary mr-2"
-                  >
-                    <i class="ri-check-line"></i>
-                  </span>
-                  <span class="text-gray-700"
-                    >Collaborated with UN-based teams to build responsive and
-                    scalable web applications</span
-                  >
-                </li>
-                <li class="flex items-start">
-                  <span
-                    class="w-6 h-6 flex items-center justify-center text-primary mr-2"
-                  >
-                    <i class="ri-check-line"></i>
-                  </span>
-                  <span class="text-gray-700"
-                    >Delivered ReactJS custom controls, reducing development
-                    time by 30%</span
-                  >
-                </li>
-                <li class="flex items-start">
-                  <span
-                    class="w-6 h-6 flex items-center justify-center text-primary mr-2"
-                  >
-                    <i class="ri-check-line"></i>
-                  </span>
-                  <span class="text-gray-700"
-                    >Optimized React-based UI components, boosting site
-                    performance by 40%</span
-                  >
-                </li>
-                <li class="flex items-start">
-                  <span
-                    class="w-6 h-6 flex items-center justify-center text-primary mr-2"
-                  >
-                    <i class="ri-check-line"></i>
-                  </span>
-                  <span class="text-gray-700"
-                    >Worked in Agile environments, utilizing Slack, Jira, and
-                    Zoom for collaboration</span
-                  >
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="relative pl-10 md:pl-0 md:mr-[50%] mb-16 timeline-item">
-            <div
-              class="md:absolute md:right-0 md:top-0 md:w-[calc(50%-40px)] md:text-left md:pl-10"
-            >
-              <span
-                class="inline-block px-4 py-1 bg-primary text-white text-sm !rounded-button whitespace-nowrap mb-2"
-              >
-                11/2019 - 08/2022
-              </span>
-              <h3 class="text-xl font-bold text-gray-900 mb-1">
-                Senior UI Developer
-              </h3>
-              <p class="text-gray-600">
-                Multicodes Services PVT. LTD., Ahmedabad, Gujarat
-              </p>
-            </div>
-            <div class="bg-white p-6 rounded-lg shadow-md">
-              <p class="text-gray-700 mb-4">
-                A technology company specializing in E-commerce web and mobile
-                app development.
-              </p>
-              <ul class="space-y-2">
-                <li class="flex items-start">
-                  <span
-                    class="w-6 h-6 flex items-center justify-center text-primary mr-2"
-                  >
-                    <i class="ri-check-line"></i>
-                  </span>
-                  <span class="text-gray-700"
-                    >Designed and developed hybrid mobile apps (Ionic, React
-                    Native), ensuring seamless user experience</span
-                  >
-                </li>
-                <li class="flex items-start">
-                  <span
-                    class="w-6 h-6 flex items-center justify-center text-primary mr-2"
-                  >
-                    <i class="ri-check-line"></i>
-                  </span>
-                  <span class="text-gray-700"
-                    >Developed and optimized WooCommerce & WordPress e-commerce
-                    solutions for global clients, enhancing site performance and
-                    user experience</span
-                  >
-                </li>
-                <li class="flex items-start">
-                  <span
-                    class="w-6 h-6 flex items-center justify-center text-primary mr-2"
-                  >
-                    <i class="ri-check-line"></i>
-                  </span>
-                  <span class="text-gray-700"
-                    >Optimized responsive design for mobile, tablet, and desktop
-                    applications</span
-                  >
-                </li>
-                <li class="flex items-start">
-                  <span
-                    class="w-6 h-6 flex items-center justify-center text-primary mr-2"
-                  >
-                    <i class="ri-check-line"></i>
-                  </span>
-                  <span class="text-gray-700"
-                    >Strong knowledge of RESTful API integration with front-end
-                    applications</span
-                  >
-                </li>
-                <li class="flex items-start">
-                  <span
-                    class="w-6 h-6 flex items-center justify-center text-primary mr-2"
-                  >
-                    <i class="ri-check-line"></i>
-                  </span>
-                  <span class="text-gray-700"
-                    >Proficient in web development tools like Shopify, Ionic,
-                    and WiX</span
-                  >
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="relative pl-10 md:pl-0 md:ml-[50%] mb-16 timeline-item">
-            <div
-              class="md:absolute md:left-0 md:top-0 md:w-[calc(50%-40px)] md:text-right md:pr-10"
-            >
-              <span
-                class="inline-block px-4 py-1 bg-primary text-white text-sm !rounded-button whitespace-nowrap mb-2"
-              >
-                03/2018 - 11/2019
-              </span>
-              <h3 class="text-xl font-bold text-gray-900 mb-1">
-                Front End Developer
-              </h3>
-              <p class="text-gray-600">Prime Apps Infotech, Ahmedabad</p>
-            </div>
-            <div class="bg-white p-6 rounded-lg shadow-md">
-              <p class="text-gray-700 mb-4">
-                A software development company focused on delivering
-                high-quality solutions.
-              </p>
-              <ul class="space-y-2">
-                <li class="flex items-start">
-                  <span
-                    class="w-6 h-6 flex items-center justify-center text-primary mr-2"
-                  >
-                    <i class="ri-check-line"></i>
-                  </span>
-                  <span class="text-gray-700"
-                    >Proficient in HTML, CSS, Bootstrap, JavaScript, and
-                    jQuery</span
-                  >
-                </li>
-                <li class="flex items-start">
-                  <span
-                    class="w-6 h-6 flex items-center justify-center text-primary mr-2"
-                  >
-                    <i class="ri-check-line"></i>
-                  </span>
-                  <span class="text-gray-700"
-                    >Enhanced design efficiency by 30% through expertise in
-                    server-side CSS and responsive design</span
-                  >
-                </li>
-                <li class="flex items-start">
-                  <span
-                    class="w-6 h-6 flex items-center justify-center text-primary mr-2"
-                  >
-                    <i class="ri-check-line"></i>
-                  </span>
-                  <span class="text-gray-700"
-                    >Expert in creating cross-browser compatible websites</span
-                  >
-                </li>
-                <li class="flex items-start">
-                  <span
-                    class="w-6 h-6 flex items-center justify-center text-primary mr-2"
-                  >
-                    <i class="ri-check-line"></i>
-                  </span>
-                  <span class="text-gray-700"
-                    >Skilled in building reusable code for future projects</span
-                  >
-                </li>
-                <li class="flex items-start">
-                  <span
-                    class="w-6 h-6 flex items-center justify-center text-primary mr-2"
-                  >
-                    <i class="ri-check-line"></i>
-                  </span>
-                  <span class="text-gray-700"
-                    >Strong problem-solving abilities to tackle development
-                    challenges</span
-                  >
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
+    <div>
+      <div class="flex justify-between mb-2">
+        <span class="text-gray-700 font-medium">JavaScript</span>
+        <span class="text-primary font-medium">85%</span>
       </div>
-    </section>
-    <!-- Skills Section -->
-    <section id="skills" class="py-20">
-      <div class="container mx-auto px-6">
-        <div class="text-center mb-16">
-          <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-            Skills & Expertise
-          </h2>
-          <div class="w-20 h-1 bg-primary mx-auto mb-8"></div>
-          <p class="max-w-2xl mx-auto text-gray-700">
-            A comprehensive overview of my technical skills and tools I use in
-            my design and development process.
-          </p>
-        </div>
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-          <!-- Design Tools -->
-          <div class="bg-white p-8 rounded-lg shadow-md">
-            <div
-              class="w-16 h-16 flex items-center justify-center bg-primary/10 text-primary rounded-full mb-6 mx-auto"
-            >
-              <i class="ri-palette-line ri-xl"></i>
-            </div>
-            <h3 class="text-xl font-bold text-gray-900 mb-4 text-center">
-              Design Tools
-            </h3>
-            <div class="grid grid-cols-2 gap-4">
-              <div class="flex flex-col items-center">
-                <div
-                  class="w-12 h-12 flex items-center justify-center bg-gray-100 rounded-lg mb-2"
-                >
-                  <i class="ri-figma-line ri-lg"></i>
-                </div>
-                <span class="text-gray-700 text-sm">Figma</span>
-              </div>
-              <div class="flex flex-col items-center">
-                <div
-                  class="w-12 h-12 flex items-center justify-center bg-gray-100 rounded-lg mb-2"
-                >
-                  <i class="ri-xd-line ri-lg"></i>
-                </div>
-                <span class="text-gray-700 text-sm">Adobe XD</span>
-              </div>
-              <div class="flex flex-col items-center">
-                <div
-                  class="w-12 h-12 flex items-center justify-center bg-gray-100 rounded-lg mb-2"
-                >
-                  <i class="ri-photoshop-line ri-lg"></i>
-                </div>
-                <span class="text-gray-700 text-sm">Photoshop</span>
-              </div>
-              <div class="flex flex-col items-center">
-                <div
-                  class="w-12 h-12 flex items-center justify-center bg-gray-100 rounded-lg mb-2"
-                >
-                  <i class="ri-illustrator-line ri-lg"></i>
-                </div>
-                <span class="text-gray-700 text-sm">Illustrator</span>
-              </div>
-              <div class="flex flex-col items-center">
-                <div
-                  class="w-12 h-12 flex items-center justify-center bg-gray-100 rounded-lg mb-2"
-                >
-                  <i class="ri-sketch-line ri-lg"></i>
-                </div>
-                <span class="text-gray-700 text-sm">Sketch</span>
-              </div>
-              <div class="flex flex-col items-center">
-                <div
-                  class="w-12 h-12 flex items-center justify-center bg-gray-100 rounded-lg mb-2"
-                >
-                  <i class="ri-invision-line ri-lg"></i>
-                </div>
-                <span class="text-gray-700 text-sm">InVision</span>
-              </div>
-            </div>
-          </div>
-          <!-- Development -->
-          <div class="bg-white p-8 rounded-lg shadow-md">
-            <div
-              class="w-16 h-16 flex items-center justify-center bg-primary/10 text-primary rounded-full mb-6 mx-auto"
-            >
-              <i class="ri-code-s-slash-line ri-xl"></i>
-            </div>
-            <h3 class="text-xl font-bold text-gray-900 mb-4 text-center">
-              Development
-            </h3>
-            <div class="grid grid-cols-2 gap-4">
-              <div class="flex flex-col items-center">
-                <div
-                  class="w-12 h-12 flex items-center justify-center bg-gray-100 rounded-lg mb-2"
-                >
-                  <i class="ri-html5-line ri-lg"></i>
-                </div>
-                <span class="text-gray-700 text-sm">HTML5</span>
-              </div>
-              <div class="flex flex-col items-center">
-                <div
-                  class="w-12 h-12 flex items-center justify-center bg-gray-100 rounded-lg mb-2"
-                >
-                  <i class="ri-css3-line ri-lg"></i>
-                </div>
-                <span class="text-gray-700 text-sm">CSS3</span>
-              </div>
-              <div class="flex flex-col items-center">
-                <div
-                  class="w-12 h-12 flex items-center justify-center bg-gray-100 rounded-lg mb-2"
-                >
-                  <i class="ri-javascript-line ri-lg"></i>
-                </div>
-                <span class="text-gray-700 text-sm">JavaScript</span>
-              </div>
-              <div class="flex flex-col items-center">
-                <div
-                  class="w-12 h-12 flex items-center justify-center bg-gray-100 rounded-lg mb-2"
-                >
-                  <i class="ri-jquery-line ri-lg"></i>
-                </div>
-                <span class="text-gray-700 text-sm">jQuery</span>
-              </div>
-              <div class="flex flex-col items-center">
-                <div
-                  class="w-12 h-12 flex items-center justify-center bg-gray-100 rounded-lg mb-2"
-                >
-                  <i class="ri-terminal-box-line ri-lg"></i>
-                </div>
-                <span class="text-gray-700 text-sm">SASS</span>
-              </div>
-              <div class="flex flex-col items-center">
-                <div
-                  class="w-12 h-12 flex items-center justify-center bg-gray-100 rounded-lg mb-2"
-                >
-                  <i class="ri-git-branch-line ri-lg"></i>
-                </div>
-                <span class="text-gray-700 text-sm">Git</span>
-              </div>
-            </div>
-          </div>
-          <!-- Frameworks -->
-          <div class="bg-white p-8 rounded-lg shadow-md">
-            <div
-              class="w-16 h-16 flex items-center justify-center bg-primary/10 text-primary rounded-full mb-6 mx-auto"
-            >
-              <i class="ri-layout-grid-line ri-xl"></i>
-            </div>
-            <h3 class="text-xl font-bold text-gray-900 mb-4 text-center">
-              Frameworks
-            </h3>
-            <div class="grid grid-cols-2 gap-4">
-              <div class="flex flex-col items-center">
-                <div
-                  class="w-12 h-12 flex items-center justify-center bg-gray-100 rounded-lg mb-2"
-                >
-                  <i class="ri-reactjs-line ri-lg"></i>
-                </div>
-                <span class="text-gray-700 text-sm">React</span>
-              </div>
-              <div class="flex flex-col items-center">
-                <div
-                  class="w-12 h-12 flex items-center justify-center bg-gray-100 rounded-lg mb-2"
-                >
-                  <i class="ri-bootstrap-line ri-lg"></i>
-                </div>
-                <span class="text-gray-700 text-sm">Bootstrap</span>
-              </div>
-              <div class="flex flex-col items-center">
-                <div
-                  class="w-12 h-12 flex items-center justify-center bg-gray-100 rounded-lg mb-2"
-                >
-                  <i class="ri-tailwind-css-line ri-lg"></i>
-                </div>
-                <span class="text-gray-700 text-sm">Tailwind</span>
-              </div>
-              <div class="flex flex-col items-center">
-                <div
-                  class="w-12 h-12 flex items-center justify-center bg-gray-100 rounded-lg mb-2"
-                >
-                  <i class="ri-vuejs-line ri-lg"></i>
-                </div>
-                <span class="text-gray-700 text-sm">Vue.js</span>
-              </div>
-              <div class="flex flex-col items-center">
-                <div
-                  class="w-12 h-12 flex items-center justify-center bg-gray-100 rounded-lg mb-2"
-                >
-                  <i class="ri-gatsby-line ri-lg"></i>
-                </div>
-                <span class="text-gray-700 text-sm">Gatsby</span>
-              </div>
-              <div class="flex flex-col items-center">
-                <div
-                  class="w-12 h-12 flex items-center justify-center bg-gray-100 rounded-lg mb-2"
-                >
-                  <i class="ri-wordpress-line ri-lg"></i>
-                </div>
-                <span class="text-gray-700 text-sm">WordPress</span>
-              </div>
-            </div>
-          </div>
-          <!-- Other Skills -->
-          <div class="bg-white p-8 rounded-lg shadow-md">
-            <div
-              class="w-16 h-16 flex items-center justify-center bg-primary/10 text-primary rounded-full mb-6 mx-auto"
-            >
-              <i class="ri-tools-line ri-xl"></i>
-            </div>
-            <h3 class="text-xl font-bold text-gray-900 mb-4 text-center">
-              Other Skills
-            </h3>
-            <div class="grid grid-cols-2 gap-4">
-              <div class="flex flex-col items-center">
-                <div
-                  class="w-12 h-12 flex items-center justify-center bg-gray-100 rounded-lg mb-2"
-                >
-                  <i class="ri-responsive-line ri-lg"></i>
-                </div>
-                <span class="text-gray-700 text-sm">Responsive</span>
-              </div>
-              <div class="flex flex-col items-center">
-                <div
-                  class="w-12 h-12 flex items-center justify-center bg-gray-100 rounded-lg mb-2"
-                >
-                  <i class="ri-user-heart-line ri-lg"></i>
-                </div>
-                <span class="text-gray-700 text-sm">UX Research</span>
-              </div>
-              <div class="flex flex-col items-center">
-                <div
-                  class="w-12 h-12 flex items-center justify-center bg-gray-100 rounded-lg mb-2"
-                >
-                  <i class="ri-search-eye-line ri-lg"></i>
-                </div>
-                <span class="text-gray-700 text-sm">SEO</span>
-              </div>
-              <div class="flex flex-col items-center">
-                <div
-                  class="w-12 h-12 flex items-center justify-center bg-gray-100 rounded-lg mb-2"
-                >
-                  <i class="ri-speed-line ri-lg"></i>
-                </div>
-                <span class="text-gray-700 text-sm">Performance</span>
-              </div>
-              <div class="flex flex-col items-center">
-                <div
-                  class="w-12 h-12 flex items-center justify-center bg-gray-100 rounded-lg mb-2"
-                >
-                  <i class="ri-test-tube-line ri-lg"></i>
-                </div>
-                <span class="text-gray-700 text-sm">Testing</span>
-              </div>
-              <div class="flex flex-col items-center">
-                <div
-                  class="w-12 h-12 flex items-center justify-center bg-gray-100 rounded-lg mb-2"
-                >
-                  <i class="ri-team-line ri-lg"></i>
-                </div>
-                <span class="text-gray-700 text-sm">Collaboration</span>
-              </div>
-            </div>
-          </div>
-        </div>
+      <div class="skill-bar">
+        <div class="skill-progress" data-width="85%"></div>
       </div>
-    </section>
-    <!-- Contact Section -->
-    <section id="contact" class="py-20 bg-gray-50">
-      <div class="container mx-auto px-6">
-        <div class="text-center mb-16">
-          <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-            Get In Touch
-          </h2>
-          <div class="w-20 h-1 bg-primary mx-auto mb-8"></div>
-          <p class="max-w-2xl mx-auto text-gray-700">
-            Have a project in mind or want to discuss potential opportunities?
-            I'd love to hear from you!
-          </p>
-        </div>
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
-          <div>
-            <div class="bg-white p-8 rounded-lg shadow-md mb-8">
-              <h3 class="text-2xl font-bold text-gray-900 mb-6">
-                Contact Information
-              </h3>
-              <div class="space-y-6">
-                <div class="flex items-start">
-                  <div
-                    class="w-12 h-12 flex items-center justify-center bg-primary/10 text-primary rounded-full mr-4"
-                  >
-                    <i class="ri-mail-line ri-lg"></i>
-                  </div>
-                  <div>
-                    <h4 class="text-lg font-medium text-gray-900 mb-1">
-                      Email
-                    </h4>
-                    <a
-                      href="mailto:swatiprogrammer94@gmail.com"
-                      class="text-gray-700 hover:text-primary transition-colors"
-                    >
-                      swatiprogrammer94@gmail.com
-                    </a>
-                  </div>
-                </div>
-                <div class="flex items-start">
-                  <div
-                    class="w-12 h-12 flex items-center justify-center bg-primary/10 text-primary rounded-full mr-4"
-                  >
-                    <i class="ri-phone-line ri-lg"></i>
-                  </div>
-                  <div>
-                    <h4 class="text-lg font-medium text-gray-900 mb-1">
-                      Phone
-                    </h4>
-                    <a
-                      href="tel:+447553519875"
-                      class="text-gray-700 hover:text-primary transition-colors"
-                    >
-                      +44 7553 519875
-                    </a>
-                  </div>
-                </div>
-                <div class="flex items-start">
-                  <div
-                    class="w-12 h-12 flex items-center justify-center bg-primary/10 text-primary rounded-full mr-4"
-                  >
-                    <i class="ri-map-pin-line ri-lg"></i>
-                  </div>
-                  <div>
-                    <h4 class="text-lg font-medium text-gray-900 mb-1">
-                      Location
-                    </h4>
-                    <p class="text-gray-700">United Kingdom</p>
-                  </div>
-                </div>
-                <div class="flex items-start">
-                  <div
-                    class="w-12 h-12 flex items-center justify-center bg-primary/10 text-primary rounded-full mr-4"
-                  >
-                    <i class="ri-time-line ri-lg"></i>
-                  </div>
-                  <div>
-                    <h4 class="text-lg font-medium text-gray-900 mb-1">
-                      Availability
-                    </h4>
-                    <p class="text-gray-700">
-                      Available for freelance, hybrid, remote, and onsite
-                      opportunities in UK
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="bg-white p-8 rounded-lg shadow-md">
-              <h3 class="text-2xl font-bold text-gray-900 mb-6">Location</h3>
-              <div class="w-full h-64 rounded-lg overflow-hidden">
-                <img
-                  src="https://public.readdy.ai/gen_page/map_placeholder_1280x720.png"
-                  alt="Location Map"
-                  class="w-full h-full object-cover"
-                />
-              </div>
-            </div>
-          </div>
-          <div class="bg-white p-8 rounded-lg shadow-md">
-            <h3 class="text-2xl font-bold text-gray-900 mb-6">
-              Send Me a Message
-            </h3>
-            <form
-              action="https://formspree.io/f/swatiprogrammer94@gmail.com"
-              method="POST"
-            >
-              <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
-                <div>
-                  <label for="name" class="block text-gray-700 font-medium mb-2"
-                    >Name</label
-                  >
-                  <input
-                    type="text"
-                    id="name"
-                    class="w-full px-4 py-3 border border-gray-300 rounded focus:border-primary"
-                    placeholder="Your name"
-                  />
-                </div>
-                <div>
-                  <label
-                    for="email"
-                    class="block text-gray-700 font-medium mb-2"
-                    >Email</label
-                  >
-                  <input
-                    type="email"
-                    id="email"
-                    class="w-full px-4 py-3 border border-gray-300 rounded focus:border-primary"
-                    placeholder="Your email"
-                  />
-                </div>
-              </div>
-              <div class="mb-6">
-                <label
-                  for="subject"
-                  class="block text-gray-700 font-medium mb-2"
-                  >Subject</label
-                >
-                <input
-                  type="text"
-                  id="subject"
-                  class="w-full px-4 py-3 border border-gray-300 rounded focus:border-primary"
-                  placeholder="Subject"
-                />
-              </div>
-              <div class="mb-6">
-                <label
-                  for="message"
-                  class="block text-gray-700 font-medium mb-2"
-                  >Message</label
-                >
-                <textarea
-                  id="message"
-                  rows="5"
-                  class="w-full px-4 py-3 border border-gray-300 rounded focus:border-primary"
-                  placeholder="Your message"
-                ></textarea>
-              </div>
-              <div class="flex items-center mb-6">
-                <input
-                  type="checkbox"
-                  id="privacy"
-                  class="custom-checkbox mr-2"
-                />
-                <label for="privacy" class="text-gray-700"
-                  >I agree to the privacy policy and terms of service</label
-                >
-              </div>
-              <button
-                type="submit"
-                class="w-full py-3 bg-primary text-white font-medium !rounded-button whitespace-nowrap hover:bg-primary/90 transition-colors"
-              >
-                Send Message
-              </button>
-            </form>
-          </div>
-        </div>
+    </div>
+    <div>
+      <div class="flex justify-between mb-2">
+        <span class="text-gray-700 font-medium">UI/UX Design</span>
+        <span class="text-primary font-medium">85%</span>
       </div>
-    </section>
-    <!-- Footer -->
-    <footer class="bg-gray-900 text-white py-12">
-      <div class="container mx-auto px-6">
-        <div
-          class="flex flex-col md:flex-row justify-between items-center mb-8"
+      <div class="skill-bar">
+        <div class="skill-progress" data-width="85%"></div>
+      </div>
+    </div>
+    <div>
+      <div class="flex justify-between mb-2">
+        <span class="text-gray-700 font-medium">HTML5/CSS3</span>
+        <span class="text-primary font-medium">90%</span>
+      </div>
+      <div class="skill-bar">
+        <div class="skill-progress" data-width="90%"></div>
+      </div>
+    </div>
+    <div>
+      <div class="flex justify-between mb-2">
+        <span class="text-gray-700 font-medium"
+        >Responsive Design</span
         >
-          <a href="#" class="text-2xl font-['Pacifico'] text-white mb-4 md:mb-0"
-            >Swati Barsoliya</a
+        <span class="text-primary font-medium">85%</span>
+      </div>
+      <div class="skill-bar">
+        <div class="skill-progress" data-width="85%"></div>
+      </div>
+    </div>
+    <div>
+      <div class="flex justify-between mb-2">
+        <span class="text-gray-700 font-medium">JavaScript</span>
+        <span class="text-primary font-medium">70%</span>
+      </div>
+      <div class="skill-bar">
+        <div class="skill-progress" data-width="70%"></div>
+      </div>
+    </div>
+    <div>
+      <div class="flex justify-between mb-2">
+        <span class="text-gray-700 font-medium"
+        >Adobe Creative Suite</span
+        >
+        <span class="text-primary font-medium">90%</span>
+      </div>
+      <div class="skill-bar">
+        <div class="skill-progress" data-width="90%"></div>
+      </div>
+    </div>
+  </div>
+  <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+    <div class="flex flex-col items-center">
+      <div
+      class="w-16 h-16 flex items-center justify-center bg-primary/10 text-primary rounded-full mb-2"
+      >
+      <i class="ri-layout-4-line ri-xl"></i>
+    </div>
+    <span class="text-gray-700 font-medium">20+ Websites</span>
+  </div>
+  <div class="flex flex-col items-center">
+    <div
+    class="w-16 h-16 flex items-center justify-center bg-primary/10 text-primary rounded-full mb-2"
+    >
+    <i class="ri-user-smile-line ri-xl"></i>
+  </div>
+  <span class="text-gray-700 font-medium">15+ Clients</span>
+</div>
+<div class="flex flex-col items-center">
+  <div
+  class="w-16 h-16 flex items-center justify-center bg-primary/10 text-primary rounded-full mb-2"
+  >
+  <i class="ri-award-line ri-xl"></i>
+</div>
+<span class="text-gray-700 font-medium">5 Awards</span>
+</div>
+<div class="flex flex-col items-center">
+  <div
+  class="w-16 h-16 flex items-center justify-center bg-primary/10 text-primary rounded-full mb-2"
+  >
+  <i class="ri-time-line ri-xl"></i>
+</div>
+<span class="text-gray-700 font-medium">7+ Years</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Portfolio Section -->
+<section id="portfolio" class="py-20">
+  <div class="container mx-auto px-6">
+    <div class="text-center mb-16">
+      <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+        My Portfolio
+      </h2>
+      <div class="w-20 h-1 bg-primary mx-auto mb-8"></div>
+      <p class="max-w-2xl mx-auto text-gray-700">
+        A collection of my recent work showcasing web design, UI/UX, and
+        front-end development projects.
+      </p>
+    </div>
+    <div class="flex flex-wrap justify-center gap-4 mb-12">
+      <button
+      class="filter-button active px-6 py-2 !rounded-button whitespace-nowrap bg-gray-100 text-gray-700 hover:bg-gray-200 transition-colors"
+      data-filter="all"
+      >
+      All Projects
+    </button>
+    <button
+    class="filter-button px-6 py-2 !rounded-button whitespace-nowrap bg-gray-100 text-gray-700 hover:bg-gray-200 transition-colors"
+    data-filter="web-design"
+    >
+    Web Design
+  </button>
+  <button
+  class="filter-button px-6 py-2 !rounded-button whitespace-nowrap bg-gray-100 text-gray-700 hover:bg-gray-200 transition-colors"
+  data-filter="ui-ux"
+  >
+  UI/UX Design
+</button>
+<button
+class="filter-button px-6 py-2 !rounded-button whitespace-nowrap bg-gray-100 text-gray-700 hover:bg-gray-200 transition-colors"
+data-filter="development"
+>
+Development
+</button>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+  <!-- Project 1 -->
+  <div
+  class="portfolio-item rounded-lg overflow-hidden shadow-lg bg-white hover:scale-105 transition-transform duration-300"
+  data-category="web-design"
+  data-aos="fade-up"
+  data-aos-delay="100"
+  >
+  <div class="relative overflow-hidden">
+    <img
+    src="https://readdy.ai/api/search-image?query=modern%20e-commerce%20website%20design%20for%20fashion%20brand%2C%20clean%20layout%2C%20product%20grid%2C%20shopping%20cart%2C%20responsive%20design%2C%20high%20quality%20mockup%20on%20laptop%20screen%2C%20professional%20web%20design%2C%208k%2C%20ultra%20detailed&width=600&height=450&seq=3&orientation=landscape"
+    alt="E-commerce Website"
+    class="w-full h-64 object-cover object-top transition-transform duration-500 hover:scale-105"
+    />
+    <div
+    class="absolute inset-0 bg-primary/80 opacity-0 hover:opacity-100 transition-opacity flex items-center justify-center"
+    >
+    <button
+    class="view-project px-6 py-2 bg-white text-primary font-medium !rounded-button whitespace-nowrap"
+    data-project="project1"
+    >
+    View Project
+  </button>
+</div>
+</div>
+<div class="p-6">
+  <h3 class="text-xl font-bold text-gray-900 mb-2">
+    Luxe Fashion E-commerce
+  </h3>
+  <p class="text-gray-700 mb-4">
+    A complete redesign of an e-commerce platform for a luxury
+    fashion brand.
+  </p>
+  <div class="flex flex-wrap gap-2">
+    <span
+    class="px-3 py-1 bg-gray-100 text-gray-700 text-sm !rounded-button whitespace-nowrap"
+    >Web Design</span
+    >
+    <span
+    class="px-3 py-1 bg-gray-100 text-gray-700 text-sm !rounded-button whitespace-nowrap"
+    >UI/UX</span
+    >
+    <span
+    class="px-3 py-1 bg-gray-100 text-gray-700 text-sm !rounded-button whitespace-nowrap"
+    >Shopify</span
+    >
+  </div>
+</div>
+</div>
+<!-- Project 2 -->
+<div
+class="portfolio-item rounded-lg overflow-hidden shadow-lg bg-white"
+data-category="ui-ux"
+>
+<div class="relative overflow-hidden">
+  <img
+  src="https://readdy.ai/api/search-image?query=mobile%20app%20interface%20design%20for%20fitness%20tracking%20application%2C%20user%20dashboard%20with%20statistics%2C%20workout%20plans%2C%20progress%20charts%2C%20clean%20modern%20UI%20on%20smartphone%20screen%2C%20professional%20UI%2FUX%20design%2C%208k%2C%20ultra%20detailed&width=600&height=450&seq=4&orientation=landscape"
+  alt="Fitness App UI"
+  class="w-full h-64 object-cover object-top transition-transform duration-500 hover:scale-105"
+  />
+  <div
+  class="absolute inset-0 bg-primary/80 opacity-0 hover:opacity-100 transition-opacity flex items-center justify-center"
+  >
+  <button
+  class="view-project px-6 py-2 bg-white text-primary font-medium !rounded-button whitespace-nowrap"
+  data-project="project2"
+  >
+  View Project
+</button>
+</div>
+</div>
+<div class="p-6">
+  <h3 class="text-xl font-bold text-gray-900 mb-2">
+    FitTrack Mobile App
+  </h3>
+  <p class="text-gray-700 mb-4">
+    A comprehensive fitness tracking mobile application with
+    personalized workout plans.
+  </p>
+  <div class="flex flex-wrap gap-2">
+    <span
+    class="px-3 py-1 bg-gray-100 text-gray-700 text-sm !rounded-button whitespace-nowrap"
+    >UI/UX</span
+    >
+    <span
+    class="px-3 py-1 bg-gray-100 text-gray-700 text-sm !rounded-button whitespace-nowrap"
+    >Mobile</span
+    >
+    <span
+    class="px-3 py-1 bg-gray-100 text-gray-700 text-sm !rounded-button whitespace-nowrap"
+    >Figma</span
+    >
+  </div>
+</div>
+</div>
+<!-- Project 3 -->
+<div
+class="portfolio-item rounded-lg overflow-hidden shadow-lg bg-white"
+data-category="development"
+>
+<div class="relative overflow-hidden">
+  <img
+  src="https://readdy.ai/api/search-image?query=real%20estate%20website%20design%2C%20property%20listings%2C%20map%20integration%2C%20search%20filters%2C%20modern%20clean%20interface%2C%20responsive%20web%20design%2C%20professional%20real%20estate%20platform%20on%20desktop%20screen%2C%208k%2C%20ultra%20detailed&width=600&height=450&seq=5&orientation=landscape"
+  alt="Real Estate Website"
+  class="w-full h-64 object-cover object-top transition-transform duration-500 hover:scale-105"
+  />
+  <div
+  class="absolute inset-0 bg-primary/80 opacity-0 hover:opacity-100 transition-opacity flex items-center justify-center"
+  >
+  <button
+  class="view-project px-6 py-2 bg-white text-primary font-medium !rounded-button whitespace-nowrap"
+  data-project="project3"
+  >
+  View Project
+</button>
+</div>
+</div>
+<div class="p-6">
+  <h3 class="text-xl font-bold text-gray-900 mb-2">
+    HomeSeeker Real Estate
+  </h3>
+  <p class="text-gray-700 mb-4">
+    A fully responsive real estate platform with advanced search and
+    filtering.
+  </p>
+  <div class="flex flex-wrap gap-2">
+    <span
+    class="px-3 py-1 bg-gray-100 text-gray-700 text-sm !rounded-button whitespace-nowrap"
+    >Development</span
+    >
+    <span
+    class="px-3 py-1 bg-gray-100 text-gray-700 text-sm !rounded-button whitespace-nowrap"
+    >React</span
+    >
+    <span
+    class="px-3 py-1 bg-gray-100 text-gray-700 text-sm !rounded-button whitespace-nowrap"
+    >API</span
+    >
+  </div>
+</div>
+</div>
+<!-- Project 4 -->
+<div
+class="portfolio-item rounded-lg overflow-hidden shadow-lg bg-white hover:scale-105 transition-transform duration-300"
+data-category="web-design"
+data-aos="fade-up"
+data-aos-delay="100"
+>
+<div class="relative overflow-hidden">
+  <img
+  src="https://readdy.ai/api/search-image?query=restaurant%20website%20design%2C%20food%20menu%2C%20reservation%20system%2C%20chef%20profiles%2C%20elegant%20layout%2C%20high%20quality%20food%20photography%2C%20responsive%20restaurant%20website%20on%20tablet%20device%2C%20professional%20web%20design%2C%208k%2C%20ultra%20detailed&width=600&height=450&seq=6&orientation=landscape"
+  alt="Restaurant Website"
+  class="w-full h-64 object-cover object-top transition-transform duration-500 hover:scale-105"
+  />
+  <div
+  class="absolute inset-0 bg-primary/80 opacity-0 hover:opacity-100 transition-opacity flex items-center justify-center"
+  >
+  <button
+  class="view-project px-6 py-2 bg-white text-primary font-medium !rounded-button whitespace-nowrap"
+  data-project="project4"
+  >
+  View Project
+</button>
+</div>
+</div>
+<div class="p-6">
+  <h3 class="text-xl font-bold text-gray-900 mb-2">
+    Saveur Restaurant
+  </h3>
+  <p class="text-gray-700 mb-4">
+    An elegant website for a fine dining restaurant with online
+    reservation system.
+  </p>
+  <div class="flex flex-wrap gap-2">
+    <span
+    class="px-3 py-1 bg-gray-100 text-gray-700 text-sm !rounded-button whitespace-nowrap"
+    >Web Design</span
+    >
+    <span
+    class="px-3 py-1 bg-gray-100 text-gray-700 text-sm !rounded-button whitespace-nowrap"
+    >WordPress</span
+    >
+    <span
+    class="px-3 py-1 bg-gray-100 text-gray-700 text-sm !rounded-button whitespace-nowrap"
+    >SEO</span
+    >
+  </div>
+</div>
+</div>
+<!-- Project 5 -->
+<div
+class="portfolio-item rounded-lg overflow-hidden shadow-lg bg-white"
+data-category="ui-ux"
+>
+<div class="relative overflow-hidden">
+  <img
+  src="https://readdy.ai/api/search-image?query=banking%20dashboard%20UI%20design%2C%20financial%20analytics%2C%20transaction%20history%2C%20account%20management%2C%20modern%20clean%20interface%2C%20data%20visualization%2C%20professional%20fintech%20application%20on%20desktop%20screen%2C%208k%2C%20ultra%20detailed&width=600&height=450&seq=7&orientation=landscape"
+  alt="Banking Dashboard"
+  class="w-full h-64 object-cover object-top transition-transform duration-500 hover:scale-105"
+  />
+  <div
+  class="absolute inset-0 bg-primary/80 opacity-0 hover:opacity-100 transition-opacity flex items-center justify-center"
+  >
+  <button
+  class="view-project px-6 py-2 bg-white text-primary font-medium !rounded-button whitespace-nowrap"
+  data-project="project5"
+  >
+  View Project
+</button>
+</div>
+</div>
+<div class="p-6">
+  <h3 class="text-xl font-bold text-gray-900 mb-2">
+    FinTrack Dashboard
+  </h3>
+  <p class="text-gray-700 mb-4">
+    A comprehensive financial tracking dashboard with data
+    visualization.
+  </p>
+  <div class="flex flex-wrap gap-2">
+    <span
+    class="px-3 py-1 bg-gray-100 text-gray-700 text-sm !rounded-button whitespace-nowrap"
+    >UI/UX</span
+    >
+    <span
+    class="px-3 py-1 bg-gray-100 text-gray-700 text-sm !rounded-button whitespace-nowrap"
+    >Dashboard</span
+    >
+    <span
+    class="px-3 py-1 bg-gray-100 text-gray-700 text-sm !rounded-button whitespace-nowrap"
+    >Adobe XD</span
+    >
+  </div>
+</div>
+</div>
+<!-- Project 6 -->
+<div
+class="portfolio-item rounded-lg overflow-hidden shadow-lg bg-white"
+data-category="development"
+>
+<div class="relative overflow-hidden">
+  <img
+  src="https://readdy.ai/api/search-image?query=travel%20booking%20website%20design%2C%20destination%20search%2C%20flight%20and%20hotel%20booking%2C%20itinerary%20planner%2C%20modern%20travel%20platform%20interface%2C%20responsive%20travel%20website%20on%20laptop%20screen%2C%20professional%20web%20design%2C%208k%2C%20ultra%20detailed&width=600&height=450&seq=8&orientation=landscape"
+  alt="Travel Booking Website"
+  class="w-full h-64 object-cover object-top transition-transform duration-500 hover:scale-105"
+  />
+  <div
+  class="absolute inset-0 bg-primary/80 opacity-0 hover:opacity-100 transition-opacity flex items-center justify-center"
+  >
+  <button
+  class="view-project px-6 py-2 bg-white text-primary font-medium !rounded-button whitespace-nowrap"
+  data-project="project6"
+  >
+  View Project
+</button>
+</div>
+</div>
+<div class="p-6">
+  <h3 class="text-xl font-bold text-gray-900 mb-2">
+    Wanderlust Travel
+  </h3>
+  <p class="text-gray-700 mb-4">
+    A travel booking platform with integrated payment system and
+    itinerary planner.
+  </p>
+  <div class="flex flex-wrap gap-2">
+    <span
+    class="px-3 py-1 bg-gray-100 text-gray-700 text-sm !rounded-button whitespace-nowrap"
+    >Development</span
+    >
+    <span
+    class="px-3 py-1 bg-gray-100 text-gray-700 text-sm !rounded-button whitespace-nowrap"
+    >JavaScript</span
+    >
+    <span
+    class="px-3 py-1 bg-gray-100 text-gray-700 text-sm !rounded-button whitespace-nowrap"
+    >API</span
+    >
+  </div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Project Modals -->
+<div id="project1Modal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+      <div>
+        <img
+        src="https://readdy.ai/api/search-image?query=luxury%20fashion%20e-commerce%20website%20design%2C%20product%20page%20with%20detailed%20view%2C%20shopping%20cart%2C%20payment%20options%2C%20high-end%20fashion%20photography%2C%20responsive%20e-commerce%20platform%2C%20professional%20web%20design%2C%208k%2C%20ultra%20detailed&width=800&height=600&seq=9&orientation=landscape"
+        alt="Luxe Fashion E-commerce"
+        class="w-full h-auto rounded-lg mb-4"
+        />
+        <div class="grid grid-cols-3 gap-2">
+          <img
+          src="https://readdy.ai/api/search-image?query=fashion%20e-commerce%20mobile%20view%2C%20product%20listing%20on%20smartphone%2C%20clean%20interface%2C%20luxury%20brand%2C%20professional%20UI%20design%2C%208k&width=200&height=200&seq=10&orientation=squarish"
+          alt="Mobile View"
+          class="w-full h-24 object-cover rounded"
+          />
+          <img
+          src="https://readdy.ai/api/search-image?query=fashion%20e-commerce%20checkout%20page%2C%20payment%20form%2C%20order%20summary%2C%20clean%20modern%20design%2C%20professional%20UI%20design%2C%208k&width=200&height=200&seq=11&orientation=squarish"
+          alt="Checkout Page"
+          class="w-full h-24 object-cover rounded"
+          />
+          <img
+          src="https://readdy.ai/api/search-image?query=fashion%20e-commerce%20product%20category%20page%2C%20filter%20options%2C%20sorting%2C%20grid%20layout%2C%20professional%20web%20design%2C%208k&width=200&height=200&seq=12&orientation=squarish"
+          alt="Category Page"
+          class="w-full h-24 object-cover rounded"
+          />
+        </div>
+      </div>
+      <div>
+        <h3 class="text-2xl font-bold text-gray-900 mb-4">
+          Luxe Fashion E-commerce
+        </h3>
+        <p class="text-gray-700 mb-6 leading-relaxed">
+          A complete redesign of an e-commerce platform for a luxury fashion
+          brand. The project focused on creating an elegant shopping
+          experience that reflects the brand's premium positioning while
+          ensuring a seamless user journey from product discovery to
+          checkout.
+        </p>
+        <div class="mb-6">
+          <h4 class="text-lg font-bold text-gray-900 mb-2">
+            Project Details
+          </h4>
+          <ul class="space-y-2">
+            <li class="flex items-start">
+              <span
+              class="w-6 h-6 flex items-center justify-center text-primary mr-2"
+              >
+              <i class="ri-check-line"></i>
+            </span>
+            <span class="text-gray-700"
+            >Responsive design for all device sizes</span
+            >
+          </li>
+          <li class="flex items-start">
+            <span
+            class="w-6 h-6 flex items-center justify-center text-primary mr-2"
+            >
+            <i class="ri-check-line"></i>
+          </span>
+          <span class="text-gray-700"
+          >Advanced filtering and search functionality</span
           >
-          <div class="flex space-x-6">
-            <a
-              href="https://linkedin.com"
-              target="_blank"
-              class="w-10 h-10 flex items-center justify-center text-gray-400 hover:text-white transition-colors"
-            >
-              <i class="ri-linkedin-line ri-lg"></i>
-            </a>
-            <a
-              href="https://github.com"
-              target="_blank"
-              class="w-10 h-10 flex items-center justify-center text-gray-400 hover:text-white transition-colors"
-            >
-              <i class="ri-github-line ri-lg"></i>
-            </a>
-            <a
-              href="https://behance.net"
-              target="_blank"
-              class="w-10 h-10 flex items-center justify-center text-gray-400 hover:text-white transition-colors"
-            >
-              <i class="ri-behance-line ri-lg"></i>
-            </a>
-            <a
-              href="https://dribbble.com"
-              target="_blank"
-              class="w-10 h-10 flex items-center justify-center text-gray-400 hover:text-white transition-colors"
-            >
-              <i class="ri-dribbble-line ri-lg"></i>
-            </a>
-          </div>
-        </div>
-        <div class="border-t border-gray-800 pt-8">
-          <div class="flex flex-col md:flex-row justify-between items-center">
-            <div class="mb-4 md:mb-0">
-              <p class="text-gray-400">
-                &copy; 2025 Swati Barsoliya. All rights reserved.
-              </p>
-            </div>
-            <div class="flex flex-wrap justify-center gap-4">
-              <a
-                href="#about"
-                class="text-gray-400 hover:text-white transition-colors"
-                >About</a
-              >
-              <a
-                href="#portfolio"
-                class="text-gray-400 hover:text-white transition-colors"
-                >Portfolio</a
-              >
-              <a
-                href="#experience"
-                class="text-gray-400 hover:text-white transition-colors"
-                >Experience</a
-              >
-              <a
-                href="#skills"
-                class="text-gray-400 hover:text-white transition-colors"
-                >Skills</a
-              >
-              <a
-                href="#contact"
-                class="text-gray-400 hover:text-white transition-colors"
-                >Contact</a
-              >
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="fixed bottom-8 right-8 z-40">
-        <a
-          href="#"
-          id="back-to-top"
-          class="w-12 h-12 flex items-center justify-center bg-primary text-white rounded-full shadow-lg hover:bg-primary/90 transition-colors"
+        </li>
+        <li class="flex items-start">
+          <span
+          class="w-6 h-6 flex items-center justify-center text-primary mr-2"
+          >
+          <i class="ri-check-line"></i>
+        </span>
+        <span class="text-gray-700"
+        >Integrated payment gateway with multiple options</span
         >
-          <i class="ri-arrow-up-line ri-lg"></i>
+      </li>
+      <li class="flex items-start">
+        <span
+        class="w-6 h-6 flex items-center justify-center text-primary mr-2"
+        >
+        <i class="ri-check-line"></i>
+      </span>
+      <span class="text-gray-700"
+      >Wishlist and saved items functionality</span
+      >
+    </li>
+    <li class="flex items-start">
+      <span
+      class="w-6 h-6 flex items-center justify-center text-primary mr-2"
+      >
+      <i class="ri-check-line"></i>
+    </span>
+    <span class="text-gray-700"
+    >Custom Shopify theme development</span
+    >
+  </li>
+</ul>
+</div>
+<div class="mb-6">
+  <h4 class="text-lg font-bold text-gray-900 mb-2">
+    Technologies Used
+  </h4>
+  <div class="flex flex-wrap gap-2">
+    <span
+    class="px-3 py-1 bg-gray-100 text-gray-700 text-sm !rounded-button whitespace-nowrap"
+    >Shopify</span
+    >
+    <span
+    class="px-3 py-1 bg-gray-100 text-gray-700 text-sm !rounded-button whitespace-nowrap"
+    >HTML5</span
+    >
+    <span
+    class="px-3 py-1 bg-gray-100 text-gray-700 text-sm !rounded-button whitespace-nowrap"
+    >CSS3</span
+    >
+    <span
+    class="px-3 py-1 bg-gray-100 text-gray-700 text-sm !rounded-button whitespace-nowrap"
+    >JavaScript</span
+    >
+    <span
+    class="px-3 py-1 bg-gray-100 text-gray-700 text-sm !rounded-button whitespace-nowrap"
+    >Liquid</span
+    >
+    <span
+    class="px-3 py-1 bg-gray-100 text-gray-700 text-sm !rounded-button whitespace-nowrap"
+    >Figma</span
+    >
+  </div>
+</div>
+<div class="flex space-x-4">
+  <a
+  href="#"
+  class="px-6 py-2 bg-primary text-white font-medium !rounded-button whitespace-nowrap hover:bg-primary/90 transition-colors"
+  >
+  Live Demo
+</a>
+<a
+href="#"
+class="px-6 py-2 bg-white text-primary font-medium border border-primary !rounded-button whitespace-nowrap hover:bg-gray-50 transition-colors"
+>
+Case Study
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Experience Section -->
+<section id="experience" class="py-20 bg-gray-50">
+  <div class="container mx-auto px-6">
+    <div class="text-center mb-16">
+      <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Professional Experience</h2>
+      <div class="w-20 h-1 bg-blue-600 mx-auto mb-6"></div>
+      <p class="max-w-2xl mx-auto text-gray-700">My professional journey in web design and development over the past 7 years.</p>
+    </div>
+
+    <div class="relative border-l-4 border-blue-600 ml-4 md:ml-10">
+      <!-- Experience Block -->
+      <div class="mb-12 pl-6 relative">
+        <span class="absolute -left-3 top-1 w-6 h-6 bg-blue-600 rounded-full"></span>
+        <span class="text-sm text-white bg-blue-600 px-3 py-1 rounded-full inline-block mb-2">08/2022 - 02/2023</span>
+        <h3 class="text-xl font-semibold text-gray-900">Front End Developer | Sr. Web Designer</h3>
+        <p class="text-gray-600 mb-4">Kanhsoft, Ahmedabad, India</p>
+        <p class="text-gray-700 mb-3">Expert in developing custom ERP software to improve business productivity.</p>
+        <ul class="list-disc list-inside text-gray-700 space-y-2">
+          <li>Led API-driven front-end development, increasing user engagement by 30%</li>
+          <li>Collaborated with UN-based teams to build responsive and scalable web applications</li>
+          <li>Delivered ReactJS custom controls, reducing development time by 30%</li>
+          <li>Optimized React-based UI components, boosting site performance by 40%</li>
+          <li>Worked in Agile environments, utilizing Slack, Jira, and Zoom for collaboration</li>
+        </ul>
+      </div>
+
+      <!-- Experience Block -->
+      <div class="mb-12 pl-6 relative">
+        <span class="absolute -left-3 top-1 w-6 h-6 bg-blue-600 rounded-full"></span>
+        <span class="text-sm text-white bg-blue-600 px-3 py-1 rounded-full inline-block mb-2">11/2019 - 08/2022</span>
+        <h3 class="text-xl font-semibold text-gray-900">Senior UI Developer</h3>
+        <p class="text-gray-600 mb-4">Multicodes Services PVT. LTD., Ahmedabad, Gujarat</p>
+        <p class="text-gray-700 mb-3">A technology company specializing in E-commerce web and mobile app development.</p>
+        <ul class="list-disc list-inside text-gray-700 space-y-2">
+          <li>Designed and developed hybrid mobile apps (Ionic, React Native)</li>
+          <li>Optimized WooCommerce & WordPress solutions for global clients</li>
+          <li>Responsive design for all device sizes</li>
+          <li>Integrated RESTful APIs with front-end applications</li>
+          <li>Skilled in Shopify, Ionic, and WiX</li>
+        </ul>
+      </div>
+
+      <!-- Experience Block -->
+      <div class="mb-12 pl-6 relative">
+        <span class="absolute -left-3 top-1 w-6 h-6 bg-blue-600 rounded-full"></span>
+        <span class="text-sm text-white bg-blue-600 px-3 py-1 rounded-full inline-block mb-2">03/2018 - 11/2019</span>
+        <h3 class="text-xl font-semibold text-gray-900">Front End Developer</h3>
+        <p class="text-gray-600 mb-4">Prime Apps Infotech, Ahmedabad</p>
+        <p class="text-gray-700 mb-3">A software development company focused on delivering high-quality solutions.</p>
+        <ul class="list-disc list-inside text-gray-700 space-y-2">
+          <li>Proficient in HTML, CSS, Bootstrap, JavaScript, and jQuery</li>
+          <li>Improved design efficiency by 30% via CSS techniques</li>
+          <li>Created cross-browser compatible websites</li>
+          <li>Built reusable UI code for future scalability</li>
+          <li>Strong problem-solving abilities in UI/UX challenges</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Skills Section -->
+<section id="skills" class="py-20">
+  <div class="container mx-auto px-6">
+    <div class="text-center mb-16">
+      <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+        Skills & Expertise
+      </h2>
+      <div class="w-20 h-1 bg-primary mx-auto mb-8"></div>
+      <p class="max-w-2xl mx-auto text-gray-700">
+        A comprehensive overview of my technical skills and tools I use in
+        my design and development process.
+      </p>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+      <!-- Design Tools -->
+      <div class="bg-white p-8 rounded-lg shadow-md">
+        <div
+        class="w-16 h-16 flex items-center justify-center bg-primary/10 text-primary rounded-full mb-6 mx-auto"
+        >
+        <i class="ri-palette-line ri-xl"></i>
+      </div>
+      <h3 class="text-xl font-bold text-gray-900 mb-4 text-center">
+        Design Tools
+      </h3>
+      <div class="grid grid-cols-2 gap-4">
+        <div class="flex flex-col items-center">
+          <div
+          class="w-12 h-12 flex items-center justify-center bg-gray-100 rounded-lg mb-2"
+          >
+          <i class="ri-figma-line ri-lg"></i>
+        </div>
+        <span class="text-gray-700 text-sm">Figma</span>
+      </div>
+      <div class="flex flex-col items-center">
+        <div
+        class="w-12 h-12 flex items-center justify-center bg-gray-100 rounded-lg mb-2"
+        >
+        <i class="ri-xd-line ri-lg"></i>
+      </div>
+      <span class="text-gray-700 text-sm">Adobe XD</span>
+    </div>
+    <div class="flex flex-col items-center">
+      <div
+      class="w-12 h-12 flex items-center justify-center bg-gray-100 rounded-lg mb-2"
+      >
+      <i class="ri-photoshop-line ri-lg"></i>
+    </div>
+    <span class="text-gray-700 text-sm">Photoshop</span>
+  </div>
+  <div class="flex flex-col items-center">
+    <div
+    class="w-12 h-12 flex items-center justify-center bg-gray-100 rounded-lg mb-2"
+    >
+    <i class="ri-illustrator-line ri-lg"></i>
+  </div>
+  <span class="text-gray-700 text-sm">Illustrator</span>
+</div>
+<div class="flex flex-col items-center">
+  <div
+  class="w-12 h-12 flex items-center justify-center bg-gray-100 rounded-lg mb-2"
+  >
+  <i class="ri-sketch-line ri-lg"></i>
+</div>
+<span class="text-gray-700 text-sm">Sketch</span>
+</div>
+<div class="flex flex-col items-center">
+  <div
+  class="w-12 h-12 flex items-center justify-center bg-gray-100 rounded-lg mb-2"
+  >
+  <i class="ri-invision-line ri-lg"></i>
+</div>
+<span class="text-gray-700 text-sm">InVision</span>
+</div>
+</div>
+</div>
+<!-- Development -->
+<div class="bg-white p-8 rounded-lg shadow-md">
+  <div
+  class="w-16 h-16 flex items-center justify-center bg-primary/10 text-primary rounded-full mb-6 mx-auto"
+  >
+  <i class="ri-code-s-slash-line ri-xl"></i>
+</div>
+<h3 class="text-xl font-bold text-gray-900 mb-4 text-center">
+  Development
+</h3>
+<div class="grid grid-cols-2 gap-4">
+  <div class="flex flex-col items-center">
+    <div
+    class="w-12 h-12 flex items-center justify-center bg-gray-100 rounded-lg mb-2"
+    >
+    <i class="ri-html5-line ri-lg"></i>
+  </div>
+  <span class="text-gray-700 text-sm">HTML5</span>
+</div>
+<div class="flex flex-col items-center">
+  <div
+  class="w-12 h-12 flex items-center justify-center bg-gray-100 rounded-lg mb-2"
+  >
+  <i class="ri-css3-line ri-lg"></i>
+</div>
+<span class="text-gray-700 text-sm">CSS3</span>
+</div>
+<div class="flex flex-col items-center">
+  <div
+  class="w-12 h-12 flex items-center justify-center bg-gray-100 rounded-lg mb-2"
+  >
+  <i class="ri-javascript-line ri-lg"></i>
+</div>
+<span class="text-gray-700 text-sm">JavaScript</span>
+</div>
+<div class="flex flex-col items-center">
+  <div
+  class="w-12 h-12 flex items-center justify-center bg-gray-100 rounded-lg mb-2"
+  >
+  <i class="ri-jquery-line ri-lg"></i>
+</div>
+<span class="text-gray-700 text-sm">jQuery</span>
+</div>
+<div class="flex flex-col items-center">
+  <div
+  class="w-12 h-12 flex items-center justify-center bg-gray-100 rounded-lg mb-2"
+  >
+  <i class="ri-terminal-box-line ri-lg"></i>
+</div>
+<span class="text-gray-700 text-sm">SASS</span>
+</div>
+<div class="flex flex-col items-center">
+  <div
+  class="w-12 h-12 flex items-center justify-center bg-gray-100 rounded-lg mb-2"
+  >
+  <i class="ri-git-branch-line ri-lg"></i>
+</div>
+<span class="text-gray-700 text-sm">Git</span>
+</div>
+</div>
+</div>
+<!-- Frameworks -->
+<div class="bg-white p-8 rounded-lg shadow-md">
+  <div
+  class="w-16 h-16 flex items-center justify-center bg-primary/10 text-primary rounded-full mb-6 mx-auto"
+  >
+  <i class="ri-layout-grid-line ri-xl"></i>
+</div>
+<h3 class="text-xl font-bold text-gray-900 mb-4 text-center">
+  Frameworks
+</h3>
+<div class="grid grid-cols-2 gap-4">
+  <div class="flex flex-col items-center">
+    <div
+    class="w-12 h-12 flex items-center justify-center bg-gray-100 rounded-lg mb-2"
+    >
+    <i class="ri-reactjs-line ri-lg"></i>
+  </div>
+  <span class="text-gray-700 text-sm">React</span>
+</div>
+<div class="flex flex-col items-center">
+  <div
+  class="w-12 h-12 flex items-center justify-center bg-gray-100 rounded-lg mb-2"
+  >
+  <i class="ri-bootstrap-line ri-lg"></i>
+</div>
+<span class="text-gray-700 text-sm">Bootstrap</span>
+</div>
+<div class="flex flex-col items-center">
+  <div
+  class="w-12 h-12 flex items-center justify-center bg-gray-100 rounded-lg mb-2"
+  >
+  <i class="ri-tailwind-css-line ri-lg"></i>
+</div>
+<span class="text-gray-700 text-sm">Tailwind</span>
+</div>
+<div class="flex flex-col items-center">
+  <div
+  class="w-12 h-12 flex items-center justify-center bg-gray-100 rounded-lg mb-2"
+  >
+  <i class="ri-vuejs-line ri-lg"></i>
+</div>
+<span class="text-gray-700 text-sm">Vue.js</span>
+</div>
+<div class="flex flex-col items-center">
+  <div
+  class="w-12 h-12 flex items-center justify-center bg-gray-100 rounded-lg mb-2"
+  >
+  <i class="ri-gatsby-line ri-lg"></i>
+</div>
+<span class="text-gray-700 text-sm">Gatsby</span>
+</div>
+<div class="flex flex-col items-center">
+  <div
+  class="w-12 h-12 flex items-center justify-center bg-gray-100 rounded-lg mb-2"
+  >
+  <i class="ri-wordpress-line ri-lg"></i>
+</div>
+<span class="text-gray-700 text-sm">WordPress</span>
+</div>
+</div>
+</div>
+<!-- Other Skills -->
+<div class="bg-white p-8 rounded-lg shadow-md">
+  <div
+  class="w-16 h-16 flex items-center justify-center bg-primary/10 text-primary rounded-full mb-6 mx-auto"
+  >
+  <i class="ri-tools-line ri-xl"></i>
+</div>
+<h3 class="text-xl font-bold text-gray-900 mb-4 text-center">
+  Other Skills
+</h3>
+<div class="grid grid-cols-2 gap-4">
+  <div class="flex flex-col items-center">
+    <div
+    class="w-12 h-12 flex items-center justify-center bg-gray-100 rounded-lg mb-2"
+    >
+    <i class="ri-responsive-line ri-lg"></i>
+  </div>
+  <span class="text-gray-700 text-sm">Responsive</span>
+</div>
+<div class="flex flex-col items-center">
+  <div
+  class="w-12 h-12 flex items-center justify-center bg-gray-100 rounded-lg mb-2"
+  >
+  <i class="ri-user-heart-line ri-lg"></i>
+</div>
+<span class="text-gray-700 text-sm">UX Research</span>
+</div>
+<div class="flex flex-col items-center">
+  <div
+  class="w-12 h-12 flex items-center justify-center bg-gray-100 rounded-lg mb-2"
+  >
+  <i class="ri-search-eye-line ri-lg"></i>
+</div>
+<span class="text-gray-700 text-sm">SEO</span>
+</div>
+<div class="flex flex-col items-center">
+  <div
+  class="w-12 h-12 flex items-center justify-center bg-gray-100 rounded-lg mb-2"
+  >
+  <i class="ri-speed-line ri-lg"></i>
+</div>
+<span class="text-gray-700 text-sm">Performance</span>
+</div>
+<div class="flex flex-col items-center">
+  <div
+  class="w-12 h-12 flex items-center justify-center bg-gray-100 rounded-lg mb-2"
+  >
+  <i class="ri-test-tube-line ri-lg"></i>
+</div>
+<span class="text-gray-700 text-sm">Testing</span>
+</div>
+<div class="flex flex-col items-center">
+  <div
+  class="w-12 h-12 flex items-center justify-center bg-gray-100 rounded-lg mb-2"
+  >
+  <i class="ri-team-line ri-lg"></i>
+</div>
+<span class="text-gray-700 text-sm">Collaboration</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Contact Section -->
+<section id="contact" class="py-20 bg-gray-50">
+  <div class="container mx-auto px-6">
+    <div class="text-center mb-16">
+      <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+        Get In Touch
+      </h2>
+      <div class="w-20 h-1 bg-primary mx-auto mb-8"></div>
+      <p class="max-w-2xl mx-auto text-gray-700">
+        Have a project in mind or want to discuss potential opportunities?
+        I'd love to hear from you!
+      </p>
+    </div>
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+      <div>
+        <div class="bg-white p-8 rounded-lg shadow-md mb-8">
+          <h3 class="text-2xl font-bold text-gray-900 mb-6">
+            Contact Information
+          </h3>
+          <div class="space-y-6">
+            <div class="flex items-start">
+              <div
+              class="w-12 h-12 flex items-center justify-center bg-primary/10 text-primary rounded-full mr-4"
+              >
+              <i class="ri-mail-line ri-lg"></i>
+            </div>
+            <div>
+              <h4 class="text-lg font-medium text-gray-900 mb-1">
+                Email
+              </h4>
+              <a
+              href="mailto:swatiprogrammer94@gmail.com"
+              class="text-gray-700 hover:text-primary transition-colors"
+              >
+              swatiprogrammer94@gmail.com
+            </a>
+          </div>
+        </div>
+        <div class="flex items-start">
+          <div
+          class="w-12 h-12 flex items-center justify-center bg-primary/10 text-primary rounded-full mr-4"
+          >
+          <i class="ri-phone-line ri-lg"></i>
+        </div>
+        <div>
+          <h4 class="text-lg font-medium text-gray-900 mb-1">
+            Phone
+          </h4>
+          <a
+          href="tel:+447553519875"
+          class="text-gray-700 hover:text-primary transition-colors"
+          >
+          +44 7553 519875
         </a>
       </div>
-    </footer>
-    <script id="animation-init">
-      document.addEventListener("DOMContentLoaded", function () {
-        AOS.init({
-          duration: 1000,
-          once: true,
-          mirror: false,
-        });
-      });
-    </script>
-    <script id="navigation-script">
-      document.addEventListener("DOMContentLoaded", function () {
-        const mobileMenuButton = document.getElementById("mobile-menu-button");
-        const mobileMenu = document.getElementById("mobile-menu");
-        const header = document.querySelector("header");
+    </div>
+    <div class="flex items-start">
+      <div
+      class="w-12 h-12 flex items-center justify-center bg-primary/10 text-primary rounded-full mr-4"
+      >
+      <i class="ri-map-pin-line ri-lg"></i>
+    </div>
+    <div>
+      <h4 class="text-lg font-medium text-gray-900 mb-1">
+        Location
+      </h4>
+      <p class="text-gray-700">United Kingdom</p>
+    </div>
+  </div>
+  <div class="flex items-start">
+    <div
+    class="w-12 h-12 flex items-center justify-center bg-primary/10 text-primary rounded-full mr-4"
+    >
+    <i class="ri-time-line ri-lg"></i>
+  </div>
+  <div>
+    <h4 class="text-lg font-medium text-gray-900 mb-1">
+      Availability
+    </h4>
+    <p class="text-gray-700">
+      Available for freelance, hybrid, remote, and onsite
+      opportunities in UK
+    </p>
+  </div>
+</div>
+</div>
+</div>
+<div class="bg-white p-8 rounded-lg shadow-md">
+  <h3 class="text-2xl font-bold text-gray-900 mb-6">Location</h3>
+  <div class="w-full h-64 rounded-lg overflow-hidden">
+    <img
+    src="https://public.readdy.ai/gen_page/map_placeholder_1280x720.png"
+    alt="Location Map"
+    class="w-full h-full object-cover"
+    />
+  </div>
+</div>
+</div>
+<div class="bg-white p-8 rounded-lg shadow-md">
+  <h3 class="text-2xl font-bold text-gray-900 mb-6">
+    Send Me a Message
+  </h3>
+  <form
+  action="https://formspree.io/f/swatiprogrammer94@gmail.com"
+  method="POST"
+  >
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+    <div>
+      <label for="name" class="block text-gray-700 font-medium mb-2"
+      >Name</label
+      >
+      <input
+      type="text"
+      id="name"
+      class="w-full px-4 py-3 border border-gray-300 rounded focus:border-primary"
+      placeholder="Your name"
+      />
+    </div>
+    <div>
+      <label
+      for="email"
+      class="block text-gray-700 font-medium mb-2"
+      >Email</label
+      >
+      <input
+      type="email"
+      id="email"
+      class="w-full px-4 py-3 border border-gray-300 rounded focus:border-primary"
+      placeholder="Your email"
+      />
+    </div>
+  </div>
+  <div class="mb-6">
+    <label
+    for="subject"
+    class="block text-gray-700 font-medium mb-2"
+    >Subject</label
+    >
+    <input
+    type="text"
+    id="subject"
+    class="w-full px-4 py-3 border border-gray-300 rounded focus:border-primary"
+    placeholder="Subject"
+    />
+  </div>
+  <div class="mb-6">
+    <label
+    for="message"
+    class="block text-gray-700 font-medium mb-2"
+    >Message</label
+    >
+    <textarea
+    id="message"
+    rows="5"
+    class="w-full px-4 py-3 border border-gray-300 rounded focus:border-primary"
+    placeholder="Your message"
+    ></textarea>
+  </div>
+  <div class="flex items-center mb-6">
+    <input
+    type="checkbox"
+    id="privacy"
+    class="custom-checkbox mr-2"
+    />
+    <label for="privacy" class="text-gray-700"
+    >I agree to the privacy policy and terms of service</label
+    >
+  </div>
+  <button
+  type="submit"
+  class="w-full py-3 bg-primary text-white font-medium !rounded-button whitespace-nowrap hover:bg-primary/90 transition-colors"
+  >
+  Send Message
+</button>
+</form>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-gray-900 text-white py-12">
+  <div class="container mx-auto px-6">
+    <div
+    class="flex flex-col md:flex-row justify-between items-center mb-8"
+    >
+    <a href="#" class="text-2xl font-['Pacifico'] text-white mb-4 md:mb-0"
+    >Swati Barsoliya</a
+    >
+    <div class="flex space-x-6">
+      <a
+      href="https://linkedin.com"
+      target="_blank"
+      class="w-10 h-10 flex items-center justify-center text-gray-400 hover:text-white transition-colors"
+      >
+      <i class="ri-linkedin-line ri-lg"></i>
+    </a>
+    <a
+    href="https://github.com"
+    target="_blank"
+    class="w-10 h-10 flex items-center justify-center text-gray-400 hover:text-white transition-colors"
+    >
+    <i class="ri-github-line ri-lg"></i>
+  </a>
+  <a
+  href="https://behance.net"
+  target="_blank"
+  class="w-10 h-10 flex items-center justify-center text-gray-400 hover:text-white transition-colors"
+  >
+  <i class="ri-behance-line ri-lg"></i>
+</a>
+<a
+href="https://dribbble.com"
+target="_blank"
+class="w-10 h-10 flex items-center justify-center text-gray-400 hover:text-white transition-colors"
+>
+<i class="ri-dribbble-line ri-lg"></i>
+</a>
+</div>
+</div>
+<div class="border-t border-gray-800 pt-8">
+  <div class="flex flex-col md:flex-row justify-between items-center">
+    <div class="mb-4 md:mb-0">
+      <p class="text-gray-400">
+        &copy; 2025 Swati Barsoliya. All rights reserved.
+      </p>
+    </div>
+    <div class="flex flex-wrap justify-center gap-4">
+      <a
+      href="#about"
+      class="text-gray-400 hover:text-white transition-colors"
+      >About</a
+      >
+      <a
+      href="#portfolio"
+      class="text-gray-400 hover:text-white transition-colors"
+      >Portfolio</a
+      >
+      <a
+      href="#experience"
+      class="text-gray-400 hover:text-white transition-colors"
+      >Experience</a
+      >
+      <a
+      href="#skills"
+      class="text-gray-400 hover:text-white transition-colors"
+      >Skills</a
+      >
+      <a
+      href="#contact"
+      class="text-gray-400 hover:text-white transition-colors"
+      >Contact</a
+      >
+    </div>
+  </div>
+</div>
+</div>
+<div class="fixed bottom-8 right-8 z-40">
+  <a
+  href="#"
+  id="back-to-top"
+  class="w-12 h-12 flex items-center justify-center bg-primary text-white rounded-full shadow-lg hover:bg-primary/90 transition-colors"
+  >
+  <i class="ri-arrow-up-line ri-lg"></i>
+</a>
+</div>
+</footer>
+<script id="animation-init">
+  document.addEventListener("DOMContentLoaded", function () {
+    AOS.init({
+      duration: 1000,
+      once: true,
+      mirror: false,
+    });
+  });
+</script>
+<script id="navigation-script">
+  document.addEventListener("DOMContentLoaded", function () {
+    const mobileMenuButton = document.getElementById("mobile-menu-button");
+    const mobileMenu = document.getElementById("mobile-menu");
+    const header = document.querySelector("header");
         // Mobile menu toggle
         mobileMenuButton.addEventListener("click", function () {
           mobileMenu.classList.toggle("hidden");
@@ -1954,7 +1763,7 @@
             });
           },
           { threshold: 0.2 },
-        );
+          );
         timelineItems.forEach((item) => timelineObserver.observe(item));
         // Skill bars animation
         const skillBars = document.querySelectorAll(".skill-progress");
@@ -1988,7 +1797,7 @@
             });
           },
           { threshold: 0.2 },
-        );
+          );
         skillsObserver.observe(aboutSection);
       });
     </script>
@@ -2096,4 +1905,4 @@
       });
     </script>
   </body>
-</html>
+  </html>
