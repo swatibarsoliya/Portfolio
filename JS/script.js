@@ -1,4 +1,31 @@
+// =========================
+// 0. Tailwind Custom Config
+// =========================
+tailwind.config = {
+  theme: {
+    extend: {
+      colors: { primary: "#0A66C2", secondary: "#00A0DC" },
+      borderRadius: {
+        none: "0px",
+        sm: "4px",
+        DEFAULT: "8px",
+        md: "12px",
+        lg: "16px",
+        xl: "20px",
+        "2xl": "24px",
+        "3xl": "32px",
+        full: "9999px",
+        button: "8px",
+      },
+    },
+  },
+};
+
+// =========================
+// 1. DOMContentLoaded Scripts
+// =========================
 document.addEventListener("DOMContentLoaded", function () {
+
   // =========================
   // 1. AOS Animation Init
   // =========================
