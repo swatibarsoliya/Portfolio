@@ -177,7 +177,7 @@ document.addEventListener("DOMContentLoaded", function () {
       document.body.style.overflow = "auto";
     });
   });
-
+  
   window.addEventListener("click", function (e) {
     modals.forEach((modal) => {
       if (e.target === modal) {
