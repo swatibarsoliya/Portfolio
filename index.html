@@ -66,74 +66,59 @@
     </div>
   </header>
   <!-- Hero Section -->
-  <section class="pt-20 md:pt-28 pb-10 md:pb-20 relative overflow-hidden"
+  <section class="pt-28 md:pt-40 pb-20 relative overflow-hidden"
     style="background-image: url('image/bg.jpg'); background-size: cover; background-position: center;">
 
-    <!-- Radial Glow -->
-    <div
-      class="absolute -top-1/2 -right-1/2 w-full h-full bg-gradient-radial from-primary/25 to-transparent rounded-full blur-[160px]">
-    </div>
+    <!-- Parallax Gradient Overlay -->
+    <div class="absolute inset-0 bg-gradient-to-br from-white/90 via-white/70 to-white/20 backdrop-blur-sm"></div>
 
-    <!-- Soft White Gradient Overlay -->
-    <div class="absolute inset-0 bg-gradient-to-br from-white/95 via-white/85 to-white/40 backdrop-blur-[2px]"></div>
+    <div class="container mx-auto px-6 relative z-10">
+      <div class="max-w-4xl" data-aos="fade-up" data-aos-duration="1000">
 
-    <!-- Floating UI Shapes -->
-    <div class="absolute top-20 left-10 w-16 h-16 bg-primary/10 rounded-xl blur-xl animate-pulse-slow"></div>
-    <div class="absolute bottom-28 right-16 w-20 h-20 bg-primary/10 rounded-full blur-2xl animate-float"></div>
+        <!-- UK Tag -->
+        <p class="inline-block mb-4 px-4 py-1 bg-primary/10 text-primary font-medium rounded-full text-sm">
+          Based in the UK 🇬🇧 · Open to Front-End Roles
+        </p>
 
-    <div class="container mx-auto px-6 relative">
-      <div class="max-w-4xl" data-aos="fade-up" data-aos-duration="1200">
-
-        <!-- Typewriter Title -->
-        <h1 class="typewriter text-xl md:text-2xl lg:text-3xl font-bold text-gray-900 mb-6">
+        <!-- Title -->
+        <h1 class="text-xl md:text-2xl lg:text-3xl font-bold text-gray-900 mb-4 typewriter">
           Front-End Developer <span class="text-primary">(React | JavaScript | UI Engineering)</span>
         </h1>
 
-        <!-- Main Statement -->
-        <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold text-gray-900 leading-tight mb-6">
+        <!-- Main Headline -->
+        <h2 class="text-4xl md:text-5xl lg:text-6xl font-extrabold text-gray-900 leading-tight mb-6">
           Building Fast, Accessible & User-Focused Web Interfaces
-        </h1>
+        </h2>
 
-        <!-- Subheadline -->
-        <p class="text-gray-700 text-md md:text-lg leading-relaxed mb-5 max-w-3xl">
-          I specialise in React, JavaScript and front-end engineering — creating scalable, production-ready interfaces
-          focused on performance, accessibility and smooth user experiences across all devices.
+        <!-- Description -->
+        <p class="text-gray-700 text-lg leading-relaxed mb-8 max-w-3xl">
+          I specialise in React, JavaScript, and modern UI engineering—crafting scalable,
+          accessible, and production-ready interfaces that deliver smooth performance across all devices.
         </p>
 
-        <!-- Tech Tags -->
-        <div class="flex flex-wrap gap-3 mb-5" data-aos="fade-up" data-aos-delay="300">
-          <span
-            class="px-4 py-2 bg-white border border-gray-200 text-gray-800 rounded-lg text-sm font-medium shadow-sm">React</span>
-          <span
-            class="px-4 py-2 bg-white border border-gray-200 text-gray-800 rounded-lg text-sm font-medium shadow-sm">JavaScript
-            (ES6+)</span>
-          <span
-            class="px-4 py-2 bg-white border border-gray-200 text-gray-800 rounded-lg text-sm font-medium shadow-sm">HTML5
-            / CSS3</span>
-          <span
-            class="px-4 py-2 bg-white border border-gray-200 text-gray-800 rounded-lg text-sm font-medium shadow-sm">Responsive
-            UI</span>
-          <span
-            class="px-4 py-2 bg-white border border-gray-200 text-gray-800 rounded-lg text-sm font-medium shadow-sm">Git
-            / GitHub</span>
-          <span
-            class="px-4 py-2 bg-white border border-gray-200 text-gray-800 rounded-lg text-sm font-medium shadow-sm">Accessibility</span>
+        <!-- Tech Stack Badges -->
+        <div class="flex flex-wrap gap-3 mb-10">
+          <span class="px-4 py-2 bg-gray-100 rounded-lg text-sm font-medium">React</span>
+          <span class="px-4 py-2 bg-gray-100 rounded-lg text-sm font-medium">JavaScript (ES6+)</span>
+          <span class="px-4 py-2 bg-gray-100 rounded-lg text-sm font-medium">HTML5 / CSS3</span>
+          <span class="px-4 py-2 bg-gray-100 rounded-lg text-sm font-medium">Responsive UI</span>
+          <span class="px-4 py-2 bg-gray-100 rounded-lg text-sm font-medium">Git / GitHub</span>
+          <span class="px-4 py-2 bg-gray-100 rounded-lg text-sm font-medium">Accessibility</span>
         </div>
 
-        <!-- CTA Buttons -->
-        <div class="flex flex-col sm:flex-row gap-5">
-          <a href="#portfolio"
-            class="px-8 py-3 bg-white text-primary font-semibold border border-primary rounded-xl whitespace-nowrap hover:bg-gray-50 transition-all shadow hover:shadow-md text-center">
+        <!-- Buttons -->
+        <div class="flex flex-col sm:flex-row gap-4">
+          <a href="#portfolio" class="px-8 py-3 bg-primary text-white rounded-lg shadow hover:bg-primary/90 transition">
             View Projects
           </a>
 
           <a href="https://smallpdf.com/file#s=dbebe139-6915-4056-8251-ad1863b31540" target="_blank"
-            class="px-8 py-3 bg-primary text-white font-semibold rounded-xl whitespace-nowrap shadow-lg hover:bg-primary/90 transition-all hover:shadow-xl text-center">
+            class="px-8 py-3 border border-primary text-primary rounded-lg hover:bg-primary hover:text-white transition">
             Download CV
           </a>
 
           <a href="#contact"
-            class="px-8 py-3 bg-white text-primary font-semibold border border-primary rounded-xl whitespace-nowrap hover:bg-gray-50 transition-all shadow hover:shadow-md text-center">
+            class="px-8 py-3 border border-gray-300 text-gray-700 rounded-lg hover:bg-gray-100 transition">
             Contact Me
           </a>
         </div>
@@ -141,6 +126,7 @@
       </div>
     </div>
   </section>
+
 
   <!-- About Section -->
   <section id="about" class="py-20 bg-gray-50">
@@ -836,45 +822,6 @@ Case Study
       </div>
     </div>
   </section>
-  <section id="testimonials" class="py-20 bg-gray-50">
-    <div class="container mx-auto px-6">
-      <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-10 text-center">
-        Testimonials & Recommendations
-      </h2>
-
-      <div class="grid md:grid-cols-3 gap-8">
-
-        <!-- Card 1 -->
-        <div class="bg-white p-6 rounded-2xl shadow hover:shadow-lg transition">
-          <p class="text-gray-700 italic mb-4">
-            “Swati is a dedicated front-end developer with great attention to detail. Her UI skills and consistency make
-            her a valuable asset on any team.”
-          </p>
-          <h4 class="font-bold text-gray-900">— Former Manager</h4>
-          <span class="text-sm text-gray-500">Tech Lead, India</span>
-        </div>
-
-        <!-- Card 2 -->
-        <div class="bg-white p-6 rounded-2xl shadow hover:shadow-lg transition">
-          <p class="text-gray-700 italic mb-4">
-            “She delivers clean, scalable code and works very well in collaborative environments. Highly recommended.”
-          </p>
-          <h4 class="font-bold text-gray-900">— Team Member</h4>
-          <span class="text-sm text-gray-500">Front-End Engineer</span>
-        </div>
-
-        <!-- Card 3 -->
-        <div class="bg-white p-6 rounded-2xl shadow hover:shadow-lg transition">
-          <p class="text-gray-700 italic mb-4">
-            “Her UI/UX understanding is strong, and she always ensures smooth user experience and accessibility.”
-          </p>
-          <h4 class="font-bold text-gray-900">— Project Lead</h4>
-          <span class="text-sm text-gray-500">UI/UX Specialist</span>
-        </div>
-
-      </div>
-    </div>
-  </section>
   <!-- Contact Section -->
   <section id="contact" class="py-20">
     <div class="container mx-auto px-6">
@@ -1002,75 +949,96 @@ Case Study
       </div>
     </div>
   </section>
-  
-
-  <!-- Footer -->
-   <footer class="bg-gray-900 text-white py-12">
+  <section id="testimonials" class="py-20 bg-gray-50">
     <div class="container mx-auto px-6">
 
-      <!-- Top Row -->
-      <div class="flex flex-col md:flex-row justify-between items-center mb-8">
+      <h2 class="text-3xl md:text-4xl font-bold text-gray-900 text-center mb-12">
+        Testimonials & Recommendations
+      </h2>
 
-        <!-- Logo + Badge -->
-        <div class="flex flex-col items-center md:items-start">
-          <a href="#" class="text-2xl font-['Pacifico'] text-white mb-2">
-            Swati Barsoliya
-          </a>
-          <span class="px-3 py-1 bg-primary/20 text-primary text-sm rounded-full">
-            Open to Front-End Roles (UK)
-          </span>
-        </div>
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
 
-        <!-- Social -->
-        <div class="flex space-x-6 mt-6 md:mt-0">
-          <a href="https://www.linkedin.com/in/swati-barsoliya/" target="_blank" aria-label="LinkedIn Profile"
-            class="w-10 h-10 flex items-center justify-center text-gray-400 hover:text-white hover:scale-110 transition-all">
-            <i class="ri-linkedin-line ri-lg"></i>
-          </a>
-          <a href="https://github.com/swatibarsoliya" target="_blank" aria-label="GitHub Profile"
-            class="w-10 h-10 flex items-center justify-center text-gray-400 hover:text-white hover:scale-110 transition-all">
-            <i class="ri-github-line ri-lg"></i>
-          </a>
-        </div>
-      </div>
-
-      <!-- Divider -->
-      <div class="border-t border-gray-800 pt-8">
-
-        <!-- Bottom Row -->
-        <div class="flex flex-col md:flex-row justify-between items-center">
-
-          <p class="text-gray-400 mb-4 md:mb-0">
-            © 2025 Swati Barsoliya. All rights reserved.
+        <!-- Testimonial 1 -->
+        <div class="bg-white p-8 shadow-lg rounded-xl border border-gray-100">
+          <p class="text-gray-700 mb-6">
+            “Swati consistently delivers clean, scalable and modern UI components.
+            A dependable developer with strong attention to detail.”
           </p>
+          <h4 class="font-semibold text-gray-900">— Senior Front-End Engineer</h4>
+        </div>
 
-          <!-- Email -->
-          <a href="mailto:swatiprogrammer94@gmail.com"
-            class="text-gray-400 hover:text-white transition-colors mb-4 md:mb-0">
-            swatibarsoliya@gmail.com
+        <!-- Testimonial 2 -->
+        <div class="bg-white p-8 shadow-lg rounded-xl border border-gray-100">
+          <p class="text-gray-700 mb-6">
+            “Her UI engineering skills and problem-solving approach improved our
+            product performance and user experience significantly.”
+          </p>
+          <h4 class="font-semibold text-gray-900">— UI/UX Lead Designer</h4>
+        </div>
+
+        <!-- Testimonial 3 -->
+        <div class="bg-white p-8 shadow-lg rounded-xl border border-gray-100">
+          <p class="text-gray-700 mb-6">
+            “Professional, collaborative, and consistently delivers high-quality front-end work.”
+          </p>
+          <h4 class="font-semibold text-gray-900">— Project Manager</h4>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-white py-12">
+    <div class="container mx-auto px-6">
+
+      <!-- Top Section -->
+      <div class="flex flex-col md:flex-row justify-between items-center mb-10">
+        <h3 class="text-2xl font-['Pacifico']">Swati Barsoliya</h3>
+
+        <p class="text-gray-400 text-sm mt-4 md:mt-0">
+          Front-End Developer · Based in the UK 🇬🇧
+        </p>
+
+        <!-- Social Icons -->
+        <div class="flex space-x-6 mt-6 md:mt-0">
+          <a href="https://www.linkedin.com/in/swati-barsoliya/" target="_blank"
+            class="text-gray-400 hover:text-white transition">
+            <i class="ri-linkedin-line ri-xl"></i>
           </a>
 
-          <!-- Navigation -->
-          <div class="flex flex-wrap justify-center gap-4 text-sm">
-            <a href="#about" class="text-gray-400 hover:text-white transition-colors">About</a>
-            <a href="#portfolio" class="text-gray-400 hover:text-white transition-colors">Portfolio</a>
-            <a href="#experience" class="text-gray-400 hover:text-white transition-colors">Experience</a>
-            <a href="#skills" class="text-gray-400 hover:text-white transition-colors">Skills</a>
-            <a href="#contact" class="text-gray-400 hover:text-white transition-colors">Contact</a>
-          </div>
-
+          <a href="https://github.com/swatibarsoliya" target="_blank" class="text-gray-400 hover:text-white transition">
+            <i class="ri-github-line ri-xl"></i>
+          </a>
         </div>
       </div>
+
+      <!-- Links -->
+      <div class="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between">
+        <p class="text-gray-400 text-sm">&copy; 2025 Swati Barsoliya. All rights reserved.</p>
+
+        <div class="flex gap-6 mt-4 md:mt-0">
+          <a href="#about" class="text-gray-400 hover:text-white transition">About</a>
+          <a href="#portfolio" class="text-gray-400 hover:text-white transition">Portfolio</a>
+          <a href="#experience" class="text-gray-400 hover:text-white transition">Experience</a>
+          <a href="#skills" class="text-gray-400 hover:text-white transition">Skills</a>
+          <a href="#contact" class="text-gray-400 hover:text-white transition">Contact</a>
+        </div>
+      </div>
+
     </div>
 
-    <!-- Scroll to Top -->
+    <!-- Back to Top -->
     <div class="fixed bottom-8 right-8 z-40">
-      <a href="#" id="back-to-top" aria-label="Back to top button"
-        class="w-12 h-12 flex items-center justify-center bg-primary text-white rounded-full shadow-lg hover:scale-110 hover:bg-primary/90 transition-all duration-300">
+      <a href="#" id="back-to-top"
+        class="w-12 h-12 flex items-center justify-center bg-primary text-white rounded-full shadow-lg hover:bg-primary/90 transition">
         <i class="ri-arrow-up-line ri-lg"></i>
       </a>
     </div>
   </footer>
+
   <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
   <script src="../Portfolio/JS/script.js" defer></script>
   <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
