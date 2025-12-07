@@ -1,112 +1,203 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="">
 
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Swati Barsoliya - UI Developer Portfolio">
   <meta name="keywords" content="UI Developer, Frontend Developer, Web Design, Portfolio">
-  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
   <title>Swati Barsoliya - Full Stack UI Engineer</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+
+  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Inter:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet" />
+
+  <!-- Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <!-- AOS Animation -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+
+  <!-- Tailwind CDN (before custom CSS) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Custom Tailwind Config -->
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            primary: "#0A66C2",
+            secondary: "#00A0DC"
+          },
+          borderRadius: {
+            none: "0px",
+            sm: "4px",
+            DEFAULT: "8px",
+            md: "12px",
+            lg: "16px",
+            xl: "20px",
+            "2xl": "24px",
+            "3xl": "32px",
+            full: "9999px",
+            button: "8px",
+          },
+        },
+      },
+      content: ["./**/*.html"],
+      plugins: [],
+    };
+  </script>
+
+  <!-- Your Custom CSS (after Tailwind) -->
   <link rel="stylesheet" href="../Portfolio/CSS/style.css" />
 </head>
 
-<body class="bg-white">
+<body class="bg-white dark:bg-gray-900">
+
   <!-- Header Section -->
-  <header class="fixed top-0 left-0 w-full bg-white shadow-sm z-40 transition-all duration-300">
+  <header class="fixed top-0 left-0 w-full bg-white dark:bg-gray-900 shadow-sm z-40 transition-all duration-300">
     <div class="container mx-auto px-6 py-4 flex justify-between items-center">
-      <a href="#" class="text-2xl font-['Pacifico'] text-primary">Swati Barsoliya</a>
+
+      <!-- Brand Name -->
+      <a href="#" class="text-2xl font-['Pacifico'] text-primary dark:text-primary">
+        Swati Barsoliya
+      </a>
+
+      <!-- Desktop Nav -->
       <nav class="hidden md:flex space-x-8">
-        <a href="#about" class="text-gray-700 hover:text-primary transition-colors">About</a>
-        <a href="#portfolio" class="text-gray-700 hover:text-primary transition-colors">Portfolio</a>
-        <a href="#experience" class="text-gray-700 hover:text-primary transition-colors">Experience</a>
-        <a href="#skills" class="text-gray-700 hover:text-primary transition-colors">Skills</a>
-        <a href="#contact" class="text-gray-700 hover:text-primary transition-colors">Contact</a>
+        <a href="#about"
+          class="text-gray-700 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors">About</a>
+        <a href="#portfolio"
+          class="text-gray-700 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors">Portfolio</a>
+        <a href="#experience"
+          class="text-gray-700 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors">Experience</a>
+        <a href="#skills"
+          class="text-gray-700 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors">Skills</a>
+        <a href="#contact"
+          class="text-gray-700 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors">Contact</a>
       </nav>
-      <div class="hidden md:flex space-x-4">
+
+      <!-- Right Section -->
+      <div class="flex items-center gap-3">
+
+        <!-- Dark Mode Toggle -->
+        <button id="dark-toggle"
+          class="p-2 rounded-md bg-gray-100 dark:bg-gray-800 text-gray-800 dark:text-gray-100 hover:scale-105 transition">
+          <svg id="icon-sun" class="w-5 h-5 block" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+            stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M12 3v2m0 14v2m9-9h-2M5 12H3m15.364 6.364l-1.414-1.414M7.05 6.05 5.636 4.636m12.728 0-1.414 1.414M7.05 17.95 5.636 19.364" />
+          </svg>
+
+          <svg id="icon-moon" class="w-5 h-5 hidden" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+            viewBox="0 0 24 24">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
+          </svg>
+        </button>
+
+        <!-- LinkedIn -->
         <a href="https://www.linkedin.com/in/swati-barsoliya/" target="_blank"
-          class="w-10 h-10 flex items-center justify-center text-gray-600 hover:text-primary transition-colors">
-          <i class="ri-linkedin-line ri-lg"></i>
+          class="hidden md:inline-flex items-center gap-2 px-3 py-1 bg-[#0A66C2] text-white rounded-md text-sm font-semibold shadow hover:bg-[#004182] transition">
+          <i class="ri-linkedin-fill"></i> LinkedIn
         </a>
+
+        <!-- GitHub -->
         <a href="https://github.com/swatibarsoliya" target="_blank"
-          class="w-10 h-10 flex items-center justify-center text-gray-600 hover:text-primary transition-colors">
-          <i class="ri-github-line ri-lg"></i>
+          class="hidden md:inline-flex items-center gap-2 px-3 py-1 bg-black dark:bg-gray-700 text-white rounded-md text-sm font-semibold shadow hover:bg-gray-800 transition">
+          <i class="ri-github-fill"></i> GitHub
         </a>
       </div>
-      <button class="md:hidden w-10 h-10 flex items-center justify-center" id="mobile-menu-button">
+
+      <!-- Mobile Menu Button -->
+      <button class="md:hidden w-10 h-10 flex items-center justify-center text-gray-700 dark:text-gray-300"
+        id="mobile-menu-button">
         <i class="ri-menu-line ri-lg"></i>
       </button>
     </div>
+
     <!-- Mobile Menu -->
-    <div id="mobile-menu" class="hidden md:hidden bg-white shadow-lg absolute w-full">
+    <div id="mobile-menu" class="hidden md:hidden bg-white dark:bg-gray-800 shadow-lg absolute w-full">
       <div class="container mx-auto px-6 py-4 flex flex-col space-y-4">
-        <a href="#about" class="text-gray-700 hover:text-primary transition-colors py-2">About</a>
-        <a href="#portfolio" class="text-gray-700 hover:text-primary transition-colors py-2">Portfolio</a>
-        <a href="#experience" class="text-gray-700 hover:text-primary transition-colors py-2">Experience</a>
-        <a href="#skills" class="text-gray-700 hover:text-primary transition-colors py-2">Skills</a>
-        <a href="#contact" class="text-gray-700 hover:text-primary transition-colors py-2">Contact</a>
+        <a href="#about"
+          class="text-gray-700 dark:text-gray-300 hover:text-primary dark:hover:text-primary py-2">About</a>
+        <a href="#portfolio"
+          class="text-gray-700 dark:text-gray-300 hover:text-primary dark:hover:text-primary py-2">Portfolio</a>
+        <a href="#experience"
+          class="text-gray-700 dark:text-gray-300 hover:text-primary dark:hover:text-primary py-2">Experience</a>
+        <a href="#skills"
+          class="text-gray-700 dark:text-gray-300 hover:text-primary dark:hover:text-primary py-2">Skills</a>
+        <a href="#contact"
+          class="text-gray-700 dark:text-gray-300 hover:text-primary dark:hover:text-primary py-2">Contact</a>
+
+        <!-- Social Icons -->
         <div class="flex space-x-4 py-2">
           <a href="https://www.linkedin.com/in/swati-barsoliya/" target="_blank"
-            class="w-10 h-10 flex items-center justify-center text-gray-600 hover:text-primary transition-colors">
+            class="w-10 h-10 flex items-center justify-center text-gray-600 dark:text-gray-300 hover:text-primary transition">
             <i class="ri-linkedin-line ri-lg"></i>
           </a>
+
           <a href="https://github.com/swatibarsoliya" target="_blank"
-            class="w-10 h-10 flex items-center justify-center text-gray-600 hover:text-primary transition-colors">
+            class="w-10 h-10 flex items-center justify-center text-gray-600 dark:text-gray-300 hover:text-primary transition">
             <i class="ri-github-line ri-lg"></i>
           </a>
         </div>
       </div>
     </div>
   </header>
+
   <!-- Hero Section -->
   <section class="pt-28 md:pt-40 pb-20 relative overflow-hidden"
     style="background-image: url('image/bg.jpg'); background-size: cover; background-position: center;">
 
-    <!-- Parallax Gradient Overlay -->
-    <div class="absolute inset-0 bg-gradient-to-br from-white/90 via-white/70 to-white/20 backdrop-blur-sm"></div>
+    <div
+      class="absolute inset-0 bg-gradient-to-br from-white/90 via-white/70 to-white/20 dark:from-gray-900/90 dark:via-gray-900/70 dark:to-gray-900/20 backdrop-blur-sm">
+    </div>
 
     <div class="container mx-auto px-6 relative z-10">
       <div class="max-w-4xl" data-aos="fade-up" data-aos-duration="1000">
 
-        <!-- UK Tag -->
         <p class="inline-block mb-4 px-4 py-1 bg-primary/10 text-primary font-medium rounded-full text-sm">
           Based in the UK 🇬🇧 · Open to Front-End Roles
         </p>
 
-        <!-- Title -->
-        <h1 class="text-xl md:text-2xl lg:text-3xl font-bold text-gray-900 mb-4 typewriter">
+        <h1 class="text-xl md:text-2xl lg:text-3xl font-bold text-gray-900 dark:text-gray-100 mb-4 typewriter">
           Front-End Developer <span class="text-primary">(React | JavaScript | UI Engineering)</span>
         </h1>
 
-        <!-- Main Headline -->
-        <h2 class="text-4xl md:text-5xl lg:text-6xl font-extrabold text-gray-900 leading-tight mb-6">
+        <h2 class="text-4xl md:text-5xl lg:text-6xl font-extrabold text-gray-900 dark:text-white leading-tight mb-6">
           Building Fast, Accessible & User-Focused Web Interfaces
         </h2>
 
-        <!-- Description -->
-        <p class="text-gray-700 text-lg leading-relaxed mb-8 max-w-3xl">
+        <p class="text-gray-700 dark:text-gray-300 text-lg leading-relaxed mb-8 max-w-3xl">
           I specialise in React, JavaScript, and modern UI engineering—crafting scalable,
           accessible, and production-ready interfaces that deliver smooth performance across all devices.
         </p>
 
-        <!-- Tech Stack Badges -->
         <div class="flex flex-wrap gap-3 mb-10">
-          <span class="px-4 py-2 bg-gray-100 rounded-lg text-sm font-medium">React</span>
-          <span class="px-4 py-2 bg-gray-100 rounded-lg text-sm font-medium">JavaScript (ES6+)</span>
-          <span class="px-4 py-2 bg-gray-100 rounded-lg text-sm font-medium">HTML5 / CSS3</span>
-          <span class="px-4 py-2 bg-gray-100 rounded-lg text-sm font-medium">Responsive UI</span>
-          <span class="px-4 py-2 bg-gray-100 rounded-lg text-sm font-medium">Git / GitHub</span>
-          <span class="px-4 py-2 bg-gray-100 rounded-lg text-sm font-medium">Accessibility</span>
+          <span
+            class="px-4 py-2 bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 rounded-lg text-sm font-medium">React</span>
+          <span
+            class="px-4 py-2 bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 rounded-lg text-sm font-medium">JavaScript
+            (ES6+)</span>
+          <span
+            class="px-4 py-2 bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 rounded-lg text-sm font-medium">HTML5
+            / CSS3</span>
+          <span
+            class="px-4 py-2 bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 rounded-lg text-sm font-medium">Responsive
+            UI</span>
+          <span
+            class="px-4 py-2 bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 rounded-lg text-sm font-medium">Git
+            / GitHub</span>
+          <span
+            class="px-4 py-2 bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 rounded-lg text-sm font-medium">Accessibility</span>
         </div>
 
-        <!-- Buttons -->
         <div class="flex flex-col sm:flex-row gap-4">
           <a href="#portfolio" class="px-8 py-3 bg-primary text-white rounded-lg shadow hover:bg-primary/90 transition">
             View Projects
@@ -118,7 +209,7 @@
           </a>
 
           <a href="#contact"
-            class="px-8 py-3 border border-gray-300 text-gray-700 rounded-lg hover:bg-gray-100 transition">
+            class="px-8 py-3 border border-gray-300 dark:border-gray-700 text-gray-700 dark:text-gray-300 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 transition">
             Contact Me
           </a>
         </div>
@@ -127,439 +218,362 @@
     </div>
   </section>
 
-
   <!-- About Section -->
-  <section id="about" class="py-20 bg-gray-50">
+  <section id="about" class="py-20 bg-gray-50 dark:bg-gray-900 transition-colors">
     <div class="container mx-auto px-6">
       <div class="text-center mb-16">
-        <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+        <h2 class="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
           About Me
         </h2>
         <div class="w-20 h-1 bg-primary mx-auto"></div>
       </div>
+
       <div class="flex flex-col lg:flex-row gap-12">
+
+        <!-- LEFT CARD -->
         <div class="lg:w-1/3">
-          <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+          <div class="bg-white dark:bg-gray-800 shadow-lg rounded-lg overflow-hidden transition-colors">
             <img src="image/swati.png" alt="Swati Barsoliya"
-              class="w-40 h-40 rounded-full mt-6 table mt-[30px] mb-0 mx-auto object-cover" />
+              class="w-40 h-40 rounded-full mt-[30px] mb-0 mx-auto object-cover" />
+
             <div class="p-6">
-              <h3 class="text-2xl font-bold text-gray-900 mb-2 text-center">
+              <h3 class="text-2xl font-bold text-gray-900 dark:text-white mb-2 text-center">
                 Swati Barsoliya
               </h3>
-              <p class="text-gray-600 mb-4 text-center">
+              <p class="text-gray-600 dark:text-gray-300 mb-4 text-center">
                 Web Designer & Front-end Developer
               </p>
+
               <div class="grid grid-cols-2 md:grid-cols-2 gap-4 mx-auto">
                 <div class="flex flex-col items-center">
-                  <div class="w-16 h-16 flex items-center justify-center bg-primary/10 text-primary rounded-full mb-2">
+                  <div
+                    class="w-16 h-16 flex items-center justify-center bg-primary/10 dark:bg-primary/20 text-primary rounded-full mb-2">
                     <i class="ri-layout-4-line ri-xl"></i>
                   </div>
-                  <span class="text-gray-700 font-medium">55+ Websites</span>
+                  <span class="text-gray-700 dark:text-gray-300 font-medium">55+ Websites</span>
                 </div>
+
                 <div class="flex flex-col items-center">
-                  <div class="w-16 h-16 flex items-center justify-center bg-primary/10 text-primary rounded-full mb-2">
+                  <div
+                    class="w-16 h-16 flex items-center justify-center bg-primary/10 dark:bg-primary/20 text-primary rounded-full mb-2">
                     <i class="ri-user-smile-line ri-xl"></i>
                   </div>
-                  <span class="text-gray-700 font-medium">15+ Clients</span>
+                  <span class="text-gray-700 dark:text-gray-300 font-medium">15+ Clients</span>
                 </div>
+
                 <div class="flex flex-col items-center">
-                  <div class="w-16 h-16 flex items-center justify-center bg-primary/10 text-primary rounded-full mb-2">
+                  <div
+                    class="w-16 h-16 flex items-center justify-center bg-primary/10 dark:bg-primary/20 text-primary rounded-full mb-2">
                     <i class="ri-award-line ri-xl"></i>
                   </div>
-                  <span class="text-gray-700 font-medium">3 Awards</span>
+                  <span class="text-gray-700 dark:text-gray-300 font-medium">3 Awards</span>
                 </div>
+
                 <div class="flex flex-col items-center">
-                  <div class="w-16 h-16 flex items-center justify-center bg-primary/10 text-primary rounded-full mb-2">
+                  <div
+                    class="w-16 h-16 flex items-center justify-center bg-primary/10 dark:bg-primary/20 text-primary rounded-full mb-2">
                     <i class="ri-time-line ri-xl"></i>
                   </div>
-                  <span class="text-gray-700 font-medium">7+ Years</span>
+                  <span class="text-gray-700 dark:text-gray-300 font-medium">7+ Years</span>
                 </div>
+
               </div>
-              <!-- <div class="flex space-x-4 mb-6">
-                <a href="https://www.linkedin.com/in/swati-barsoliya/" target="_blank"
-                  class="w-10 h-10 flex items-center justify-center text-gray-600 hover:text-primary transition-colors">
-                  <i class="ri-linkedin-line ri-lg"></i>
-                </a>
-                <a href="https://github.com/swatibarsoliya" target="_blank"
-                  class="w-10 h-10 flex items-center justify-center text-gray-600 hover:text-primary transition-colors">
-                  <i class="ri-github-line ri-lg"></i>
-                </a>
-              </div> -->
             </div>
           </div>
         </div>
+
+        <!-- RIGHT CONTENT -->
         <div class="lg:w-2/3">
-          <h3 class="text-2xl font-bold text-gray-900 mb-4">My Story</h3>
+          <h3 class="text-2xl font-bold text-gray-900 dark:text-white mb-4">My Story</h3>
 
-          <p class="text-gray-700 mb-6 leading-relaxed">
-            I’m a Front-End Developer with 7 years of experience creating fast, accessible and user-focused web
-            interfaces.
-            I specialise in modern JavaScript, React, and building clean, scalable front-end architectures that
-            translate
-            design concepts into reliable, production-ready experiences.
+          <p class="text-gray-700 dark:text-gray-300 mb-6 leading-relaxed">
+            I’m a Front-End Developer with 7 years of experience creating fast, accessible and user-focused
+            web interfaces. I specialise in modern JavaScript, React, and building clean, scalable
+            front-end architectures that translate design concepts into reliable, production-ready experiences.
           </p>
 
-          <p class="text-gray-700 mb-6 leading-relaxed">
+          <p class="text-gray-700 dark:text-gray-300 mb-6 leading-relaxed">
             Across my career, I’ve delivered dashboards, web applications, component libraries and mobile-first
-            interfaces
-            for a variety of clients and teams. I work confidently across the full front-end lifecycle — from
-            understanding
-            requirements and planning UI structure to coding, optimisation, debugging and deployment.
+            interfaces for a variety of clients and teams. I work confidently across the full front-end
+            lifecycle — from understanding requirements and planning UI structure to coding, optimisation,
+            debugging and deployment.
           </p>
 
-          <p class="text-gray-700 mb-6 leading-relaxed">
-            My approach is grounded in clean coding practices, reusable components, performance optimisation and
-            delivering
-            smooth, consistent experiences across devices and browsers.
+          <p class="text-gray-700 dark:text-gray-300 mb-6 leading-relaxed">
+            My approach is grounded in clean coding practices, reusable components, performance optimisation
+            and delivering smooth, consistent experiences across devices and browsers.
           </p>
 
-          <h3 class="text-lg font-semibold text-gray-900 mb-2">Core strengths:</h3>
+          <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-2">Core strengths:</h3>
+
           <ul class="list-disc list-inside mb-6 space-y-1">
-            <li class="text-gray-700 leading-relaxed">Strong expertise in HTML5, CSS3, JavaScript (ES6+) and React.js
-            </li>
-            <li class="text-gray-700 leading-relaxed">Experience in responsive design, accessibility and cross-browser
-              compatibility</li>
-            <li class="text-gray-700 leading-relaxed">Solid understanding of UI/UX principles and design-to-development
-              workflows</li>
-            <li class="text-gray-700 leading-relaxed">Skilled with Git, Webpack and modern build/deployment processes
-            </li>
-            <li class="text-gray-700 leading-relaxed">Focused on maintainable code, continuous improvement and modern
-              best practices</li>
+            <li class="text-gray-700 dark:text-gray-300 leading-relaxed">Strong expertise in HTML5, CSS3, JavaScript
+              (ES6+) and React.js</li>
+            <li class="text-gray-700 dark:text-gray-300 leading-relaxed">Experience in responsive design, accessibility
+              and cross-browser compatibility</li>
+            <li class="text-gray-700 dark:text-gray-300 leading-relaxed">Solid understanding of UI/UX principles and
+              design-to-development workflows</li>
+            <li class="text-gray-700 dark:text-gray-300 leading-relaxed">Skilled with Git, Webpack and modern
+              build/deployment processes</li>
+            <li class="text-gray-700 dark:text-gray-300 leading-relaxed">Focused on maintainable code, continuous
+              improvement and modern best practices</li>
           </ul>
 
-          <p class="text-gray-700 mb-8 leading-relaxed">
-            I’m passionate about building high-quality, modern interfaces and improving the performance and usability of
-            every
-            product I work on. I’m currently seeking opportunities in the UK where I can contribute to front-end teams,
-            deliver
-            impactful user experiences and continue growing within a modern engineering environment.
+          <p class="text-gray-700 dark:text-gray-300 mb-8 leading-relaxed">
+            I’m passionate about building high-quality, modern interfaces and improving the performance and
+            usability of every product I work on. I’m currently seeking opportunities in the UK where I can
+            contribute to front-end teams, deliver impactful user experiences and continue growing within a
+            modern engineering environment.
           </p>
         </div>
 
       </div>
     </div>
   </section>
+
   <!-- Portfolio Section -->
- <section id="portfolio" class="py-24">
-  <div class="container mx-auto px-6">
-    
-    <!-- Section Header -->
-    <div class="text-center mb-16">
-      <h2 class="text-4xl font-extrabold text-gray-900 mb-4">Featured Projects</h2>
-      <div class="w-24 h-1 bg-primary mx-auto mb-6"></div>
-      <p class="max-w-2xl mx-auto text-gray-600 text-lg">
-        A curated selection of my best work in Front-End Development, UI/UX Design, and modern web applications.
-      </p>
-    </div>
+  <section id="portfolio" class="py-24 bg-white dark:bg-black transition-colors duration-300">
+    <div class="container mx-auto px-6">
 
-    <!-- Filters -->
-    <div class="flex flex-wrap justify-center gap-3 mb-14">
-      <button class="filter-button active px-6 py-2 rounded-full bg-primary text-white shadow hover:bg-primary/90 transition" data-filter="all">All</button>
-      <button class="filter-button px-6 py-2 rounded-full bg-white text-gray-700 shadow border hover:bg-gray-100 transition" data-filter="web-design">Web Design</button>
-      <button class="filter-button px-6 py-2 rounded-full bg-white text-gray-700 shadow border hover:bg-gray-100 transition" data-filter="ui-ux">UI/UX</button>
-      <button class="filter-button px-6 py-2 rounded-full bg-white text-gray-700 shadow border hover:bg-gray-100 transition" data-filter="development">Development</button>
-    </div>
-
-    <!-- Portfolio Grid -->
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
-      
-      <!-- Project Card -->
-      <div class="portfolio-item bg-white rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden" data-category="web-design">
-        <div class="relative group overflow-hidden">
-          <img src="image/luxe.jpg" alt="Luxe fashion e-commerce website" class="h-64 w-full object-cover transition-transform duration-500 group-hover:scale-110">
-          <div class="absolute inset-0 bg-primary/80 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
-            <a href="#" class="px-6 py-2 bg-white text-primary font-semibold rounded-full shadow hover:bg-gray-100">View Project</a>
-          </div>
-        </div>
-        <div class="p-6">
-          <h3 class="text-xl font-bold text-gray-900 mb-2">Luxe Fashion E-commerce</h3>
-          <p class="text-gray-600 mb-4 text-sm">Modern redesign of a luxury e-commerce experience with enhanced product browsing and UI animations.</p>
-          <div class="flex flex-wrap gap-2 text-sm">
-            <span class="px-3 py-1 bg-gray-100 rounded-full text-gray-700">Web Design</span>
-            <span class="px-3 py-1 bg-gray-100 rounded-full text-gray-700">UI/UX</span>
-            <span class="px-3 py-1 bg-gray-100 rounded-full text-gray-700">Shopify</span>
-          </div>
-        </div>
+      <!-- Header -->
+      <div class="text-center mb-12" data-aos="fade-up">
+        <h2 class="text-3xl md:text-4xl font-bold text-gray-900 dark:text-gray-50 mb-3 transition-colors">Featured Case
+          Studies</h2>
+        <p class="max-w-2xl mx-auto text-gray-600 dark:text-gray-300 transition-colors">
+          Deep dives into three selected projects showcasing front-end engineering, accessibility and measurable impact.
+        </p>
       </div>
 
-      <!-- Project 2 -->
-      <div class="portfolio-item bg-white rounded-2xl shadow-md hover:shadow-xl transition overflow-hidden" data-category="ui-ux">
-        <div class="relative group overflow-hidden">
-          <img src="image/fit-track.jpg" alt="Fitness tracking mobile app UI" class="h-64 w-full object-cover transition-transform duration-500 group-hover:scale-110">
-          <div class="absolute inset-0 bg-primary/80 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
-            <a href="#" class="px-6 py-2 bg-white text-primary font-semibold rounded-full shadow">View Project</a>
-          </div>
-        </div>
-        <div class="p-6">
-          <h3 class="text-xl font-bold text-gray-900 mb-2">FitTrack Mobile App</h3>
-          <p class="text-gray-600 mb-4 text-sm">Intuitive mobile UI for tracking workouts, calories, and progress with clean dashboards.</p>
-          <div class="flex flex-wrap gap-2 text-sm">
-            <span class="px-3 py-1 bg-gray-100 rounded-full text-gray-700">UI/UX</span>
-            <span class="px-3 py-1 bg-gray-100 rounded-full text-gray-700">Mobile</span>
-            <span class="px-3 py-1 bg-gray-100 rounded-full text-gray-700">Figma</span>
-          </div>
-        </div>
-      </div>
+      <!-- Grid -->
+      <div class="grid gap-8 md:grid-cols-3 mt-10">
 
-      <!-- Project 3 -->
-      <div class="portfolio-item bg-white rounded-2xl shadow-md hover:shadow-xl transition overflow-hidden" data-category="development">
-        <div class="relative group overflow-hidden">
-          <img src="image/home-seeker.jpg" alt="Real estate listing platform" class="h-64 w-full object-cover transition-transform duration-500 group-hover:scale-110">
-          <div class="absolute inset-0 bg-primary/80 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
-            <a href="#" class="px-6 py-2 bg-white text-primary font-semibold rounded-full shadow">View Project</a>
-          </div>
-        </div>
-        <div class="p-6">
-          <h3 class="text-xl font-bold text-gray-900 mb-2">HomeSeeker Real Estate</h3>
-          <p class="text-gray-600 mb-4 text-sm">Fully responsive platform with dynamic property filtering, search and map integration.</p>
-          <div class="flex flex-wrap gap-2 text-sm">
-            <span class="px-3 py-1 bg-gray-100 rounded-full text-gray-700">React</span>
-            <span class="px-3 py-1 bg-gray-100 rounded-full text-gray-700">API</span>
-            <span class="px-3 py-1 bg-gray-100 rounded-full text-gray-700">Development</span>
-          </div>
-        </div>
-      </div>
-
-      <!-- Project 4 -->
-      <div class="portfolio-item bg-white rounded-2xl shadow-md hover:shadow-xl transition overflow-hidden" data-category="web-design">
-        <div class="relative group overflow-hidden">
-          <img src="image/saveur.jpg" alt="Restaurant website design" class="h-64 w-full object-cover transition-transform duration-500 group-hover:scale-110">
-          <div class="absolute inset-0 bg-primary/80 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
-            <a href="#" class="px-6 py-2 bg-white text-primary font-semibold rounded-full shadow">View Project</a>
-          </div>
-        </div>
-        <div class="p-6">
-          <h3 class="text-xl font-bold text-gray-900 mb-2">Saveur Restaurant</h3>
-          <p class="text-gray-600 mb-4 text-sm">Fine-dining website with reservation system, menu showcase & optimized SEO.</p>
-          <div class="flex flex-wrap gap-2 text-sm">
-            <span class="px-3 py-1 bg-gray-100 rounded-full text-gray-700">Web Design</span>
-            <span class="px-3 py-1 bg-gray-100 rounded-full text-gray-700">WordPress</span>
-            <span class="px-3 py-1 bg-gray-100 rounded-full text-gray-700">SEO</span>
-          </div>
-        </div>
-      </div>
-
-      <!-- Project 5 -->
-      <div class="portfolio-item bg-white rounded-2xl shadow-md hover:shadow-xl transition overflow-hidden" data-category="ui-ux">
-        <div class="relative group overflow-hidden">
-          <img src="image/fintrack.jpg" alt="Financial dashboard UI" class="h-64 w-full object-cover transition-transform duration-500 group-hover:scale-110">
-          <div class="absolute inset-0 bg-primary/80 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
-            <a href="#" class="px-6 py-2 bg-white text-primary font-semibold rounded-full shadow">View Project</a>
-          </div>
-        </div>
-        <div class="p-6">
-          <h3 class="text-xl font-bold text-gray-900 mb-2">FinTrack Dashboard</h3>
-          <p class="text-gray-600 mb-4 text-sm">Financial analytics dashboard with clean graphs, dark-mode UI, and accessibility focus.</p>
-          <div class="flex flex-wrap gap-2 text-sm">
-            <span class="px-3 py-1 bg-gray-100 rounded-full text-gray-700">UI/UX</span>
-            <span class="px-3 py-1 bg-gray-100 rounded-full text-gray-700">Data Viz</span>
-            <span class="px-3 py-1 bg-gray-100 rounded-full text-gray-700">Adobe XD</span>
-          </div>
-        </div>
-      </div>
-
-      <!-- Project 6 -->
-      <div class="portfolio-item bg-white rounded-2xl shadow-md hover:shadow-xl transition overflow-hidden" data-category="development">
-        <div class="relative group overflow-hidden">
-          <img src="image/wanderlust.jpg" alt="Travel booking web app" class="h-64 w-full object-cover transition-transform duration-500 group-hover:scale-110">
-          <div class="absolute inset-0 bg-primary/80 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
-            <a href="#" class="px-6 py-2 bg-white text-primary font-semibold rounded-full shadow">View Project</a>
-          </div>
-        </div>
-        <div class="p-6">
-          <h3 class="text-xl font-bold text-gray-900 mb-2">Wanderlust Travel</h3>
-          <p class="text-gray-600 mb-4 text-sm">Travel booking web app with secure payments, itinerary builder, and offer listings.</p>
-          <div class="flex flex-wrap gap-2 text-sm">
-            <span class="px-3 py-1 bg-gray-100 rounded-full text-gray-700">Development</span>
-            <span class="px-3 py-1 bg-gray-100 rounded-full text-gray-700">JavaScript</span>
-            <span class="px-3 py-1 bg-gray-100 rounded-full text-gray-700">API</span>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-  <!-- Project Modals -->
-  <div id="project1Modal" class="modal">
-    <div class="modal-content">
-      <span class="close">&times;</span>
-      <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
-        <div>
-          <img src="image/luxe-modal.jpg" alt="Luxe Fashion E-commerce" class="w-full h-auto rounded-lg mb-4" />
-          <div class="grid grid-cols-3 gap-2">
-            <img src="image/ecommarce-modal-mob.jpg" alt="Mobile View" class="w-full h-24 object-cover rounded" />
-            <img src="image/ecommarce-modal-mob1.jpg" alt="Checkout Page" class="w-full h-24 object-cover rounded" />
-            <img src="image/ecommarce-modal-mob2.jpg" alt="Category Page" class="w-full h-24 object-cover rounded" />
-          </div>
-        </div>
-        <div>
-          <h3 class="text-2xl font-bold text-gray-900 mb-4">
-            Luxe Fashion E-commerce
-          </h3>
-          <p class="text-gray-700 mb-6 leading-relaxed">
-            A complete redesign of an e-commerce platform for a luxury fashion
-            brand. The project focused on creating an elegant shopping
-            experience that reflects the brand's premium positioning while
-            ensuring a seamless user journey from product discovery to
-            checkout.
-          </p>
-          <div class="mb-6">
-            <h4 class="text-lg font-bold text-gray-900 mb-2">
-              Project Details
-            </h4>
-            <ul class="space-y-2">
-              <li class="flex items-start">
-                <span class="w-6 h-6 flex items-center justify-center text-primary mr-2">
-                  <i class="ri-check-line"></i>
-                </span>
-                <span class="text-gray-700">Responsive design for all device sizes</span>
-              </li>
-              <li class="flex items-start">
-                <span class="w-6 h-6 flex items-center justify-center text-primary mr-2">
-                  <i class="ri-check-line"></i>
-                </span>
-                <span class="text-gray-700">Advanced filtering and search functionality</span>
-              </li>
-              <li class="flex items-start">
-                <span class="w-6 h-6 flex items-center justify-center text-primary mr-2">
-                  <i class="ri-check-line"></i>
-                </span>
-                <span class="text-gray-700">Integrated payment gateway with multiple options</span>
-              </li>
-              <li class="flex items-start">
-                <span class="w-6 h-6 flex items-center justify-center text-primary mr-2">
-                  <i class="ri-check-line"></i>
-                </span>
-                <span class="text-gray-700">Wishlist and saved items functionality</span>
-              </li>
-              <li class="flex items-start">
-                <span class="w-6 h-6 flex items-center justify-center text-primary mr-2">
-                  <i class="ri-check-line"></i>
-                </span>
-                <span class="text-gray-700">Custom Shopify theme development</span>
-              </li>
-            </ul>
-          </div>
-          <div class="mb-6">
-            <h4 class="text-lg font-bold text-gray-900 mb-2">
-              Technologies Used
-            </h4>
-            <div class="flex flex-wrap gap-2">
-              <span class="px-3 py-1 bg-gray-100 text-gray-700 text-sm !rounded-button whitespace-nowrap">Shopify</span>
-              <span class="px-3 py-1 bg-gray-100 text-gray-700 text-sm !rounded-button whitespace-nowrap">HTML5</span>
-              <span class="px-3 py-1 bg-gray-100 text-gray-700 text-sm !rounded-button whitespace-nowrap">CSS3</span>
-              <span
-                class="px-3 py-1 bg-gray-100 text-gray-700 text-sm !rounded-button whitespace-nowrap">JavaScript</span>
-              <span class="px-3 py-1 bg-gray-100 text-gray-700 text-sm !rounded-button whitespace-nowrap">Liquid</span>
-              <span class="px-3 py-1 bg-gray-100 text-gray-700 text-sm !rounded-button whitespace-nowrap">Figma</span>
+        <!-- 1: HomeSeeker -->
+        <article
+          class="relative bg-white dark:bg-gray-800 rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden"
+          data-aos="fade-up">
+          <div class="relative group">
+            <img src="image/home-seeker.jpg" alt="HomeSeeker Real Estate"
+              class="w-full h-56 object-cover group-hover:scale-105 transition-transform duration-500">
+            <div
+              class="absolute inset-0 flex items-center justify-center bg-black/30 opacity-0 group-hover:opacity-100 transition">
+              <button class="px-5 py-2 bg-white text-primary font-semibold rounded-full mr-3"
+                data-modal="modal-project3">Quick Preview</button>
+              <a href="./project/homeseeker.html"
+                class="px-5 py-2 bg-primary text-white font-semibold rounded-full">Full Case Study</a>
             </div>
           </div>
-          <!-- <div class="flex space-x-4">
-  <a
-  href="#"
-  class="px-6 py-2 bg-primary text-white font-medium !rounded-button whitespace-nowrap hover:bg-primary/90 transition-colors"
-  >
-  Live Demo
-</a>
-<a
-href="#"
-class="px-6 py-2 bg-white text-primary font-medium border border-primary !rounded-button whitespace-nowrap hover:bg-gray-50 transition-colors"
->
-Case Study
-</a>
-</div> -->
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- Experience Section -->
-  <section id="experience" class="py-20 bg-gray-50">
-    <div class="container mx-auto px-6">
-      <div class="text-center mb-16">
-        <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Professional Experience</h2>
-        <div class="w-20 h-1 bg-blue-600 mx-auto mb-6"></div>
-        <p class="max-w-2xl mx-auto text-gray-700">My professional journey in web design and development over the past 7
-          years.</p>
-      </div>
+          <div class="p-6">
+            <h3 class="text-xl font-bold text-gray-900 dark:text-gray-100 mb-2 transition-colors">HomeSeeker — Real
+              Estate Platform</h3>
+            <p class="text-gray-600 dark:text-gray-300 mb-4 text-sm transition-colors">
+              Responsive property marketplace with advanced filtering, map integration, and optimized search
+              performance.
+            </p>
+            <div class="flex flex-wrap gap-2">
+              <span
+                class="px-3 py-1 bg-gray-100 dark:bg-gray-700 rounded-full text-xs text-gray-700 dark:text-gray-200">React</span>
+              <span
+                class="px-3 py-1 bg-gray-100 dark:bg-gray-700 rounded-full text-xs text-gray-700 dark:text-gray-200">APIs</span>
+              <span
+                class="px-3 py-1 bg-gray-100 dark:bg-gray-700 rounded-full text-xs text-gray-700 dark:text-gray-200">Performance</span>
+            </div>
+          </div>
+        </article>
 
-      <div class="relative border-l-4 border-blue-600 ml-4 md:ml-10">
-        <!-- Experience Block -->
-        <div class="mb-12 pl-6 relative">
-          <span class="absolute -left-3 top-0 w-6 h-6 bg-blue-600 rounded-full"></span>
-          <span class="text-sm text-white bg-blue-600 px-3 py-1 rounded-full inline-block mb-2">08/2022 - 02/2025</span>
-          <h3 class="text-xl font-semibold text-gray-900">Front End Developer | Sr. Web Designer</h3>
-          <p class="text-gray-600 mb-4">Kanhsoft, Ahmedabad, India</p>
-          <p class="text-gray-700 mb-3">Expert in developing custom ERP software to improve business productivity.</p>
-          <ul class="list-disc list-inside text-gray-700 space-y-2">
-            <li>Increased user engagement by 30% by leading API-driven front-end development for a custom ERP system.
-            </li>
-            <li>Boosted site performance by 30% by optimizing React components and minimizing payload size.</li>
-            <li>Reduced development time by 20% through reusable UI component libraries in Figma and React.</li>
-            <li>Optimized React-based UI components, boosting site performance by 40%</li>
-            <li>Collaborated with UK-based stakeholders in Agile teams using Jira and Slack for fast iteration and
-              delivery.</li>
-          </ul>
-        </div>
+        <!-- 2: Luxe Fashion -->
+        <article
+          class="relative bg-white dark:bg-gray-800 rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden"
+          data-aos="fade-up" data-aos-delay="100">
+          <div class="relative group">
+            <img src="image/luxe.jpg" alt="Luxe Fashion E-commerce"
+              class="w-full h-56 object-cover group-hover:scale-105 transition-transform duration-500">
+            <div
+              class="absolute inset-0 flex items-center justify-center bg-black/30 opacity-0 group-hover:opacity-100 transition">
+              <button class="px-5 py-2 bg-white text-primary font-semibold rounded-full mr-3"
+                data-modal="modal-project1">Quick Preview</button>
+              <a href="./projects/luxe-fashion.html"
+                class="px-5 py-2 bg-primary text-white font-semibold rounded-full">Full Case Study</a>
+            </div>
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-bold text-gray-900 dark:text-gray-100 mb-2 transition-colors">Luxe Fashion —
+              E-commerce Redesign</h3>
+            <p class="text-gray-600 dark:text-gray-300 mb-4 text-sm transition-colors">
+              Redesigned product browse & checkout flow for higher conversions and better mobile UX.
+            </p>
+            <div class="flex flex-wrap gap-2">
+              <span
+                class="px-3 py-1 bg-gray-100 dark:bg-gray-700 rounded-full text-xs text-gray-700 dark:text-gray-200">Shopify</span>
+              <span
+                class="px-3 py-1 bg-gray-100 dark:bg-gray-700 rounded-full text-xs text-gray-700 dark:text-gray-200">UI/UX</span>
+              <span
+                class="px-3 py-1 bg-gray-100 dark:bg-gray-700 rounded-full text-xs text-gray-700 dark:text-gray-200">Performance</span>
+            </div>
+          </div>
+        </article>
 
-        <!-- Experience Block -->
-        <div class="mb-12 pl-6 relative">
-          <span class="absolute -left-3 top-0 w-6 h-6 bg-blue-600 rounded-full"></span>
-          <span class="text-sm text-white bg-blue-600 px-3 py-1 rounded-full inline-block mb-2">11/2019 - 08/2022</span>
-          <h3 class="text-xl font-semibold text-gray-900">Senior UI Developer</h3>
-          <p class="text-gray-600 mb-4">Multicodes Services PVT. LTD., Ahmedabad, Gujarat</p>
-          <p class="text-gray-700 mb-3">A technology company specializing in E-commerce web and mobile app development.
-          </p>
-          <ul class="list-disc list-inside text-gray-700 space-y-2">
-            <li>Developed cross-platform mobile apps using Ionic and React Native, increasing mobile user satisfaction
-              by 25%.
-            </li>
-            <li>Improved WooCommerce eCommerce site speed and checkout UX, decreasing bounce rate by 20%.</li>
-            <li>Led the responsive redesign of product pages, improving mobile conversion rates by 18%.
-            </li>
-            <li>Integrated RESTful APIs and Shopify features, enabling smoother cart and product navigation.</li>
-          </ul>
-        </div>
+        <!-- 3: FinTrack -->
+        <article
+          class="relative bg-white dark:bg-gray-800 rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden"
+          data-aos="fade-up" data-aos-delay="200">
+          <div class="relative group">
+            <img src="image/fintrack.jpg" alt="FinTrack Dashboard"
+              class="w-full h-56 object-cover group-hover:scale-105 transition-transform duration-500">
+            <div
+              class="absolute inset-0 flex items-center justify-center bg-black/30 opacity-0 group-hover:opacity-100 transition">
+              <button class="px-5 py-2 bg-white text-primary font-semibold rounded-full mr-3"
+                data-modal="modal-project5">Quick Preview</button>
+              <a href="./project/fintrack.html" class="px-5 py-2 bg-primary text-white font-semibold rounded-full">Full
+                Case Study</a>
+            </div>
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-bold text-gray-900 dark:text-gray-100 mb-2 transition-colors">FinTrack — Financial
+              Dashboard</h3>
+            <p class="text-gray-600 dark:text-gray-300 mb-4 text-sm transition-colors">
+              Data-driven dashboard focusing on accessibility, dark mode, and performant charts.
+            </p>
+            <div class="flex flex-wrap gap-2">
+              <span
+                class="px-3 py-1 bg-gray-100 dark:bg-gray-700 rounded-full text-xs text-gray-700 dark:text-gray-200">Data
+                Viz</span>
+              <span
+                class="px-3 py-1 bg-gray-100 dark:bg-gray-700 rounded-full text-xs text-gray-700 dark:text-gray-200">React</span>
+              <span
+                class="px-3 py-1 bg-gray-100 dark:bg-gray-700 rounded-full text-xs text-gray-700 dark:text-gray-200">Accessibility</span>
+            </div>
+          </div>
+        </article>
 
-        <!-- Experience Block -->
-        <div class="mb-12 pl-6 relative">
-          <span class="absolute -left-3 top-0 w-6 h-6 bg-blue-600 rounded-full"></span>
-          <span class="text-sm text-white bg-blue-600 px-3 py-1 rounded-full inline-block mb-2">03/2018 - 11/2019</span>
-          <h3 class="text-xl font-semibold text-gray-900">Front End Developer</h3>
-          <p class="text-gray-600 mb-4">Prime Apps Infotech, Ahmedabad</p>
-          <p class="text-gray-700 mb-3">A software development company focused on delivering high-quality solutions.</p>
-          <ul class="list-disc list-inside text-gray-700 space-y-2">
-            <li>Increased design efficiency by 30% through optimized HTML/CSS and responsive grid systems.</li>
-            <li>Created reusable frontend code, accelerating development cycles by 25% for new client projects.</li>
-            <li>Delivered cross-browser-compatible websites, reducing QA time by 40%.</li>
-            <li>Used Photoshop to design UI assets, maintaining pixel-perfect accuracy across breakpoints.</li>
-          </ul>
-        </div>
       </div>
     </div>
   </section>
+
+
+  <!-- Experience Section -->
+  <section id="experience" class="py-20 bg-gray-50 dark:bg-black transition-colors duration-300">
+    <div class="container mx-auto px-6">
+
+      <!-- Header -->
+      <div class="text-center mb-16">
+        <h2 class="text-3xl md:text-4xl font-bold text-gray-900 dark:text-gray-50 mb-4 transition-colors">
+          Professional Experience
+        </h2>
+        <div class="w-20 h-1 bg-blue-600 mx-auto mb-6"></div>
+        <p class="max-w-2xl mx-auto text-gray-700 dark:text-gray-300 transition-colors">
+          My professional journey in web design and development over the past 7 years.
+        </p>
+      </div>
+
+      <!-- Timeline -->
+      <div class="relative border-l-4 border-blue-600 ml-4 md:ml-10">
+
+        <!-- Experience 1 -->
+        <div class="mb-12 pl-6 relative">
+          <span class="absolute -left-3 top-0 w-6 h-6 bg-blue-600 rounded-full"></span>
+
+          <span class="text-sm text-white bg-blue-600 px-3 py-1 rounded-full inline-block mb-2 transition">
+            08/2022 - 02/2025
+          </span>
+
+          <h3 class="text-xl font-semibold text-gray-900 dark:text-gray-100 transition-colors">
+            Front End Developer | Sr. Web Designer
+          </h3>
+
+          <p class="text-gray-600 dark:text-gray-300 mb-4 transition-colors">
+            Kanhsoft, Ahmedabad, India
+          </p>
+
+          <p class="text-gray-700 dark:text-gray-300 mb-3 transition-colors">
+            Expert in developing custom ERP software to improve business productivity.
+          </p>
+
+          <ul class="list-disc list-inside text-gray-700 dark:text-gray-300 space-y-2 transition-colors">
+            <li>Increased user engagement by 30% by leading API-driven front-end development.</li>
+            <li>Boosted site performance by 30% by optimizing React components.</li>
+            <li>Reduced development time by 20% via reusable UI component libraries.</li>
+            <li>Optimized React UI components, improving performance by 40%.</li>
+            <li>Collaborated with UK-based stakeholders using Agile, Jira, and Slack.</li>
+          </ul>
+        </div>
+
+        <!-- Experience 2 -->
+        <div class="mb-12 pl-6 relative">
+          <span class="absolute -left-3 top-0 w-6 h-6 bg-blue-600 rounded-full"></span>
+
+          <span class="text-sm text-white bg-blue-600 px-3 py-1 rounded-full inline-block mb-2">
+            11/2019 - 08/2022
+          </span>
+
+          <h3 class="text-xl font-semibold text-gray-900 dark:text-gray-100 transition-colors">
+            Senior UI Developer
+          </h3>
+
+          <p class="text-gray-600 dark:text-gray-300 mb-4">Multicodes Services PVT. LTD., Ahmedabad</p>
+
+          <p class="text-gray-700 dark:text-gray-300 mb-3 transition-colors">
+            Technology company specializing in E-commerce web and mobile app development.
+          </p>
+
+          <ul class="list-disc list-inside text-gray-700 dark:text-gray-300 space-y-2 transition-colors">
+            <li>Developed cross-platform apps with Ionic and React Native, boosting satisfaction by 25%.</li>
+            <li>Improved WooCommerce UX and load speed, reducing bounce rate by 20%.</li>
+            <li>Led responsive redesign improving mobile conversions by 18%.</li>
+            <li>Integrated REST APIs and Shopify features for smooth navigation.</li>
+          </ul>
+        </div>
+
+        <!-- Experience 3 -->
+        <div class="mb-12 pl-6 relative">
+          <span class="absolute -left-3 top-0 w-6 h-6 bg-blue-600 rounded-full"></span>
+
+          <span class="text-sm text-white bg-blue-600 px-3 py-1 rounded-full inline-block mb-2">
+            03/2018 - 11/2019
+          </span>
+
+          <h3 class="text-xl font-semibold text-gray-900 dark:text-gray-100 transition-colors">
+            Front End Developer
+          </h3>
+
+          <p class="text-gray-600 dark:text-gray-300 mb-4">Prime Apps Infotech, Ahmedabad</p>
+
+          <p class="text-gray-700 dark:text-gray-300 mb-3 transition-colors">
+            Software development company focused on delivering high-quality solutions.
+          </p>
+
+          <ul class="list-disc list-inside text-gray-700 dark:text-gray-300 space-y-2 transition-colors">
+            <li>Increased design efficiency by 30% through optimized HTML/CSS layouts.</li>
+            <li>Created reusable frontend code, accelerating development by 25%.</li>
+            <li>Delivered cross-browser websites reducing QA time by 40%.</li>
+            <li>Used Photoshop to create pixel-perfect UI assets.</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
 
   <!-- Skills Section -->
   <section id="skills" class="py-20">
     <div class="container mx-auto px-6">
       <div class="text-center mb-16">
-        <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+        <h2 class="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
           Skills & Expertise
         </h2>
         <div class="w-20 h-1 bg-primary mx-auto mb-8"></div>
-        <p class="max-w-2xl mx-auto text-gray-700">
+        <p class="max-w-2xl mx-auto text-gray-700  dark:text-white">
           A comprehensive overview of my technical skills and tools I use in
           my design and development process.
         </p>
       </div>
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
         <!-- Design Tools -->
-        <div class="bg-white p-8 rounded-lg shadow-md">
+        <div class="bg-white dark:bg-gray-800 p-8 rounded-lg shadow-md">
           <div class="w-16 h-16 flex items-center justify-center bg-primary/10 text-primary rounded-full mb-6 mx-auto">
             <i class="ri-palette-line ri-xl"></i>
           </div>
-          <h3 class="text-xl font-bold text-gray-900 mb-4 text-center">
+          <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-4 text-center">
             Design Tools
           </h3>
           <div class="grid grid-cols-2 gap-4">
@@ -567,46 +581,46 @@ Case Study
               <div class="w-12 h-12 flex items-center justify-center bg-gray-100 rounded-lg mb-2">
                 <i class="ri-figma-line ri-lg"></i>
               </div>
-              <span class="text-gray-700 text-sm">Figma</span>
+              <span class="text-gray-700 dark:text-white text-sm">Figma</span>
             </div>
             <div class="flex flex-col items-center">
               <div class="w-12 h-12 flex items-center justify-center bg-gray-100 rounded-lg mb-2">
                 <iconify-icon icon="simple-icons:adobephotoshop" width="24"></iconify-icon>
               </div>
-              <span class="text-gray-700 text-sm">Adobe XD</span>
+              <span class="text-gray-700 dark:text-white text-sm">Adobe XD</span>
             </div>
             <div class="flex flex-col items-center">
               <div class="w-12 h-12 flex items-center justify-center bg-gray-100 rounded-lg mb-2">
                 <i class="ri-photoshop-line ri-lg"></i>
               </div>
-              <span class="text-gray-700 text-sm">Photoshop</span>
+              <span class="text-gray-700 dark:text-white text-sm">Photoshop</span>
             </div>
             <div class="flex flex-col items-center">
               <div class="w-12 h-12 flex items-center justify-center bg-gray-100 rounded-lg mb-2">
                 <iconify-icon icon="simple-icons:adobeillustrator" width="24"></iconify-icon>
               </div>
-              <span class="text-gray-700 text-sm">Illustrator</span>
+              <span class="text-gray-700 dark:text-white text-sm">Illustrator</span>
             </div>
             <div class="flex flex-col items-center">
               <div class="w-12 h-12 flex items-center justify-center bg-gray-100 rounded-lg mb-2">
                 <iconify-icon icon="simple-icons:sketch" width="24"></iconify-icon>
               </div>
-              <span class="text-gray-700 text-sm">Sketch</span>
+              <span class="text-gray-700 dark:text-white text-sm">Sketch</span>
             </div>
             <div class="flex flex-col items-center">
               <div class="w-12 h-12 flex items-center justify-center bg-gray-100 rounded-lg mb-2">
                 <i class="ri-invision-line ri-lg"></i>
               </div>
-              <span class="text-gray-700 text-sm">InVision</span>
+              <span class="text-gray-700 dark:text-white text-sm">InVision</span>
             </div>
           </div>
         </div>
         <!-- Development -->
-        <div class="bg-white p-8 rounded-lg shadow-md">
+        <div class="bg-white dark:bg-gray-800 p-8 rounded-lg shadow-md">
           <div class="w-16 h-16 flex items-center justify-center bg-primary/10 text-primary rounded-full mb-6 mx-auto">
             <i class="ri-code-s-slash-line ri-xl"></i>
           </div>
-          <h3 class="text-xl font-bold text-gray-900 mb-4 text-center">
+          <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-4 text-center">
             Development
           </h3>
           <div class="grid grid-cols-2 gap-4">
@@ -614,46 +628,46 @@ Case Study
               <div class="w-12 h-12 flex items-center justify-center bg-gray-100 rounded-lg mb-2">
                 <i class="ri-html5-line ri-lg"></i>
               </div>
-              <span class="text-gray-700 text-sm">HTML5</span>
+              <span class="text-gray-700 dark:text-white text-sm">HTML5</span>
             </div>
             <div class="flex flex-col items-center">
               <div class="w-12 h-12 flex items-center justify-center bg-gray-100 rounded-lg mb-2">
                 <i class="ri-css3-line ri-lg"></i>
               </div>
-              <span class="text-gray-700 text-sm">CSS3</span>
+              <span class="text-gray-700 dark:text-white text-sm">CSS3</span>
             </div>
             <div class="flex flex-col items-center">
               <div class="w-12 h-12 flex items-center justify-center bg-gray-100 rounded-lg mb-2">
                 <i class="ri-javascript-line ri-lg"></i>
               </div>
-              <span class="text-gray-700 text-sm">JavaScript</span>
+              <span class="text-gray-700 dark:text-white text-sm">JavaScript</span>
             </div>
             <div class="flex flex-col items-center">
               <div class="w-12 h-12 flex items-center justify-center bg-gray-100 rounded-lg mb-2">
                 <iconify-icon icon="simple-icons:jquery" width="24"></iconify-icon>
               </div>
-              <span class="text-gray-700 text-sm">jQuery</span>
+              <span class="text-gray-700 dark:text-white text-sm">jQuery</span>
             </div>
             <div class="flex flex-col items-center">
               <div class="w-12 h-12 flex items-center justify-center bg-gray-100 rounded-lg mb-2">
                 <i class="ri-terminal-box-line ri-lg"></i>
               </div>
-              <span class="text-gray-700 text-sm">SASS</span>
+              <span class="text-gray-700 dark:text-white text-sm">SASS</span>
             </div>
             <div class="flex flex-col items-center">
               <div class="w-12 h-12 flex items-center justify-center bg-gray-100 rounded-lg mb-2">
                 <i class="ri-git-branch-line ri-lg"></i>
               </div>
-              <span class="text-gray-700 text-sm">Git</span>
+              <span class="text-gray-700 dark:text-white text-sm">Git</span>
             </div>
           </div>
         </div>
         <!-- Frameworks -->
-        <div class="bg-white p-8 rounded-lg shadow-md">
+        <div class="bg-white dark:bg-gray-800 p-8 rounded-lg shadow-md">
           <div class="w-16 h-16 flex items-center justify-center bg-primary/10 text-primary rounded-full mb-6 mx-auto">
             <i class="ri-layout-grid-line ri-xl"></i>
           </div>
-          <h3 class="text-xl font-bold text-gray-900 mb-4 text-center">
+          <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-4 text-center">
             Frameworks
           </h3>
           <div class="grid grid-cols-2 gap-4">
@@ -661,46 +675,46 @@ Case Study
               <div class="w-12 h-12 flex items-center justify-center bg-gray-100 rounded-lg mb-2">
                 <i class="ri-reactjs-line ri-lg"></i>
               </div>
-              <span class="text-gray-700 text-sm">React</span>
+              <span class="text-gray-700 dark:text-white text-sm">React</span>
             </div>
             <div class="flex flex-col items-center">
               <div class="w-12 h-12 flex items-center justify-center bg-gray-100 rounded-lg mb-2">
                 <i class="ri-bootstrap-line ri-lg"></i>
               </div>
-              <span class="text-gray-700 text-sm">Bootstrap</span>
+              <span class="text-gray-700 dark:text-white text-sm">Bootstrap</span>
             </div>
             <div class="flex flex-col items-center">
               <div class="w-12 h-12 flex items-center justify-center bg-gray-100 rounded-lg mb-2">
                 <i class="ri-tailwind-css-line ri-lg"></i>
               </div>
-              <span class="text-gray-700 text-sm">Tailwind</span>
+              <span class="text-gray-700 dark:text-white text-sm">Tailwind</span>
             </div>
             <div class="flex flex-col items-center">
               <div class="w-12 h-12 flex items-center justify-center bg-gray-100 rounded-lg mb-2">
                 <i class="ri-vuejs-line ri-lg"></i>
               </div>
-              <span class="text-gray-700 text-sm">Vue.js</span>
+              <span class="text-gray-700 dark:text-white text-sm">Vue.js</span>
             </div>
             <div class="flex flex-col items-center">
               <div class="w-12 h-12 flex items-center justify-center bg-gray-100 rounded-lg mb-2">
                 <i class="ri-gatsby-line ri-lg"></i>
               </div>
-              <span class="text-gray-700 text-sm">Gatsby</span>
+              <span class="text-gray-700 dark:text-white text-sm">Gatsby</span>
             </div>
             <div class="flex flex-col items-center">
               <div class="w-12 h-12 flex items-center justify-center bg-gray-100 rounded-lg mb-2">
                 <i class="ri-wordpress-line ri-lg"></i>
               </div>
-              <span class="text-gray-700 text-sm">WordPress</span>
+              <span class="text-gray-700 dark:text-white text-sm">WordPress</span>
             </div>
           </div>
         </div>
         <!-- Other Skills -->
-        <div class="bg-white p-8 rounded-lg shadow-md">
+        <div class="bg-white dark:bg-gray-800 p-8 rounded-lg shadow-md">
           <div class="w-16 h-16 flex items-center justify-center bg-primary/10 text-primary rounded-full mb-6 mx-auto">
             <i class="ri-tools-line ri-xl"></i>
           </div>
-          <h3 class="text-xl font-bold text-gray-900 mb-4 text-center">
+          <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-4 text-center">
             Other Skills
           </h3>
           <div class="grid grid-cols-2 gap-4">
@@ -708,37 +722,37 @@ Case Study
               <div class="w-12 h-12 flex items-center justify-center bg-gray-100 rounded-lg mb-2">
                 <iconify-icon icon="ph:device-mobile-camera" width="24"></iconify-icon>
               </div>
-              <span class="text-gray-700 text-sm">Responsive</span>
+              <span class="text-gray-700 dark:text-white text-sm">Responsive</span>
             </div>
             <div class="flex flex-col items-center">
               <div class="w-12 h-12 flex items-center justify-center bg-gray-100 rounded-lg mb-2">
                 <i class="ri-user-heart-line ri-lg"></i>
               </div>
-              <span class="text-gray-700 text-sm">UX Research</span>
+              <span class="text-gray-700 dark:text-white text-sm">UX Research</span>
             </div>
             <div class="flex flex-col items-center">
               <div class="w-12 h-12 flex items-center justify-center bg-gray-100 rounded-lg mb-2">
                 <i class="ri-search-eye-line ri-lg"></i>
               </div>
-              <span class="text-gray-700 text-sm">SEO</span>
+              <span class="text-gray-700 dark:text-white text-sm">SEO</span>
             </div>
             <div class="flex flex-col items-center">
               <div class="w-12 h-12 flex items-center justify-center bg-gray-100 rounded-lg mb-2">
                 <i class="ri-speed-line ri-lg"></i>
               </div>
-              <span class="text-gray-700 text-sm">Performance</span>
+              <span class="text-gray-700 dark:text-white text-sm">Performance</span>
             </div>
             <div class="flex flex-col items-center">
               <div class="w-12 h-12 flex items-center justify-center bg-gray-100 rounded-lg mb-2">
                 <i class="ri-test-tube-line ri-lg"></i>
               </div>
-              <span class="text-gray-700 text-sm">Testing</span>
+              <span class="text-gray-700 dark:text-white text-sm">Testing</span>
             </div>
             <div class="flex flex-col items-center">
               <div class="w-12 h-12 flex items-center justify-center bg-gray-100 rounded-lg mb-2">
                 <i class="ri-team-line ri-lg"></i>
               </div>
-              <span class="text-gray-700 text-sm">Collaboration</span>
+              <span class="text-gray-700 dark:text-white text-sm">Collaboration</span>
             </div>
           </div>
         </div>
@@ -746,165 +760,175 @@ Case Study
     </div>
   </section>
   <!-- Contact Section -->
-  <section id="contact" class="py-20">
+  <section id="contact" class="py-20 bg-gray-50 dark:bg-black transition-colors">
     <div class="container mx-auto px-6">
       <div class="text-center mb-16">
-        <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+        <h2 class="text-3xl md:text-4xl font-bold text-gray-900 dark:text-gray-50 mb-4">
           Get In Touch
         </h2>
         <div class="w-20 h-1 bg-primary mx-auto mb-8"></div>
-        <p class="max-w-2xl mx-auto text-gray-700">
+        <p class="max-w-2xl mx-auto text-gray-700 dark:text-gray-300">
           Have a project in mind or want to discuss potential opportunities?
           I'd love to hear from you!
         </p>
       </div>
+
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+
+        <!-- Contact Info Cards -->
         <div>
-          <div class="bg-white p-8 rounded-lg shadow-md mb-8">
-            <h3 class="text-2xl font-bold text-gray-900 mb-6">
+          <div class="bg-white dark:bg-gray-800 p-8 rounded-lg shadow-md mb-8 transition-colors">
+            <h3 class="text-2xl font-bold text-gray-900 dark:text-gray-100 mb-6">
               Contact Information
             </h3>
+
             <div class="space-y-6">
+              <!-- Email -->
               <div class="flex items-start">
                 <div class="w-12 h-12 flex items-center justify-center bg-primary/10 text-primary rounded-full mr-4">
                   <i class="ri-mail-line ri-lg"></i>
                 </div>
                 <div>
-                  <h4 class="text-lg font-medium text-gray-900 mb-1">
-                    Email
-                  </h4>
+                  <h4 class="text-lg font-medium text-gray-900 dark:text-gray-100 mb-1">Email</h4>
                   <a href="mailto:swatiprogrammer94@gmail.com"
-                    class="text-gray-700 hover:text-primary transition-colors">
+                    class="text-gray-700 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors">
                     swatiprogrammer94@gmail.com
                   </a>
                 </div>
               </div>
+
+              <!-- Phone -->
               <div class="flex items-start">
                 <div class="w-12 h-12 flex items-center justify-center bg-primary/10 text-primary rounded-full mr-4">
                   <i class="ri-phone-line ri-lg"></i>
                 </div>
                 <div>
-                  <h4 class="text-lg font-medium text-gray-900 mb-1">
-                    Phone
-                  </h4>
-                  <a href="tel:+447553519875" class="text-gray-700 hover:text-primary transition-colors">
+                  <h4 class="text-lg font-medium text-gray-900 dark:text-gray-100 mb-1">Phone</h4>
+                  <a href="tel:+447553519875"
+                    class="text-gray-700 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors">
                     +44 7553 519875
                   </a>
                 </div>
               </div>
+
+              <!-- Location -->
               <div class="flex items-start">
                 <div class="w-12 h-12 flex items-center justify-center bg-primary/10 text-primary rounded-full mr-4">
                   <i class="ri-map-pin-line ri-lg"></i>
                 </div>
                 <div>
-                  <h4 class="text-lg font-medium text-gray-900 mb-1">
-                    Location
-                  </h4>
-                  <p class="text-gray-700">United Kingdom</p>
+                  <h4 class="text-lg font-medium text-gray-900 dark:text-gray-100 mb-1">Location</h4>
+                  <p class="text-gray-700 dark:text-gray-300">United Kingdom</p>
                 </div>
               </div>
+
+              <!-- Availability -->
               <div class="flex items-start">
                 <div class="w-12 h-12 flex items-center justify-center bg-primary/10 text-primary rounded-full mr-4">
                   <i class="ri-time-line ri-lg"></i>
                 </div>
                 <div>
-                  <h4 class="text-lg font-medium text-gray-900 mb-1">
-                    Availability
-                  </h4>
-                  <p class="text-gray-700">
-                    Available for freelance, hybrid, remote, and onsite
-                    opportunities in UK
+                  <h4 class="text-lg font-medium text-gray-900 dark:text-gray-100 mb-1">Availability</h4>
+                  <p class="text-gray-700 dark:text-gray-300">
+                    Available for freelance, hybrid, remote, and onsite opportunities in UK
                   </p>
                 </div>
               </div>
             </div>
           </div>
-          <div class="bg-white p-8 rounded-lg shadow-md">
-            <h3 class="text-2xl font-bold text-gray-900 mb-6">Location</h3>
+
+          <!-- Map -->
+          <div class="bg-white dark:bg-gray-800 p-8 rounded-lg shadow-md transition-colors">
+            <h3 class="text-2xl font-bold text-gray-900 dark:text-gray-100 mb-6">Location</h3>
             <div class="w-full h-64 rounded-lg overflow-hidden">
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2504.197072757521!2d1.3115665756287744!3d51.12327283869366!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47dea4d33a669713%3A0x3fe6305cff9bec7e!2s1A%20Cambridge%20Rd%2C%20Dover%20CT16%201JT!5e0!3m2!1sen!2suk!4v1751898614324!5m2!1sen!2suk"
-                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"></iframe>
+              <iframe class="w-full h-full" src="YOUR_MAP_URL" allowfullscreen="" loading="lazy"></iframe>
             </div>
           </div>
+
         </div>
-        <div class="bg-white p-8 rounded-lg shadow-md">
-          <h3 class="text-2xl font-bold text-gray-900 mb-6">
+
+        <!-- Contact Form -->
+        <div class="bg-white dark:bg-gray-800 p-8 rounded-lg shadow-md transition-colors">
+          <h3 class="text-2xl font-bold text-gray-900 dark:text-gray-100 mb-6">
             Send Me a Message
           </h3>
-          <form action="https://formspree.io/f/swatiprogrammer94@gmail.com" method="POST">
+
+          <form>
+            <!-- Fields -->
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
               <div>
-                <label for="name" class="block text-gray-700 font-medium mb-2">Name</label>
-                <input type="text" id="name"
-                  class="w-full px-4 py-3 border border-gray-300 rounded focus:border-primary"
-                  placeholder="Your name" />
+                <label class="block text-gray-700 dark:text-gray-300 font-medium mb-2">Name</label>
+                <input type="text"
+                  class="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700 text-gray-900 dark:text-gray-100 rounded focus:border-primary">
               </div>
+
               <div>
-                <label for="email" class="block text-gray-700 font-medium mb-2">Email</label>
-                <input type="email" id="email"
-                  class="w-full px-4 py-3 border border-gray-300 rounded focus:border-primary"
-                  placeholder="Your email" />
+                <label class="block text-gray-700 dark:text-gray-300 font-medium mb-2">Email</label>
+                <input type="email"
+                  class="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700 text-gray-900 dark:text-gray-100 rounded focus:border-primary">
               </div>
             </div>
+
             <div class="mb-6">
-              <label for="subject" class="block text-gray-700 font-medium mb-2">Subject</label>
-              <input type="text" id="subject"
-                class="w-full px-4 py-3 border border-gray-300 rounded focus:border-primary" placeholder="Subject" />
+              <label class="block text-gray-700 dark:text-gray-300 font-medium mb-2">Subject</label>
+              <input type="text"
+                class="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700 text-gray-900 dark:text-gray-100 rounded focus:border-primary">
             </div>
+
             <div class="mb-6">
-              <label for="message" class="block text-gray-700 font-medium mb-2">Message</label>
-              <textarea id="message" rows="5"
-                class="w-full px-4 py-3 border border-gray-300 rounded focus:border-primary"
-                placeholder="Your message"></textarea>
+              <label class="block text-gray-700 dark:text-gray-300 font-medium mb-2">Message</label>
+              <textarea rows="5"
+                class="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700 text-gray-900 dark:text-gray-100 rounded focus:border-primary"></textarea>
             </div>
+
             <div class="flex items-center mb-6">
-              <input type="checkbox" id="privacy" class="custom-checkbox mr-2" />
-              <label for="privacy" class="text-gray-700">I agree to the privacy policy and terms of service</label>
+              <input type="checkbox" class="mr-2">
+              <label class="text-gray-700 dark:text-gray-300">I agree to the privacy policy</label>
             </div>
-            <button type="submit"
-              class="w-full py-3 bg-primary text-white font-medium !rounded-button whitespace-nowrap hover:bg-primary/90 transition-colors">
+
+            <button class="w-full py-3 bg-primary text-white font-medium rounded hover:bg-primary/90 transition">
               Send Message
             </button>
           </form>
         </div>
+
       </div>
     </div>
   </section>
-  <section id="testimonials" class="py-20 bg-gray-50">
+
+  <section id="testimonials" class="py-20">
     <div class="container mx-auto px-6">
 
-      <h2 class="text-3xl md:text-4xl font-bold text-gray-900 text-center mb-12">
+      <h2 class="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white text-center mb-12">
         Testimonials & Recommendations
       </h2>
 
       <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
 
         <!-- Testimonial 1 -->
-        <div class="bg-white p-8 shadow-lg rounded-xl border border-gray-100">
-          <p class="text-gray-700 mb-6">
+        <div class="bg-white dark:bg-gray-800 p-8 shadow-lg rounded-xl border border-gray-100">
+          <p class="text-gray-700  dark:text-white mb-6">
             “Swati consistently delivers clean, scalable and modern UI components.
             A dependable developer with strong attention to detail.”
           </p>
-          <h4 class="font-semibold text-gray-900">— Senior Front-End Engineer</h4>
+          <h4 class="font-semibold text-gray-900 dark:text-white">— Senior Front-End Engineer</h4>
         </div>
 
         <!-- Testimonial 2 -->
-        <div class="bg-white p-8 shadow-lg rounded-xl border border-gray-100">
-          <p class="text-gray-700 mb-6">
+        <div class="bg-white dark:bg-gray-800 p-8 shadow-lg rounded-xl border border-gray-100">
+          <p class="text-gray-700  dark:text-white mb-6">
             “Her UI engineering skills and problem-solving approach improved our
             product performance and user experience significantly.”
           </p>
-          <h4 class="font-semibold text-gray-900">— UI/UX Lead Designer</h4>
+          <h4 class="font-semibold text-gray-900 dark:text-white">— UI/UX Lead Designer</h4>
         </div>
 
         <!-- Testimonial 3 -->
-        <div class="bg-white p-8 shadow-lg rounded-xl border border-gray-100">
-          <p class="text-gray-700 mb-6">
+        <div class="bg-white dark:bg-gray-800 p-8 shadow-lg rounded-xl border border-gray-100">
+          <p class="text-gray-700  dark:text-white mb-6">
             “Professional, collaborative, and consistently delivers high-quality front-end work.”
           </p>
-          <h4 class="font-semibold text-gray-900">— Project Manager</h4>
+          <h4 class="font-semibold text-gray-900 dark:text-white">— Project Manager</h4>
         </div>
 
       </div>
@@ -913,11 +937,11 @@ Case Study
   </section>
 
 
+
   <!-- Footer -->
   <footer class="bg-gray-900 text-white py-12">
     <div class="container mx-auto px-6">
 
-      <!-- Top Section -->
       <div class="flex flex-col md:flex-row justify-between items-center mb-10">
         <h3 class="text-2xl font-['Pacifico']">Swati Barsoliya</h3>
 
@@ -925,7 +949,6 @@ Case Study
           Front-End Developer · Based in the UK 🇬🇧
         </p>
 
-        <!-- Social Icons -->
         <div class="flex space-x-6 mt-6 md:mt-0">
           <a href="https://www.linkedin.com/in/swati-barsoliya/" target="_blank"
             class="text-gray-400 hover:text-white transition">
@@ -938,7 +961,6 @@ Case Study
         </div>
       </div>
 
-      <!-- Links -->
       <div class="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between">
         <p class="text-gray-400 text-sm">&copy; 2025 Swati Barsoliya. All rights reserved.</p>
 
@@ -950,10 +972,8 @@ Case Study
           <a href="#contact" class="text-gray-400 hover:text-white transition">Contact</a>
         </div>
       </div>
-
     </div>
 
-    <!-- Back to Top -->
     <div class="fixed bottom-8 right-8 z-40">
       <a href="#" id="back-to-top"
         class="w-12 h-12 flex items-center justify-center bg-primary text-white rounded-full shadow-lg hover:bg-primary/90 transition">
@@ -962,10 +982,47 @@ Case Study
     </div>
   </footer>
 
+  <!-- AOS -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-  <script src="../Portfolio/JS/script.js" defer></script>
-  <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
-  <script src="https://cdn.tailwindcss.com/3.4.16"></script>
+  <script>AOS.init({ once: true });</script>
+
+  <!-- ⭐ DARK MODE FIX SCRIPT — THE IMPORTANT PART ⭐ -->
+  <script>
+    const html = document.documentElement;
+    const toggleBtn = document.getElementById("dark-toggle");
+    const iconSun = document.getElementById("icon-sun");
+    const iconMoon = document.getElementById("icon-moon");
+
+    // Default theme = light
+    if (localStorage.theme === "dark") {
+      html.classList.add("dark");
+      iconSun.classList.add("hidden");
+      iconMoon.classList.remove("hidden");
+    } else {
+      html.classList.remove("dark");
+      iconSun.classList.remove("hidden");
+      iconMoon.classList.add("hidden");
+    }
+
+    // Click to toggle
+    toggleBtn.addEventListener("click", () => {
+      const isDark = html.classList.contains("dark");
+
+      if (isDark) {
+        html.classList.remove("dark");
+        localStorage.theme = "light";
+        iconSun.classList.remove("hidden");
+        iconMoon.classList.add("hidden");
+      } else {
+        html.classList.add("dark");
+        localStorage.theme = "dark";
+        iconSun.classList.add("hidden");
+        iconMoon.classList.remove("hidden");
+      }
+    });
+  </script>
+
+
 </body>
 
 </html>

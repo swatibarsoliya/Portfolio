@@ -1,27 +1,4 @@
 // =========================
-// 0. Tailwind Custom Config
-// =========================
-tailwind.config = {
-  theme: {
-    extend: {
-      colors: { primary: "#0A66C2", secondary: "#00A0DC" },
-      borderRadius: {
-        none: "0px",
-        sm: "4px",
-        DEFAULT: "8px",
-        md: "12px",
-        lg: "16px",
-        xl: "20px",
-        "2xl": "24px",
-        "3xl": "32px",
-        full: "9999px",
-        button: "8px",
-      },
-    },
-  },
-};
-
-// =========================
 // 1. DOMContentLoaded Scripts
 // =========================
 document.addEventListener("DOMContentLoaded", function () {
@@ -139,53 +116,60 @@ document.addEventListener("DOMContentLoaded", function () {
   // =========================
   // 6. Portfolio Filter & Modal
   // =========================
-  const filterButtons = document.querySelectorAll(".filter-button");
-  const portfolioItems = document.querySelectorAll(".portfolio-item");
-
-  filterButtons.forEach((button) => {
-    button.addEventListener("click", function () {
-      filterButtons.forEach((btn) => btn.classList.remove("active"));
-      this.classList.add("active");
-      const filter = this.getAttribute("data-filter");
-      portfolioItems.forEach((item) => {
-        item.style.display =
-          filter === "all" || item.getAttribute("data-category") === filter
-            ? "block"
-            : "none";
+  (function () {
+    // Open modal when button with data-modal attribute clicked
+    document.querySelectorAll('[data-modal]').forEach(btn => {
+      btn.addEventListener('click', function () {
+        const id = this.getAttribute('data-modal');
+        openModal(document.getElementById(id));
       });
     });
-  });
 
-  const projectButtons = document.querySelectorAll(".view-project");
-  const modals = document.querySelectorAll(".modal");
-  const closeButtons = document.querySelectorAll(".close");
+    // Close modal elements
+    document.querySelectorAll('[data-modal-close]').forEach(el => {
+      el.addEventListener('click', () => {
+        const modal = el.closest('[id^="modal-"]') || document.querySelector('.modal-open');
+        closeModal(modal);
+      });
+    });
 
-  projectButtons.forEach((button) => {
-    button.addEventListener("click", function () {
-      const modal = document.getElementById(this.dataset.project + "Modal");
-      if (modal) {
-        modal.style.display = "block";
-        document.body.style.overflow = "hidden";
+    // openModal / closeModal functions
+    function openModal(modal) {
+      if (!modal) return;
+      modal.classList.remove('hidden');
+      modal.classList.add('flex');
+      modal.setAttribute('aria-hidden', 'false');
+      modal.querySelector('[data-modal-close]')?.focus();
+      modal.classList.add('modal-open');
+      // trap focus (basic)
+      document.addEventListener('keydown', escHandler);
+    }
+
+    function closeModal(modal) {
+      if (!modal) return;
+      modal.classList.remove('flex');
+      modal.classList.add('hidden');
+      modal.setAttribute('aria-hidden', 'true');
+      modal.classList.remove('modal-open');
+      document.removeEventListener('keydown', escHandler);
+    }
+
+    function escHandler(e) {
+      if (e.key === 'Escape') {
+        const open = document.querySelector('.modal-open');
+        if (open) closeModal(open);
       }
-    });
-  });
+    }
 
-  closeButtons.forEach((button) => {
-    button.addEventListener("click", function () {
-      const modal = this.closest(".modal");
-      modal.style.display = "none";
-      document.body.style.overflow = "auto";
+    // Close when clicking overlay
+    document.querySelectorAll('[data-modal-close]').forEach(overlay => {
+      overlay.addEventListener('click', (e) => {
+        const modal = overlay.closest('[id^="modal-"]');
+        closeModal(modal);
+      });
     });
-  });
-  
-  window.addEventListener("click", function (e) {
-    modals.forEach((modal) => {
-      if (e.target === modal) {
-        modal.style.display = "none";
-        document.body.style.overflow = "auto";
-      }
-    });
-  });
+  })();
+
 
   // =========================
   // 7. Contact Form Validation
@@ -223,3 +207,5 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 });
+
+
