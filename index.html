@@ -240,224 +240,147 @@
     </div>
   </section>
   <!-- Portfolio Section -->
-  <section id="portfolio" class="py-20">
-    <div class="container mx-auto px-6">
-      <div class="text-center mb-16">
-        <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-          My Portfolio
-        </h2>
-        <div class="w-20 h-1 bg-primary mx-auto mb-8"></div>
-        <p class="max-w-2xl mx-auto text-gray-700">
-          A collection of my recent work showcasing web design, UI/UX, and
-          front-end development projects.
-        </p>
-      </div>
-      <div class="flex flex-wrap justify-center gap-4 mb-12">
-        <button
-          class="filter-button active px-6 py-2 !rounded-button whitespace-nowrap bg-gray-100 text-gray-700 hover:bg-gray-200 transition-colors hover:text-black"
-          data-filter="all">
-          All Projects
-        </button>
-        <button
-          class="filter-button px-6 py-2 !rounded-button whitespace-nowrap bg-gray-100 text-gray-700 hover:bg-gray-200 transition-colors hover:text-black"
-          data-filter="web-design">
-          Web Design
-        </button>
-        <button
-          class="filter-button px-6 py-2 !rounded-button whitespace-nowrap bg-gray-100 text-gray-700 hover:bg-gray-200 transition-colors hover:text-black"
-          data-filter="ui-ux">
-          UI/UX Design
-        </button>
-        <button
-          class="filter-button px-6 py-2 !rounded-button whitespace-nowrap bg-gray-100 text-gray-700 hover:bg-gray-200 transition-colors hover:text-black"
-          data-filter="development">
-          Development
-        </button>
-      </div>
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-        <!-- Project 1 -->
-        <div
-          class="portfolio-item rounded-lg overflow-hidden shadow-lg bg-white hover:scale-105 transition-transform duration-300"
-          data-category="web-design" data-aos="fade-up" data-aos-delay="100">
-          <div class="relative overflow-hidden">
-            <img src="image/luxe.jpg" alt="E-commerce Website"
-              class="w-full h-64 object-cover object-top transition-transform duration-500 hover:scale-105" />
-            <div
-              class="absolute inset-0 bg-primary/80 opacity-0 hover:opacity-100 transition-opacity flex items-center justify-center">
-              <button class="view-project px-6 py-2 bg-white text-primary font-medium !rounded-button whitespace-nowrap"
-                data-project="project1">
-                View Project
-              </button>
-            </div>
-          </div>
-          <div class="p-6">
-            <h3 class="text-xl font-bold text-gray-900 mb-2">
-              Luxe Fashion E-commerce
-            </h3>
-            <p class="text-gray-700 mb-4">
-              A complete redesign of an e-commerce platform for a luxury
-              fashion brand.
-            </p>
-            <div class="flex flex-wrap gap-2">
-              <span class="px-3 py-1 bg-gray-100 text-gray-700 text-sm !rounded-button whitespace-nowrap">Web
-                Design</span>
-              <span class="px-3 py-1 bg-gray-100 text-gray-700 text-sm !rounded-button whitespace-nowrap">UI/UX</span>
-              <span class="px-3 py-1 bg-gray-100 text-gray-700 text-sm !rounded-button whitespace-nowrap">Shopify</span>
-            </div>
-          </div>
-        </div>
-        <!-- Project 2 -->
-        <div class="portfolio-item rounded-lg overflow-hidden shadow-lg bg-white" data-category="ui-ux">
-          <div class="relative overflow-hidden">
-            <img src="image/fit-track.jpg" alt="Fitness App UI"
-              class="w-full h-64 object-cover object-top transition-transform duration-500 hover:scale-105" />
-            <div
-              class="absolute inset-0 bg-primary/80 opacity-0 hover:opacity-100 transition-opacity flex items-center justify-center">
-              <button class="view-project px-6 py-2 bg-white text-primary font-medium !rounded-button whitespace-nowrap"
-                data-project="project2">
-                View Project
-              </button>
-            </div>
-          </div>
-          <div class="p-6">
-            <h3 class="text-xl font-bold text-gray-900 mb-2">
-              FitTrack Mobile App
-            </h3>
-            <p class="text-gray-700 mb-4">
-              A comprehensive fitness tracking mobile application with
-              personalized workout plans.
-            </p>
-            <div class="flex flex-wrap gap-2">
-              <span class="px-3 py-1 bg-gray-100 text-gray-700 text-sm !rounded-button whitespace-nowrap">UI/UX</span>
-              <span class="px-3 py-1 bg-gray-100 text-gray-700 text-sm !rounded-button whitespace-nowrap">Mobile</span>
-              <span class="px-3 py-1 bg-gray-100 text-gray-700 text-sm !rounded-button whitespace-nowrap">Figma</span>
-            </div>
-          </div>
-        </div>
-        <!-- Project 3 -->
-        <div class="portfolio-item rounded-lg overflow-hidden shadow-lg bg-white" data-category="development">
-          <div class="relative overflow-hidden">
-            <img src="image/home-seeker.jpg" alt="Real Estate Website"
-              class="w-full h-64 object-cover object-top transition-transform duration-500 hover:scale-105" />
-            <div
-              class="absolute inset-0 bg-primary/80 opacity-0 hover:opacity-100 transition-opacity flex items-center justify-center">
-              <button class="view-project px-6 py-2 bg-white text-primary font-medium !rounded-button whitespace-nowrap"
-                data-project="project3">
-                View Project
-              </button>
-            </div>
-          </div>
-          <div class="p-6">
-            <h3 class="text-xl font-bold text-gray-900 mb-2">
-              HomeSeeker Real Estate
-            </h3>
-            <p class="text-gray-700 mb-4">
-              A fully responsive real estate platform with advanced search and
-              filtering.
-            </p>
-            <div class="flex flex-wrap gap-2">
-              <span
-                class="px-3 py-1 bg-gray-100 text-gray-700 text-sm !rounded-button whitespace-nowrap">Development</span>
-              <span class="px-3 py-1 bg-gray-100 text-gray-700 text-sm !rounded-button whitespace-nowrap">React</span>
-              <span class="px-3 py-1 bg-gray-100 text-gray-700 text-sm !rounded-button whitespace-nowrap">API</span>
-            </div>
-          </div>
-        </div>
-        <!-- Project 4 -->
-        <div
-          class="portfolio-item rounded-lg overflow-hidden shadow-lg bg-white hover:scale-105 transition-transform duration-300"
-          data-category="web-design" data-aos="fade-up" data-aos-delay="100">
-          <div class="relative overflow-hidden">
-            <img src="image/saveur.jpg" alt="Restaurant Website"
-              class="w-full h-64 object-cover object-top transition-transform duration-500 hover:scale-105" />
-            <div
-              class="absolute inset-0 bg-primary/80 opacity-0 hover:opacity-100 transition-opacity flex items-center justify-center">
-              <button class="view-project px-6 py-2 bg-white text-primary font-medium !rounded-button whitespace-nowrap"
-                data-project="project4">
-                View Project
-              </button>
-            </div>
-          </div>
-          <div class="p-6">
-            <h3 class="text-xl font-bold text-gray-900 mb-2">
-              Saveur Restaurant
-            </h3>
-            <p class="text-gray-700 mb-4">
-              An elegant website for a fine dining restaurant with online
-              reservation system.
-            </p>
-            <div class="flex flex-wrap gap-2">
-              <span class="px-3 py-1 bg-gray-100 text-gray-700 text-sm !rounded-button whitespace-nowrap">Web
-                Design</span>
-              <span
-                class="px-3 py-1 bg-gray-100 text-gray-700 text-sm !rounded-button whitespace-nowrap">WordPress</span>
-              <span class="px-3 py-1 bg-gray-100 text-gray-700 text-sm !rounded-button whitespace-nowrap">SEO</span>
-            </div>
-          </div>
-        </div>
-        <!-- Project 5 -->
-        <div class="portfolio-item rounded-lg overflow-hidden shadow-lg bg-white" data-category="ui-ux">
-          <div class="relative overflow-hidden">
-            <img src="image/fintrack.jpg" alt="Banking Dashboard"
-              class="w-full h-64 object-cover object-top transition-transform duration-500 hover:scale-105" />
-            <div
-              class="absolute inset-0 bg-primary/80 opacity-0 hover:opacity-100 transition-opacity flex items-center justify-center">
-              <button class="view-project px-6 py-2 bg-white text-primary font-medium !rounded-button whitespace-nowrap"
-                data-project="project5">
-                View Project
-              </button>
-            </div>
-          </div>
-          <div class="p-6">
-            <h3 class="text-xl font-bold text-gray-900 mb-2">
-              FinTrack Dashboard
-            </h3>
-            <p class="text-gray-700 mb-4">
-              A comprehensive financial tracking dashboard with data
-              visualization.
-            </p>
-            <div class="flex flex-wrap gap-2">
-              <span class="px-3 py-1 bg-gray-100 text-gray-700 text-sm !rounded-button whitespace-nowrap">UI/UX</span>
-              <span
-                class="px-3 py-1 bg-gray-100 text-gray-700 text-sm !rounded-button whitespace-nowrap">Dashboard</span>
-              <span class="px-3 py-1 bg-gray-100 text-gray-700 text-sm !rounded-button whitespace-nowrap">Adobe
-                XD</span>
-            </div>
-          </div>
-        </div>
-        <!-- Project 6 -->
-        <div class="portfolio-item rounded-lg overflow-hidden shadow-lg bg-white" data-category="development">
-          <div class="relative overflow-hidden">
-            <img src="image/wanderlust.jpg" alt="Travel Booking Website"
-              class="w-full h-64 object-cover object-top transition-transform duration-500 hover:scale-105" />
-            <div
-              class="absolute inset-0 bg-primary/80 opacity-0 hover:opacity-100 transition-opacity flex items-center justify-center">
-              <button class="view-project px-6 py-2 bg-white text-primary font-medium !rounded-button whitespace-nowrap"
-                data-project="project6">
-                View Project
-              </button>
-            </div>
-          </div>
-          <div class="p-6">
-            <h3 class="text-xl font-bold text-gray-900 mb-2">
-              Wanderlust Travel
-            </h3>
-            <p class="text-gray-700 mb-4">
-              A travel booking platform with integrated payment system and
-              itinerary planner.
-            </p>
-            <div class="flex flex-wrap gap-2">
-              <span
-                class="px-3 py-1 bg-gray-100 text-gray-700 text-sm !rounded-button whitespace-nowrap">Development</span>
-              <span
-                class="px-3 py-1 bg-gray-100 text-gray-700 text-sm !rounded-button whitespace-nowrap">JavaScript</span>
-              <span class="px-3 py-1 bg-gray-100 text-gray-700 text-sm !rounded-button whitespace-nowrap">API</span>
-            </div>
-          </div>
-        </div>
-      </div>
+ <section id="portfolio" class="py-24">
+  <div class="container mx-auto px-6">
+    
+    <!-- Section Header -->
+    <div class="text-center mb-16">
+      <h2 class="text-4xl font-extrabold text-gray-900 mb-4">Featured Projects</h2>
+      <div class="w-24 h-1 bg-primary mx-auto mb-6"></div>
+      <p class="max-w-2xl mx-auto text-gray-600 text-lg">
+        A curated selection of my best work in Front-End Development, UI/UX Design, and modern web applications.
+      </p>
     </div>
-  </section>
+
+    <!-- Filters -->
+    <div class="flex flex-wrap justify-center gap-3 mb-14">
+      <button class="filter-button active px-6 py-2 rounded-full bg-primary text-white shadow hover:bg-primary/90 transition" data-filter="all">All</button>
+      <button class="filter-button px-6 py-2 rounded-full bg-white text-gray-700 shadow border hover:bg-gray-100 transition" data-filter="web-design">Web Design</button>
+      <button class="filter-button px-6 py-2 rounded-full bg-white text-gray-700 shadow border hover:bg-gray-100 transition" data-filter="ui-ux">UI/UX</button>
+      <button class="filter-button px-6 py-2 rounded-full bg-white text-gray-700 shadow border hover:bg-gray-100 transition" data-filter="development">Development</button>
+    </div>
+
+    <!-- Portfolio Grid -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
+      
+      <!-- Project Card -->
+      <div class="portfolio-item bg-white rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden" data-category="web-design">
+        <div class="relative group overflow-hidden">
+          <img src="image/luxe.jpg" alt="Luxe fashion e-commerce website" class="h-64 w-full object-cover transition-transform duration-500 group-hover:scale-110">
+          <div class="absolute inset-0 bg-primary/80 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
+            <a href="#" class="px-6 py-2 bg-white text-primary font-semibold rounded-full shadow hover:bg-gray-100">View Project</a>
+          </div>
+        </div>
+        <div class="p-6">
+          <h3 class="text-xl font-bold text-gray-900 mb-2">Luxe Fashion E-commerce</h3>
+          <p class="text-gray-600 mb-4 text-sm">Modern redesign of a luxury e-commerce experience with enhanced product browsing and UI animations.</p>
+          <div class="flex flex-wrap gap-2 text-sm">
+            <span class="px-3 py-1 bg-gray-100 rounded-full text-gray-700">Web Design</span>
+            <span class="px-3 py-1 bg-gray-100 rounded-full text-gray-700">UI/UX</span>
+            <span class="px-3 py-1 bg-gray-100 rounded-full text-gray-700">Shopify</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="portfolio-item bg-white rounded-2xl shadow-md hover:shadow-xl transition overflow-hidden" data-category="ui-ux">
+        <div class="relative group overflow-hidden">
+          <img src="image/fit-track.jpg" alt="Fitness tracking mobile app UI" class="h-64 w-full object-cover transition-transform duration-500 group-hover:scale-110">
+          <div class="absolute inset-0 bg-primary/80 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
+            <a href="#" class="px-6 py-2 bg-white text-primary font-semibold rounded-full shadow">View Project</a>
+          </div>
+        </div>
+        <div class="p-6">
+          <h3 class="text-xl font-bold text-gray-900 mb-2">FitTrack Mobile App</h3>
+          <p class="text-gray-600 mb-4 text-sm">Intuitive mobile UI for tracking workouts, calories, and progress with clean dashboards.</p>
+          <div class="flex flex-wrap gap-2 text-sm">
+            <span class="px-3 py-1 bg-gray-100 rounded-full text-gray-700">UI/UX</span>
+            <span class="px-3 py-1 bg-gray-100 rounded-full text-gray-700">Mobile</span>
+            <span class="px-3 py-1 bg-gray-100 rounded-full text-gray-700">Figma</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 3 -->
+      <div class="portfolio-item bg-white rounded-2xl shadow-md hover:shadow-xl transition overflow-hidden" data-category="development">
+        <div class="relative group overflow-hidden">
+          <img src="image/home-seeker.jpg" alt="Real estate listing platform" class="h-64 w-full object-cover transition-transform duration-500 group-hover:scale-110">
+          <div class="absolute inset-0 bg-primary/80 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
+            <a href="#" class="px-6 py-2 bg-white text-primary font-semibold rounded-full shadow">View Project</a>
+          </div>
+        </div>
+        <div class="p-6">
+          <h3 class="text-xl font-bold text-gray-900 mb-2">HomeSeeker Real Estate</h3>
+          <p class="text-gray-600 mb-4 text-sm">Fully responsive platform with dynamic property filtering, search and map integration.</p>
+          <div class="flex flex-wrap gap-2 text-sm">
+            <span class="px-3 py-1 bg-gray-100 rounded-full text-gray-700">React</span>
+            <span class="px-3 py-1 bg-gray-100 rounded-full text-gray-700">API</span>
+            <span class="px-3 py-1 bg-gray-100 rounded-full text-gray-700">Development</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 4 -->
+      <div class="portfolio-item bg-white rounded-2xl shadow-md hover:shadow-xl transition overflow-hidden" data-category="web-design">
+        <div class="relative group overflow-hidden">
+          <img src="image/saveur.jpg" alt="Restaurant website design" class="h-64 w-full object-cover transition-transform duration-500 group-hover:scale-110">
+          <div class="absolute inset-0 bg-primary/80 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
+            <a href="#" class="px-6 py-2 bg-white text-primary font-semibold rounded-full shadow">View Project</a>
+          </div>
+        </div>
+        <div class="p-6">
+          <h3 class="text-xl font-bold text-gray-900 mb-2">Saveur Restaurant</h3>
+          <p class="text-gray-600 mb-4 text-sm">Fine-dining website with reservation system, menu showcase & optimized SEO.</p>
+          <div class="flex flex-wrap gap-2 text-sm">
+            <span class="px-3 py-1 bg-gray-100 rounded-full text-gray-700">Web Design</span>
+            <span class="px-3 py-1 bg-gray-100 rounded-full text-gray-700">WordPress</span>
+            <span class="px-3 py-1 bg-gray-100 rounded-full text-gray-700">SEO</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 5 -->
+      <div class="portfolio-item bg-white rounded-2xl shadow-md hover:shadow-xl transition overflow-hidden" data-category="ui-ux">
+        <div class="relative group overflow-hidden">
+          <img src="image/fintrack.jpg" alt="Financial dashboard UI" class="h-64 w-full object-cover transition-transform duration-500 group-hover:scale-110">
+          <div class="absolute inset-0 bg-primary/80 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
+            <a href="#" class="px-6 py-2 bg-white text-primary font-semibold rounded-full shadow">View Project</a>
+          </div>
+        </div>
+        <div class="p-6">
+          <h3 class="text-xl font-bold text-gray-900 mb-2">FinTrack Dashboard</h3>
+          <p class="text-gray-600 mb-4 text-sm">Financial analytics dashboard with clean graphs, dark-mode UI, and accessibility focus.</p>
+          <div class="flex flex-wrap gap-2 text-sm">
+            <span class="px-3 py-1 bg-gray-100 rounded-full text-gray-700">UI/UX</span>
+            <span class="px-3 py-1 bg-gray-100 rounded-full text-gray-700">Data Viz</span>
+            <span class="px-3 py-1 bg-gray-100 rounded-full text-gray-700">Adobe XD</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 6 -->
+      <div class="portfolio-item bg-white rounded-2xl shadow-md hover:shadow-xl transition overflow-hidden" data-category="development">
+        <div class="relative group overflow-hidden">
+          <img src="image/wanderlust.jpg" alt="Travel booking web app" class="h-64 w-full object-cover transition-transform duration-500 group-hover:scale-110">
+          <div class="absolute inset-0 bg-primary/80 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
+            <a href="#" class="px-6 py-2 bg-white text-primary font-semibold rounded-full shadow">View Project</a>
+          </div>
+        </div>
+        <div class="p-6">
+          <h3 class="text-xl font-bold text-gray-900 mb-2">Wanderlust Travel</h3>
+          <p class="text-gray-600 mb-4 text-sm">Travel booking web app with secure payments, itinerary builder, and offer listings.</p>
+          <div class="flex flex-wrap gap-2 text-sm">
+            <span class="px-3 py-1 bg-gray-100 rounded-full text-gray-700">Development</span>
+            <span class="px-3 py-1 bg-gray-100 rounded-full text-gray-700">JavaScript</span>
+            <span class="px-3 py-1 bg-gray-100 rounded-full text-gray-700">API</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
   <!-- Project Modals -->
   <div id="project1Modal" class="modal">
     <div class="modal-content">
