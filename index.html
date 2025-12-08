@@ -2,28 +2,55 @@
 <html lang="en" class="">
 
 <head>
+  <!-- Basic Required Meta -->
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Swati Barsoliya - UI Developer Portfolio">
-  <meta name="keywords" content="UI Developer, Frontend Developer, Web Design, Portfolio">
+  <title>Swati Barsoliya | Front-End Developer (React, JavaScript) | UK</title>
 
-  <title>Swati Barsoliya - Full Stack UI Engineer</title>
+  <!-- SEO Meta -->
+  <meta name="description"
+    content="Front-End Developer specialising in React, JavaScript and UI Engineering. Based in the UK. Creating fast, scalable and accessible web interfaces.">
+  <meta name="author" content="Swati Barsoliya">
+  <meta name="keywords"
+    content="Front-End Developer UK, React Developer UK, JavaScript Developer UK, UI Engineer UK, Web Developer Manchester, Web Developer London">
+
+  <link rel="canonical" href="https://swatibarsoliya.github.io/Portfolio/">
+
+  <!-- Social Sharing (Open Graph) -->
+  <meta property="og:title" content="Swati Barsoliya | Front-End Developer (React, JavaScript)">
+  <meta property="og:description"
+    content="Front-End Developer in the UK specialising in React and modern UI engineering.">
+  <meta property="og:image" content="image/preview.png">
+  <meta property="og:url" content="https://swatibarsoliya.github.io/Portfolio/">
+  <meta property="og:type" content="website">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Swati Barsoliya | Front-End Developer (React, JavaScript)">
+  <meta name="twitter:description"
+    content="Front-End Developer based in the UK, creating fast and accessible interfaces.">
+  <meta name="twitter:image" content="image/preview.png">
+
+  <!-- Mobile Browser / PWA -->
+  <meta name="theme-color" content="#0A66C2">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="image/favicon.png">
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css" />
   <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Inter:wght@300;400;500;600;700&display=swap"
     rel="stylesheet" />
 
   <!-- Icons -->
-  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 
   <!-- AOS Animation -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
 
-  <!-- Tailwind CDN (before custom CSS) -->
+  <!-- Tailwind CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
 
   <!-- Custom Tailwind Config -->
@@ -37,15 +64,6 @@
             secondary: "#00A0DC"
           },
           borderRadius: {
-            none: "0px",
-            sm: "4px",
-            DEFAULT: "8px",
-            md: "12px",
-            lg: "16px",
-            xl: "20px",
-            "2xl": "24px",
-            "3xl": "32px",
-            full: "9999px",
             button: "8px",
           },
         },
@@ -55,8 +73,29 @@
     };
   </script>
 
-  <!-- Your Custom CSS (after Tailwind) -->
+  <!-- Custom CSS -->
   <link rel="stylesheet" href="../Portfolio/CSS/style.css" />
+
+  <!-- Schema Markup (JSON-LD) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Swati Barsoliya",
+    "jobTitle": "Front-End Developer",
+    "url": "https://swatibarsoliya.github.io/Portfolio/",
+    "sameAs": [
+      "https://www.linkedin.com/in/swati-barsoliya/",
+      "https://github.com/swatibarsoliya"
+    ],
+    "skills": ["React", "JavaScript", "UI Engineering", "Front-End Development"],
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "UK"
+    }
+  }
+  </script>
+
 </head>
 
 <body class="bg-white dark:bg-gray-900">
@@ -88,7 +127,7 @@
       <div class="flex items-center gap-3">
 
         <!-- Dark Mode Toggle -->
-        <button id="dark-toggle"
+        <button id="dark-toggle" role="button" aria-pressed="false"
           class="p-2 rounded-md bg-gray-100 dark:bg-gray-800 text-gray-800 dark:text-gray-100 hover:scale-105 transition">
           <svg id="icon-sun" class="w-5 h-5 block" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
             stroke="currentColor">
@@ -103,20 +142,20 @@
         </button>
 
         <!-- LinkedIn -->
-        <a href="https://www.linkedin.com/in/swati-barsoliya/" target="_blank"
+        <a href="https://www.linkedin.com/in/swati-barsoliya/" target="_blank" aria-label="LinkedIn Profile">
           class="hidden md:inline-flex items-center gap-2 px-3 py-1 bg-[#0A66C2] text-white rounded-md text-sm font-semibold shadow hover:bg-[#004182] transition">
-          <i class="ri-linkedin-fill"></i> LinkedIn
+          <i class="ri-linkedin-fill "></i> LinkedIn
         </a>
 
         <!-- GitHub -->
-        <a href="https://github.com/swatibarsoliya" target="_blank"
+        <a href="https://github.com/swatibarsoliya" target="_blank" aria-label="GitHub Profile"
           class="hidden md:inline-flex items-center gap-2 px-3 py-1 bg-black dark:bg-gray-700 text-white rounded-md text-sm font-semibold shadow hover:bg-gray-800 transition">
           <i class="ri-github-fill"></i> GitHub
         </a>
       </div>
 
       <!-- Mobile Menu Button -->
-      <button class="md:hidden w-10 h-10 flex items-center justify-center text-gray-700 dark:text-gray-300"
+      <button role="button" aria-pressed="false" class="md:hidden w-10 h-10 flex items-center justify-center text-gray-700 dark:text-gray-300"
         id="mobile-menu-button">
         <i class="ri-menu-line ri-lg"></i>
       </button>
@@ -138,12 +177,12 @@
 
         <!-- Social Icons -->
         <div class="flex space-x-4 py-2">
-          <a href="https://www.linkedin.com/in/swati-barsoliya/" target="_blank"
+          <a href="https://www.linkedin.com/in/swati-barsoliya/" target="_blank" aria-label="LinkedIn Profile"
             class="w-10 h-10 flex items-center justify-center text-gray-600 dark:text-gray-300 hover:text-primary transition">
             <i class="ri-linkedin-line ri-lg"></i>
           </a>
 
-          <a href="https://github.com/swatibarsoliya" target="_blank"
+          <a href="https://github.com/swatibarsoliya" target="_blank" aria-label="GitHub Profile"
             class="w-10 h-10 flex items-center justify-center text-gray-600 dark:text-gray-300 hover:text-primary transition">
             <i class="ri-github-line ri-lg"></i>
           </a>
@@ -357,7 +396,7 @@
               class="w-full h-56 object-cover group-hover:scale-105 transition-transform duration-500">
             <div
               class="absolute inset-0 flex items-center justify-center bg-black/30 opacity-0 group-hover:opacity-100 transition">
-              <button class="px-5 py-2 bg-white text-primary font-semibold rounded-full mr-3"
+              <button  role="button" aria-pressed="false" class="px-5 py-2 bg-white text-primary font-semibold rounded-full mr-3"
                 data-modal="modal-project3">Quick Preview</button>
               <a href="./project/homeseeker.html"
                 class="px-5 py-2 bg-primary text-white font-semibold rounded-full">Full Case Study</a>
@@ -390,7 +429,7 @@
               class="w-full h-56 object-cover group-hover:scale-105 transition-transform duration-500">
             <div
               class="absolute inset-0 flex items-center justify-center bg-black/30 opacity-0 group-hover:opacity-100 transition">
-              <button class="px-5 py-2 bg-white text-primary font-semibold rounded-full mr-3"
+              <button role="button" aria-pressed="false" class="px-5 py-2 bg-white text-primary font-semibold rounded-full mr-3"
                 data-modal="modal-project1">Quick Preview</button>
               <a href="./projects/luxe-fashion.html"
                 class="px-5 py-2 bg-primary text-white font-semibold rounded-full">Full Case Study</a>
@@ -422,7 +461,7 @@
               class="w-full h-56 object-cover group-hover:scale-105 transition-transform duration-500">
             <div
               class="absolute inset-0 flex items-center justify-center bg-black/30 opacity-0 group-hover:opacity-100 transition">
-              <button class="px-5 py-2 bg-white text-primary font-semibold rounded-full mr-3"
+              <button role="button" aria-pressed="false" class="px-5 py-2 bg-white text-primary font-semibold rounded-full mr-3"
                 data-modal="modal-project5">Quick Preview</button>
               <a href="./project/fintrack.html" class="px-5 py-2 bg-primary text-white font-semibold rounded-full">Full
                 Case Study</a>
@@ -887,7 +926,7 @@
               <label class="text-gray-700 dark:text-gray-300">I agree to the privacy policy</label>
             </div>
 
-            <button class="w-full py-3 bg-primary text-white font-medium rounded hover:bg-primary/90 transition">
+            <button role="button" aria-pressed="false" class="w-full py-3 bg-primary text-white font-medium rounded hover:bg-primary/90 transition">
               Send Message
             </button>
           </form>
@@ -951,12 +990,12 @@
         </p>
 
         <div class="flex space-x-6 mt-6 md:mt-0">
-          <a href="https://www.linkedin.com/in/swati-barsoliya/" target="_blank"
+          <a aria-label="LinkedIn Profile" href="https://www.linkedin.com/in/swati-barsoliya/" target="_blank"
             class="text-gray-400 hover:text-white transition">
             <i class="ri-linkedin-line ri-xl"></i>
           </a>
 
-          <a href="https://github.com/swatibarsoliya" target="_blank" class="text-gray-400 hover:text-white transition">
+          <a aria-label="GitHub Profile" href="https://github.com/swatibarsoliya" target="_blank" class="text-gray-400 hover:text-white transition">
             <i class="ri-github-line ri-xl"></i>
           </a>
         </div>
@@ -976,14 +1015,14 @@
     </div>
 
     <div class="fixed bottom-8 right-8 z-40">
-      <a href="#" id="back-to-top"
+      <a href="#" id="back-to-top" aria-label="ri-arrow-up-line"
         class="w-12 h-12 flex items-center justify-center bg-primary text-white rounded-full shadow-lg hover:bg-primary/90 transition">
         <i class="ri-arrow-up-line ri-lg"></i>
       </a>
     </div>
   </footer>
   <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
-  
+
   <!-- AOS -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
   <script>AOS.init({ once: true });</script>
