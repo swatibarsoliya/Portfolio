@@ -209,3 +209,30 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
+
+document.addEventListener("DOMContentLoaded", () => {
+  const sections = document.querySelectorAll(".lazy-section");
+
+  const observer = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        
+        // Load background image if exists
+        const bg = entry.target.getAttribute("data-bg");
+        if (bg && bg !== "none") {
+          entry.target.style.backgroundImage = `url('${bg}')`;
+          entry.target.style.backgroundSize = "cover";
+          entry.target.style.backgroundPosition = "center";
+        }
+
+        // Reveal Section (Fade-in)
+        entry.target.classList.add("lazy-visible");
+
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.15 });
+
+  sections.forEach(section => observer.observe(section));
+});
+

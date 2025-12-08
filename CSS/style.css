@@ -278,7 +278,12 @@ input:checked + .slider:before {
     transform: translateY(0);
 }
 
-/* .dark .bg-white,.dark .bg-gray-50 {
-    background-color: #1f2937;
-    color: #f9fafb;
-} */
+#loader {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+#loader.hide {
+  opacity: 0;
+  pointer-events: none;
+}
