@@ -278,12 +278,45 @@ input:checked + .slider:before {
     transform: translateY(0);
 }
 
-#loader {
-  opacity: 1;
-  pointer-events: auto;
+/* Light + Dark adaptive variables */
+:root {
+  --loader-bg: #f7f9fc;
+  --loader-c1: #0072FF;
+  --loader-c2: #00C6FF;
 }
 
+.dark {
+  --loader-bg: #0b0f19;
+  --loader-c1: #4F9EFF;
+  --loader-c2: #00E0FF;
+}
+
+/* Fade Out Animation */
 #loader.hide {
   opacity: 0;
   pointer-events: none;
+}
+
+/* Gradient Spinner */
+.loader-spinner {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 6px solid transparent;
+  border-top-color: var(--loader-c1);
+  border-right-color: var(--loader-c2);
+  animation: spin 1s linear infinite, glow 2s ease-in-out infinite;
+}
+
+/* Rotation */
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Glow pulse */
+@keyframes glow {
+  0% { box-shadow: 0 0 10px var(--loader-c1), 0 0 20px var(--loader-c2); }
+  50% { box-shadow: 0 0 25px var(--loader-c1), 0 0 35px var(--loader-c2); }
+  100% { box-shadow: 0 0 10px var(--loader-c1), 0 0 20px var(--loader-c2); }
 }

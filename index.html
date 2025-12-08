@@ -261,7 +261,7 @@
 
   <!-- About Section -->
   <section id="about" class="py-20 bg-gray-50 dark:bg-gray-900 transition-colors lazy-section" data-bg="none">
-    <div class="container mx-auto px-6"  data-aos="fade-up" data-aos-duration="1000">
+    <div class="container mx-auto px-6" data-aos="fade-up" data-aos-duration="1000">
       <div class="text-center mb-16">
         <h2 class="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
           About Me
@@ -1071,16 +1071,16 @@
     });
   </script>
   <div id="loader"
-    class="fixed inset-0 z-[9999] flex items-center justify-center bg-[#ffffffa6] dark:bg-gray-900 transition-opacity duration-700">
-    <div class="w-12 h-12 border-4 border-primary border-t-transparent rounded-full animate-spin"></div>
+    class="fixed inset-0 flex items-center justify-center bg-[var(--loader-bg)] z-[9999] transition-opacity duration-700">
+    <div class="loader-spinner"></div>
   </div>
   <script>
-    window.addEventListener("load", () => {
+    document.addEventListener("DOMContentLoaded", () => {
       const loader = document.getElementById("loader");
-      setTimeout(() => {
-        loader.classList.add("hide");
-      }, 300); // small delay for smoother effect
+      setTimeout(() => loader.classList.add("hide"), 600);
     });
   </script>
+
 </body>
+
 </html>
